@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "status": "TRACKING",
+    "rounds_collected": 5,
+    "current_diff": -59,
+    "max_diff": -59,
+    "extreme_start_time": "2026-03-29T18:47:10",
+    "rounds_since_extreme": 0,
+    "pzs_current_diff": 0,
+    "pzs_state": 1,
+    "pzs_0012_diff": 0,
+    "pzs_0012_state": 0,
+    "pzs_12012_diff": 0,
+    "pzs_12012_state": 0,
+    "zeros_since_last_good": 4,
+    "p3zs_current_diff": 0,
+    "p3zs_state": 0,
+    "p3zs_zeros_count": 4
+  }
+]

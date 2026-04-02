@@ -74,7 +74,7 @@ def get_latest_data():
         conn = mysql.connector.connect(**db_config)
         cursor = conn.cursor(dictionary=True)
         
-        query = "SELECT timestamp, raw_value, category, current_diff, max_diff, pzs_diff, pzs_0012_diff, pzs_12012_diff, pzs_source FROM game_data ORDER BY timestamp DESC LIMIT 1"
+        query = "SELECT timestamp, raw_value, category, current_diff, max_diff, pzs_diff, pzs_0012_diff, pzs_12012_diff, pzs_source, good_distance, p3zs_diff FROM game_data ORDER BY id DESC LIMIT 1"
         cursor.execute(query)
         result = cursor.fetchone()
         
@@ -103,13 +103,13 @@ def get_tracker_data():
         if tracker_state and tracker_state.get('extreme_start_time'):
             tracker_state['extreme_start_time'] = tracker_state['extreme_start_time'].isoformat()
             
-        cursor.execute("SELECT max_diff_value, duration_seconds, rounds_count, ended_at FROM extreme_durations ORDER BY ended_at DESC LIMIT 5")
+        cursor.execute("SELECT max_diff_value, duration_seconds, rounds_count, ended_at FROM extreme_durations ORDER BY id DESC LIMIT 5")
         extreme_durations = cursor.fetchall()
         for row in extreme_durations:
             if row.get('ended_at'):
                 row['ended_at'] = row['ended_at'].isoformat()
                 
-        cursor.execute("SELECT max_difference, time_difference_seconds, rounds_to_converge, recorded_at FROM convergence_history ORDER BY recorded_at DESC LIMIT 5")
+        cursor.execute("SELECT max_difference, time_difference_seconds, rounds_to_converge, recorded_at FROM convergence_history ORDER BY id DESC LIMIT 5")
         convergence_history = cursor.fetchall()
         for row in convergence_history:
             if row.get('recorded_at'):
@@ -137,7 +137,7 @@ def get_probabilities():
         
         # 1. Get the most recent categories from all-time history (all_games)
         # This allows probabilities to show immediately even on fresh session restart
-        cursor.execute("SELECT category FROM all_games ORDER BY timestamp DESC LIMIT 5")
+        cursor.execute("SELECT category FROM all_games ORDER BY id DESC LIMIT 5")
         rows = cursor.fetchall()
         recent_cats = [str(row['category']) for row in rows]
         recent_cats.reverse()  # Current order: [oldest, ..., newest]
@@ -220,7 +220,7 @@ def save_data():
         cursor = conn.cursor()
         
         # --- NEW: CALCULATE TRACKER STATE ---
-        cursor.execute("SELECT status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state FROM tracker_state WHERE id = 1")
+        cursor.execute("SELECT status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state, zeros_since_last_good, p3zs_current_diff, p3zs_state, p3zs_zeros_count FROM tracker_state WHERE id = 1")
         state_row = cursor.fetchone()
         
         # Good = +1 (categories 1, 2), Bad = -1 (category 0)
@@ -231,9 +231,11 @@ def save_data():
         save_pzs_0012_diff = 0
         save_pzs_12012_diff = 0
         save_pzs_source = None
+        save_good_distance = None
+        save_p3zs_diff = 0
         
         if state_row:
-            status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state = state_row
+            status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state, zeros_since_last_good, p3zs_current_diff, p3zs_state, p3zs_zeros_count = state_row
             
             # --- PZS LOGIC ---
             # Ensure values are never None
@@ -243,9 +245,13 @@ def save_data():
             pzs_0012_diff = int(pzs_0012_diff) if pzs_0012_diff is not None else 0
             pzs_12012_state = int(pzs_12012_state) if pzs_12012_state is not None else 0
             pzs_12012_diff = int(pzs_12012_diff) if pzs_12012_diff is not None else 0
+            zeros_since_last_good = int(zeros_since_last_good) if zeros_since_last_good is not None else 0
+            p3zs_current_diff = int(p3zs_current_diff) if p3zs_current_diff is not None else 0
+            p3zs_state = int(p3zs_state) if p3zs_state is not None else 0
+            p3zs_zeros_count = int(p3zs_zeros_count) if p3zs_zeros_count is not None else 0
 
             # Get recent category history to identify trigger sequences
-            cursor.execute("SELECT category FROM all_games ORDER BY timestamp DESC LIMIT 4")
+            cursor.execute("SELECT category FROM all_games ORDER BY id DESC LIMIT 4")
             history_rows = cursor.fetchall()
             # history_rows is [newest, ..., oldest]
             # We want [oldest, ..., newest] excluding the *current* category (which isn't in DB yet)
@@ -260,6 +266,44 @@ def save_data():
                 prev_3 = hist[-3:]
                 if prev_3 == [0, 0, 1] or prev_3 == [0, 0, 2]: is_0012 = True
                 if (prev_3[0] in [1, 2]) and prev_3[1] == 0 and (prev_3[2] in [1, 2]): is_12012 = True
+
+            # --- P3ZS LOGIC ---
+            # 3+ zeros then 1 repeat (+1) or fail (-1)
+            if category == 0:
+                if p3zs_state == 1:
+                    p3zs_current_diff -= 1
+                    p3zs_state = 0
+                    p3zs_zeros_count = 1
+                else:
+                    p3zs_zeros_count += 1
+            elif category in [1, 2]:
+                if p3zs_state == 1:
+                    print(f"🎯 P3ZS Success! Clicking at (1782, 473)...", flush=True)
+                    pyautogui.click(1782, 473)
+                    p3zs_current_diff += 1
+                    p3zs_state = 0
+                    p3zs_zeros_count = 0
+                else:
+                    if p3zs_zeros_count >= 3:
+                        p3zs_state = 1
+                    p3zs_zeros_count = 0
+            save_p3zs_diff = p3zs_current_diff
+
+            # --- DISTANCE & PATTERN LOGIC ---
+            # Distance logic
+            if category == 0:
+                zeros_since_last_good += 1
+            elif category in [1, 2]:
+                save_good_distance = zeros_since_last_good
+                zeros_since_last_good = 0
+            
+            # Pattern Clicker Logic: [Good, Bad, Good] -> [1/2, 0, current=1/2]
+            if len(hist) >= 2:
+                # hist is [oldest -> newest] excluding current category
+                # Looking for [hist[-2], hist[-1], category]
+                if (hist[-2] in [1, 2]) and (hist[-1] == 0) and (category in [1, 2]):
+                    print(f"🎯 Pattern Matched ([{hist[-2]}, {hist[-1]}, {category}])! Clicking at (1782, 473)...", flush=True)
+                    pyautogui.click(1782, 473)
 
             # State machine for main PZS:
             if category == 0:
@@ -333,19 +377,19 @@ def save_data():
             # Update tracker_state table
             cursor.execute("""
                 UPDATE tracker_state 
-                SET status=%s, rounds_collected=%s, current_diff=%s, max_diff=%s, extreme_start_time=%s, rounds_since_extreme=%s, pzs_current_diff=%s, pzs_state=%s, pzs_0012_diff=%s, pzs_0012_state=%s, pzs_12012_diff=%s, pzs_12012_state=%s
+                SET status=%s, rounds_collected=%s, current_diff=%s, max_diff=%s, extreme_start_time=%s, rounds_since_extreme=%s, pzs_current_diff=%s, pzs_state=%s, pzs_0012_diff=%s, pzs_0012_state=%s, pzs_12012_diff=%s, pzs_12012_state=%s, zeros_since_last_good=%s, p3zs_current_diff=%s, p3zs_state=%s, p3zs_zeros_count=%s
                 WHERE id = 1
-            """, (status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state))
+            """, (status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state, zeros_since_last_good, p3zs_current_diff, p3zs_state, p3zs_zeros_count))
 
         # --- ORIGINAL INSERT ---
-        insert_query = "INSERT INTO game_data (timestamp, raw_value, category, current_diff, max_diff, pzs_diff, pzs_0012_diff, pzs_12012_diff, pzs_source) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
-        cursor.execute(insert_query, (now, clean_value, category, save_current_diff, save_max_diff, save_pzs_diff, save_pzs_0012_diff, save_pzs_12012_diff, save_pzs_source))
+        insert_query = "INSERT INTO game_data (timestamp, raw_value, category, current_diff, max_diff, pzs_diff, pzs_0012_diff, pzs_12012_diff, pzs_source, good_distance, p3zs_diff) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        cursor.execute(insert_query, (now, clean_value, category, save_current_diff, save_max_diff, save_pzs_diff, save_pzs_0012_diff, save_pzs_12012_diff, save_pzs_source, save_good_distance, save_p3zs_diff))
         
         # --- NEW: SAVE TO RAW HISTORY ---
         cursor.execute("INSERT INTO all_games (timestamp, raw_value, category) VALUES (%s, %s, %s)", (now, clean_value, category))
         
         # --- NEW: LOG RAW PATTERNS ---
-        cursor.execute("SELECT category FROM all_games ORDER BY timestamp DESC LIMIT 5")
+        cursor.execute("SELECT category FROM all_games ORDER BY id DESC LIMIT 5")
         history_rows = cursor.fetchall()
         hist_cats = [str(r[0]) for r in reversed(history_rows)]
         
@@ -355,7 +399,7 @@ def save_data():
                 cursor.execute("INSERT INTO all_patterns (pattern_string, pattern_length, timestamp) VALUES (%s, %s, %s)", (pattern, length, now))
         
         # --- PATTERN TRACKING (Aggregated Table) ---
-        cursor.execute("SELECT category FROM game_data ORDER BY timestamp DESC LIMIT 5")
+        cursor.execute("SELECT category FROM game_data ORDER BY id DESC LIMIT 5")
         rows = cursor.fetchall()
         
         recent_cats = [str(row[0]) for row in rows]
@@ -383,8 +427,14 @@ def save_data():
         cursor.close()
         conn.close()
 
-        print(f"✅ Saved: {clean_value} (Cat: {category})")
-        return jsonify({"status": "success", "message": "Data, Patterns & Extreme History saved"}), 200
+        print(f"✅ Saved: {clean_value} (Cat: {category})", flush=True)
+        return jsonify({
+            "status": "success", 
+            "message": "Saved",
+            "category": category,
+            "good_distance": save_good_distance,
+            "p3zs_diff": save_p3zs_diff
+        }), 200
         
     except Exception as e:
         print(f"❌ Error: {e}")
@@ -398,7 +448,7 @@ def auto_click_center():
         center_x = screen_width // 2
         center_y = screen_height // 2
         pyautogui.click(center_x, center_y)
-        print(f"🖱️ Auto-clicked center of screen ({center_x}, {center_y})")
+        print(f"🖱️ Auto-clicked center of screen ({center_x}, {center_y})", flush=True)
         time.sleep(1800)  # Wait 5 minutes
 
 
@@ -416,6 +466,10 @@ if __name__ == '__main__':
             cursor.execute("ALTER TABLE tracker_state ADD COLUMN pzs_0012_state INT DEFAULT 0")
             cursor.execute("ALTER TABLE tracker_state ADD COLUMN pzs_12012_diff INT DEFAULT 0")
             cursor.execute("ALTER TABLE tracker_state ADD COLUMN pzs_12012_state INT DEFAULT 0")
+            cursor.execute("ALTER TABLE tracker_state ADD COLUMN zeros_since_last_good INT DEFAULT 0")
+            cursor.execute("ALTER TABLE tracker_state ADD COLUMN p3zs_current_diff INT DEFAULT 0")
+            cursor.execute("ALTER TABLE tracker_state ADD COLUMN p3zs_state INT DEFAULT 0")
+            cursor.execute("ALTER TABLE tracker_state ADD COLUMN p3zs_zeros_count INT DEFAULT 0")
         except: pass 
         
         try:
@@ -423,12 +477,14 @@ if __name__ == '__main__':
             cursor.execute("ALTER TABLE game_data ADD COLUMN pzs_0012_diff INT DEFAULT 0")
             cursor.execute("ALTER TABLE game_data ADD COLUMN pzs_12012_diff INT DEFAULT 0")
             cursor.execute("ALTER TABLE game_data ADD COLUMN pzs_source VARCHAR(50)")
+            cursor.execute("ALTER TABLE game_data ADD COLUMN good_distance INT DEFAULT NULL")
+            cursor.execute("ALTER TABLE game_data ADD COLUMN p3zs_diff INT DEFAULT 0")
         except: pass
 
         print("🔄 Starting new session: Clearing session-specific data...")
         cursor.execute("TRUNCATE TABLE game_data")
         # Reset tracker state to initial values
-        cursor.execute("UPDATE tracker_state SET status='WAITING', rounds_collected=0, current_diff=0, max_diff=0, extreme_start_time=NULL, rounds_since_extreme=0, pzs_current_diff=0, pzs_state=0, pzs_0012_diff=0, pzs_0012_state=0, pzs_12012_diff=0, pzs_12012_state=0 WHERE id=1")
+        cursor.execute("UPDATE tracker_state SET status='WAITING', rounds_collected=0, current_diff=0, max_diff=0, extreme_start_time=NULL, rounds_since_extreme=0, pzs_current_diff=0, pzs_state=0, pzs_0012_diff=0, pzs_0012_state=0, pzs_12012_diff=0, pzs_12012_state=0, zeros_since_last_good=0, p3zs_current_diff=0, p3zs_state=0, p3zs_zeros_count=0 WHERE id=1")
         conn.commit()
         cursor.close()
         conn.close()
