@@ -4,6 +4,7 @@ from datetime import datetime
 import mysql.connector
 import threading
 import time
+import random
 import pyautogui
 
 app = Flask(__name__)
@@ -31,11 +32,11 @@ def get_category(value):
     else:
         return 2
 
-def delayed_click(x, y, delay):
-    """Wait for delay then click at (x, y)."""
-    time.sleep(delay)
-    pyautogui.click(x, y)
-    print(f"🖱️ Delayed click performed at ({x}, {y}) after {delay}s", flush=True)
+#def delayed_click(x, y, delay):
+#    """Wait for delay then click at (x, y)."""
+#    time.sleep(delay)
+#    pyautogui.click(x, y)
+#    print(f"🖱️ Delayed click performed at ({x}, {y}) after {delay}s", flush=True)
 
 # ─────────────────────────────────────────────────────────────
 # NEW: Grid data endpoint for the /more frontend page
@@ -54,6 +55,65 @@ def get_grid_data():
             "status": "success",
             "categories": [r[0] for r in rows],
             "total": len(rows)
+        }), 200
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route('/analysis-data', methods=['GET'])
+def get_analysis_data():
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor(dictionary=True)
+        
+        # Fetch all CURRENT SESSION games (game_data reset on startup)
+        cursor.execute("SELECT id, timestamp, raw_value FROM game_data ORDER BY id ASC")
+        rows = cursor.fetchall()
+        
+        # Fetch current session timeline (last 400 of the current session)
+        cursor.execute("SELECT id, timestamp, raw_value FROM game_data ORDER BY id DESC LIMIT 400")
+        recent_rows = cursor.fetchall()
+        recent_rows.reverse() # Back to chronological order
+        
+        cursor.close()
+        conn.close()
+        
+        def calculate_gaps(threshold):
+            gaps = []
+            last_id = None
+            last_time = None
+            
+            for row in rows:
+                if row['raw_value'] < threshold:
+                    if last_id is not None:
+                        gap_rounds = row['id'] - last_id
+                        gap_seconds = (row['timestamp'] - last_time).total_seconds()
+                        gaps.append({
+                            "id": row['id'],
+                            "timestamp": row['timestamp'].isoformat(),
+                            "gap_rounds": int(gap_rounds),
+                            "gap_seconds": int(gap_seconds)
+                        })
+                    last_id = row['id']
+                    last_time = row['timestamp']
+            return gaps
+
+        def get_timeline(threshold):
+            return [
+                {
+                    "rounds_ago": len(recent_rows) - i - 1,
+                    "time": r['timestamp'].strftime('%H:%M:%S'),
+                    "hit": 1 if r['raw_value'] < threshold else 0,
+                    "value": float(r['raw_value'])
+                } for i, r in enumerate(recent_rows)
+            ]
+
+        return jsonify({
+            "status": "success",
+            "threshold_111": calculate_gaps(1.11),
+            "threshold_121": calculate_gaps(1.21),
+            "timeline_111": get_timeline(1.11),
+            "timeline_121": get_timeline(1.21)
         }), 200
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
@@ -234,7 +294,7 @@ def save_data():
     try:
         data = request.json
         multiplier_str = data.get('multiplier', '0')
-        
+        print(f"📩 Incoming Request: {multiplier_str}", flush=True)
         # 1. Clean data & categorize
         clean_value = float(multiplier_str.replace('x', '').strip())
         category = get_category(clean_value)
@@ -243,8 +303,45 @@ def save_data():
         conn = mysql.connector.connect(**db_config)
         cursor = conn.cursor()
         
+        # --- NEW LOGIC: Tracking next 6 games after < 1.21 ---
+        import json
+        import os
+        TRACKING_FILE = 'post_bad_tracking.txt'
+        
+        cursor.execute("SELECT raw_value FROM all_games ORDER BY id DESC LIMIT 6")
+        past_6_rows = cursor.fetchall()
+        
+        if len(past_6_rows) >= 1:
+            if os.path.exists(TRACKING_FILE):
+                try:
+                    with open(TRACKING_FILE, 'r') as f:
+                        tracking_data = json.load(f)
+                except Exception:
+                    tracking_data = {str(i): [] for i in range(6)}
+            else:
+                tracking_data = {str(i): [] for i in range(6)}
+                
+            is_good = 1 if clean_value >= 1.21 else 0
+            
+            updated = False
+            for idx, row in enumerate(past_6_rows):
+                # row[0] is the raw_value of the past game
+                if float(row[0]) < 1.21:
+                    tracking_data[str(idx)].append(is_good)
+                    updated = True
+                    
+            if updated:
+                with open(TRACKING_FILE, 'w') as f:
+                    json.dump(tracking_data, f)
+                
+                print("📊 Post-Bad Tracking Updated:")
+                for i in range(6):
+                    print(f"   List {i}: {tracking_data[str(i)]}", flush=True)
+        # --------------------------------------------------------
+
+        
         # --- CALCULATE TRACKER STATE ---
-        cursor.execute("SELECT status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state, zeros_since_last_good, p3zs_current_diff, p3zs_state, p3zs_zeros_count FROM tracker_state WHERE id = 1")
+        cursor.execute("SELECT status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state, zeros_since_last_good, p3zs_current_diff, p3zs_state, p3zs_zeros_count, click_delay_target, click_delay_count, gap_last_hit_id, gap_measured_value, gap_click_target_id, gap_hist_1, gap_hist_2, gap_hist_3 FROM tracker_state WHERE id = 1")
         state_row = cursor.fetchone()
         
         round_val = 1 if category in [1, 2] else -1
@@ -258,7 +355,126 @@ def save_data():
         save_p3zs_diff = 0
         
         if state_row:
-            status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state, zeros_since_last_good, p3zs_current_diff, p3zs_state, p3zs_zeros_count = state_row
+            status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state, zeros_since_last_good, p3zs_current_diff, p3zs_state, p3zs_zeros_count, click_delay_target, click_delay_count, gap_last_hit_id, gap_measured_value, gap_click_target_id, gap_hist_1, gap_hist_2, gap_hist_3 = state_row
+            
+            # --- START TRACKING ROUND ---
+            # Pre-insert into game_data to get the current round ID
+            mock_diff = 0 # Temporarily placeholder as it's computed below
+            insert_query = "INSERT INTO game_data (timestamp, raw_value, category, current_diff, max_diff, pzs_diff, pzs_0012_diff, pzs_12012_diff, pzs_source, good_distance, p3zs_diff) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+            cursor.execute(insert_query, (now, clean_value, category, 0, 0, 0, 0, 0, None, None, 0))
+            current_game_id = cursor.lastrowid
+
+            print(f"📩 Data: {clean_value}x (ID: {current_game_id}) | G-Target: {gap_click_target_id} | Measured-G: {gap_measured_value}", flush=True)
+
+            # --- OLD GAP CLICKER LOGIC (COMMENTED OUT) ---
+            # if clean_value < 1.21:
+            #     # 1. Measurement: Calculate gap between last hit and this hit
+            #     if gap_last_hit_id > 0:
+            #         new_g = current_game_id - gap_last_hit_id - 1
+            #
+            #         if new_g >= 3:
+            #             # REAL/BETTER HIT: Reset the base and update the schedule
+            #             old_target = gap_click_target_id
+            #             gap_measured_value = new_g
+            #             gap_last_hit_id = current_game_id
+            #             gap_click_target_id = current_game_id + gap_measured_value
+            #
+            #             status_str = "OVERRIDDEN" if old_target > 0 else "Triggered"
+            #             print(f"🎯 {status_str}! New Gap={gap_measured_value}. Click at Round {gap_click_target_id}", flush=True)
+            #         else:
+            #             # NOISE HIT: Don't let small gaps (0,1,2) reset our good G or Target
+            #             print(f"ℹ️ NOISE HIT (Gap {new_g} < 3). Ignoring and keeping Target {gap_click_target_id} (G={gap_measured_value})", flush=True)
+            #     else:
+            #         # First hit of the session: Set the starting base
+            #         gap_last_hit_id = current_game_id
+            #         print(f"🏁 First reference hit recorded at ID: {gap_last_hit_id}. Waiting for next hit to measure gap.", flush=True)
+            #
+            # # 2. Execution: Check if we reached the targeted round
+            # if gap_click_target_id > 0 and current_game_id == gap_click_target_id:
+            #     print(f"🎯 TARGET REACHED! (ID: {current_game_id} == Target: {gap_click_target_id}). Checking window...", flush=True)
+            #
+            #     # Check previous 10 results for Category 0 density from all_games
+            #     cursor.execute("SELECT category FROM all_games ORDER BY id DESC LIMIT 10")
+            #     last_10_rows = cursor.fetchall()
+            #     last_10_cats = [r[0] for r in last_10_rows]
+            #     zero_count = last_10_cats.count(0)
+            #
+            #     if zero_count >= 7:
+            #         print(f"⚠️ SKIP CLICK! Window has {zero_count}/10 zeros (Category 0). Skipping click for safety.", flush=True)
+            #     else:
+            #         print(f"✅ Safe to click: Window has {zero_count}/10 zeros. Clicking...", flush=True)
+            #         threading.Thread(target=lambda: pyautogui.click(1054, 822)).start()
+            #
+            #     gap_click_target_id = 0
+
+            # --- NEW: 3-GAP AVERAGE CLICKER LOGIC ---
+            import math
+            gap_hist_1 = int(gap_hist_1) if gap_hist_1 is not None else -1
+            gap_hist_2 = int(gap_hist_2) if gap_hist_2 is not None else -1
+            gap_hist_3 = int(gap_hist_3) if gap_hist_3 is not None else -1
+
+            if clean_value < 1.21:
+                # A new hit: measure gap from last hit (ALL gaps allowed, including noises)
+                if gap_last_hit_id > 0:
+                    new_g = current_game_id - gap_last_hit_id - 1
+
+                    # Shift history: push new_g onto the left (oldest drops off the right)
+                    gap_hist_3 = gap_hist_2
+                    gap_hist_2 = gap_hist_1
+                    gap_hist_1 = new_g
+
+                    # Collect valid recorded gaps (only those already stored, i.e. >= 0)
+                    recorded = [g for g in [gap_hist_1, gap_hist_2, gap_hist_3] if g >= 0]
+
+                    if len(recorded) == 3:
+                        avg_gap = sum(recorded) / 3
+                        click_rounds_away = math.ceil(avg_gap)  # Round UP
+                        gap_click_target_id = current_game_id + click_rounds_away
+                        print(f"📊 Gap recorded: {new_g} | History: {recorded} | Avg: {avg_gap:.2f} | Ceil: {click_rounds_away} | Click at Round {gap_click_target_id}", flush=True)
+                    else:
+                        print(f"📊 Gap recorded: {new_g} | History so far: {recorded} ({len(recorded)}/3) — waiting for full window.", flush=True)
+
+                    gap_last_hit_id = current_game_id
+                else:
+                    # First hit of the session
+                    gap_last_hit_id = current_game_id
+                    print(f"🏁 First reference hit recorded at ID: {gap_last_hit_id}. Waiting for next hit to measure gap.", flush=True)
+
+            # Execution: Check if we reached the targeted round
+            if gap_click_target_id > 0 and current_game_id == gap_click_target_id:
+                print(f"🎯 3-GAP-AVG TARGET REACHED! (ID: {current_game_id}). Checking window...", flush=True)
+
+                # Safety check: if 7+ of last 10 results are category 0, skip the click
+                cursor.execute("SELECT category FROM all_games ORDER BY id DESC LIMIT 10")
+                last_10_rows = cursor.fetchall()
+                last_10_cats = [r[0] for r in last_10_rows]
+                zero_count = last_10_cats.count(0)
+
+                if zero_count >= 7:
+                    print(f"⚠️ SKIP CLICK! Window has {zero_count}/10 zeros (Category 0). Skipping click for safety.", flush=True)
+                else:
+                    print(f"✅ Safe to click: Window has {zero_count}/10 zeros. Clicking...", flush=True)
+                    threading.Thread(target=lambda: pyautogui.click(1054, 822)).start()
+
+                gap_click_target_id = 0
+
+
+            # --- RANDOM CLICKER LOGIC (COMMENTED) ---
+            # triggered_this_round = False
+            # if clean_value < 1.21:
+            #     click_delay_target = random.randint(1, 5)
+            #     click_delay_count = 0
+            #     triggered_this_round = True
+            #     print(f"🎲 HIT (<1.21)! Target set: Click in {click_delay_target} rounds", flush=True)
+            #
+            # if click_delay_target > 0 and not triggered_this_round:
+            #     click_delay_count += 1
+            #     print(f"⏳ Counting towards random click: {click_delay_count}/{click_delay_target}", flush=True)
+            #     if click_delay_count >= click_delay_target:
+            #         print(f"🎯 TARGET REACHED! Clicking...", flush=True)
+            #         threading.Thread(target=lambda: pyautogui.click(1054, 822)).start()
+            #         click_delay_target = 0
+            #         click_delay_count = 0
             
             # --- PZS LOGIC ---
             pzs_state = int(pzs_state) if pzs_state is not None else 0
@@ -385,13 +601,13 @@ def save_data():
 
             cursor.execute("""
                 UPDATE tracker_state 
-                SET status=%s, rounds_collected=%s, current_diff=%s, max_diff=%s, extreme_start_time=%s, rounds_since_extreme=%s, pzs_current_diff=%s, pzs_state=%s, pzs_0012_diff=%s, pzs_0012_state=%s, pzs_12012_diff=%s, pzs_12012_state=%s, zeros_since_last_good=%s, p3zs_current_diff=%s, p3zs_state=%s, p3zs_zeros_count=%s
+                SET status=%s, rounds_collected=%s, current_diff=%s, max_diff=%s, extreme_start_time=%s, rounds_since_extreme=%s, pzs_current_diff=%s, pzs_state=%s, pzs_0012_diff=%s, pzs_0012_state=%s, pzs_12012_diff=%s, pzs_12012_state=%s, zeros_since_last_good=%s, p3zs_current_diff=%s, p3zs_state=%s, p3zs_zeros_count=%s, click_delay_target=%s, click_delay_count=%s, gap_last_hit_id=%s, gap_measured_value=%s, gap_click_target_id=%s, gap_hist_1=%s, gap_hist_2=%s, gap_hist_3=%s
                 WHERE id = 1
-            """, (status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state, zeros_since_last_good, p3zs_current_diff, p3zs_state, p3zs_zeros_count))
+            """, (status, rounds_collected, current_diff, max_diff, extreme_start_time, rounds_since_extreme, pzs_current_diff, pzs_state, pzs_0012_diff, pzs_0012_state, pzs_12012_diff, pzs_12012_state, zeros_since_last_good, p3zs_current_diff, p3zs_state, p3zs_zeros_count, click_delay_target, click_delay_count, gap_last_hit_id, gap_measured_value, gap_click_target_id, gap_hist_1, gap_hist_2, gap_hist_3))
 
-        # --- ORIGINAL INSERT ---
-        insert_query = "INSERT INTO game_data (timestamp, raw_value, category, current_diff, max_diff, pzs_diff, pzs_0012_diff, pzs_12012_diff, pzs_source, good_distance, p3zs_diff) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
-        cursor.execute(insert_query, (now, clean_value, category, save_current_diff, save_max_diff, save_pzs_diff, save_pzs_0012_diff, save_pzs_12012_diff, save_pzs_source, save_good_distance, save_p3zs_diff))
+        # --- UPDATE RECENT INSERT WITH CALC DATA ---
+        update_query = "UPDATE game_data SET current_diff=%s, max_diff=%s, pzs_diff=%s, pzs_0012_diff=%s, pzs_12012_diff=%s, pzs_source=%s, good_distance=%s, p3zs_diff=%s WHERE id=%s"
+        cursor.execute(update_query, (save_current_diff, save_max_diff, save_pzs_diff, save_pzs_0012_diff, save_pzs_12012_diff, save_pzs_source, save_good_distance, save_p3zs_diff, current_game_id))
         
         # --- SAVE TO RAW HISTORY ---
         cursor.execute("INSERT INTO all_games (timestamp, raw_value, category) VALUES (%s, %s, %s)", (now, clean_value, category))
@@ -433,7 +649,7 @@ def save_data():
         conn.close()
 
         # Trigger delayed click on EVERY data entry
-        threading.Thread(target=delayed_click, args=(1054, 822, 1.5), daemon=True).start()
+        #threading.Thread(target=delayed_click, args=(1054, 822, 1.5), daemon=True).start()
 
         print(f"✅ Saved: {clean_value} (Cat: {category})", flush=True)
         return jsonify({
@@ -466,32 +682,34 @@ if __name__ == '__main__':
         conn = mysql.connector.connect(**db_config)
         cursor = conn.cursor()
         
-        # Migration: Ensure PZS columns exist
-        try:
-            cursor.execute("ALTER TABLE tracker_state ADD COLUMN pzs_current_diff INT DEFAULT 0")
-            cursor.execute("ALTER TABLE tracker_state ADD COLUMN pzs_state INT DEFAULT 0")
-            cursor.execute("ALTER TABLE tracker_state ADD COLUMN pzs_0012_diff INT DEFAULT 0")
-            cursor.execute("ALTER TABLE tracker_state ADD COLUMN pzs_0012_state INT DEFAULT 0")
-            cursor.execute("ALTER TABLE tracker_state ADD COLUMN pzs_12012_diff INT DEFAULT 0")
-            cursor.execute("ALTER TABLE tracker_state ADD COLUMN pzs_12012_state INT DEFAULT 0")
-            cursor.execute("ALTER TABLE tracker_state ADD COLUMN zeros_since_last_good INT DEFAULT 0")
-            cursor.execute("ALTER TABLE tracker_state ADD COLUMN p3zs_current_diff INT DEFAULT 0")
-            cursor.execute("ALTER TABLE tracker_state ADD COLUMN p3zs_state INT DEFAULT 0")
-            cursor.execute("ALTER TABLE tracker_state ADD COLUMN p3zs_zeros_count INT DEFAULT 0")
-        except: pass 
+        # Migration: Ensure all needed columns exist in tracker_state
+        for col in [
+            "pzs_current_diff INT DEFAULT 0", "pzs_state INT DEFAULT 0",
+            "pzs_0012_diff INT DEFAULT 0", "pzs_0012_state INT DEFAULT 0",
+            "pzs_12012_diff INT DEFAULT 0", "pzs_12012_state INT DEFAULT 0",
+            "zeros_since_last_good INT DEFAULT 0", "p3zs_current_diff INT DEFAULT 0",
+            "p3zs_state INT DEFAULT 0", "p3zs_zeros_count INT DEFAULT 0",
+            "click_delay_target INT DEFAULT 0", "click_delay_count INT DEFAULT 0",
+            "gap_last_hit_id BIGINT DEFAULT 0", "gap_measured_value INT DEFAULT 0",
+            "gap_click_target_id BIGINT DEFAULT 0",
+            "gap_hist_1 INT DEFAULT -1", "gap_hist_2 INT DEFAULT -1",
+            "gap_hist_3 INT DEFAULT -1"
+        ]:
+            try: cursor.execute(f"ALTER TABLE tracker_state ADD COLUMN {col}")
+            except: pass
         
-        try:
-            cursor.execute("ALTER TABLE game_data ADD COLUMN pzs_diff INT DEFAULT 0")
-            cursor.execute("ALTER TABLE game_data ADD COLUMN pzs_0012_diff INT DEFAULT 0")
-            cursor.execute("ALTER TABLE game_data ADD COLUMN pzs_12012_diff INT DEFAULT 0")
-            cursor.execute("ALTER TABLE game_data ADD COLUMN pzs_source VARCHAR(50)")
-            cursor.execute("ALTER TABLE game_data ADD COLUMN good_distance INT DEFAULT NULL")
-            cursor.execute("ALTER TABLE game_data ADD COLUMN p3zs_diff INT DEFAULT 0")
-        except: pass
+        # Migration: Ensure all needed columns exist in game_data
+        for col in [
+            "pzs_diff INT DEFAULT 0", "pzs_0012_diff INT DEFAULT 0",
+            "pzs_12012_diff INT DEFAULT 0", "pzs_source VARCHAR(50)",
+            "good_distance INT DEFAULT NULL", "p3zs_diff INT DEFAULT 0"
+        ]:
+            try: cursor.execute(f"ALTER TABLE game_data ADD COLUMN {col}")
+            except: pass
 
         print("🔄 Starting new session: Clearing session-specific data...")
         cursor.execute("TRUNCATE TABLE game_data")
-        cursor.execute("UPDATE tracker_state SET status='WAITING', rounds_collected=0, current_diff=0, max_diff=0, extreme_start_time=NULL, rounds_since_extreme=0, pzs_current_diff=0, pzs_state=0, pzs_0012_diff=0, pzs_0012_state=0, pzs_12012_diff=0, pzs_12012_state=0, zeros_since_last_good=0, p3zs_current_diff=0, p3zs_state=0, p3zs_zeros_count=0 WHERE id=1")
+        cursor.execute("UPDATE tracker_state SET status='WAITING', rounds_collected=0, current_diff=0, max_diff=0, extreme_start_time=NULL, rounds_since_extreme=0, pzs_current_diff=0, pzs_state=0, pzs_0012_diff=0, pzs_0012_state=0, pzs_12012_diff=0, pzs_12012_state=0, zeros_since_last_good=0, p3zs_current_diff=0, p3zs_state=0, p3zs_zeros_count=0, click_delay_target=0, click_delay_count=0, gap_last_hit_id=0, gap_measured_value=0, gap_click_target_id=0, gap_hist_1=-1, gap_hist_2=-1, gap_hist_3=-1 WHERE id=1")
         conn.commit()
         cursor.close()
         conn.close()
@@ -499,7 +717,11 @@ if __name__ == '__main__':
     except Exception as e:
         print(f"⚠️ Session reset error: {e}")
 
+    print("\n" + "="*50)
+    print("🚀 FLYER BACKEND ACTIVE: Port 5000 is listening!")
+    print("Watching for Game results and GAPs...")
+    print("="*50 + "\n", flush=True)
+
     click_thread = threading.Thread(target=auto_click_center, daemon=True)
     click_thread.start()
-    # Run on port 5001 (new6.py uses 5000)
     app.run(host='127.0.0.1', port=5000)

@@ -7,7 +7,8 @@ import os
 base_dir = os.path.dirname(__file__)
 data_path = os.path.join(base_dir, 'game_data04.txt')
 df = pd.read_csv(data_path, sep=';')
-all_categories = df['category'].values
+# Map values >= 1.21 to 1 (White) and < 1.21 to 0 (Black)
+all_binary_values = (df['raw_value'].values >= 1.21).astype(int)
 
 # 2. Define the target number of points (up to 370)
 target_limit = 370
@@ -22,12 +23,12 @@ for i, w in enumerate(widths):
     n_points = w * h
     
     # Slice the first n_points and reshape
-    image_data = all_categories[:n_points].reshape((h, w))
+    image_data = all_binary_values[:n_points].reshape((h, w))
     
     # 4. Create and save the image
     # Increased width slightly for more space
     plt.figure(figsize=(12, 7))
-    plt.imshow(image_data, cmap='gray', vmin=0, vmax=2, aspect='auto')
+    plt.imshow(image_data, cmap='gray', vmin=0, vmax=1, aspect='auto')
     
     # Calculate and display the number of "good" values (1 and 2) per column
     # Font size decreases as width increases to avoid overlap
@@ -35,7 +36,7 @@ for i, w in enumerate(widths):
     
     for col_idx in range(w):
         column = image_data[:, col_idx]
-        good_count = np.sum((column == 1) | (column == 2))
+        good_count = np.sum(column == 1)
         
         # Display count at the top of each column
         # Placing it slightly above the top row (y = -0.5)
@@ -43,7 +44,7 @@ for i, w in enumerate(widths):
                  ha='center', va='bottom', 
                  fontsize=fs, color='red', fontweight='bold')
     
-    plt.title(f'Pattern Analysis (Width: {w}, Height: {h}) | Good Results Count per Column', pad=20)
+    plt.title(f'Pattern Analysis (Width: {w}, Height: {h}) | Results >= 1.21 Count per Column', pad=20)
     plt.axis('off')
     
     # Saving with the requested naming convention: _01, _02, etc.

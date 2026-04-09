@@ -1,0 +1,5 @@
+Model loaded successfully.
+Input shape: (None, 15, 1)
+Output shape: (None, 1)
+Error loading model: 'charmap' codec can't encode characters in position 21-44: character maps to <undefined>
+ti
