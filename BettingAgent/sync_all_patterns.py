@@ -16,7 +16,6 @@ def sync_and_consolidate():
     try:
         conn = mysql.connector.connect(**db_config)
         cursor = conn.cursor(dictionary=True)
-
         print("🔄 Starting consolidation and raw pattern sync...")
         
         # 0. Clear existing raw patterns

@@ -5,16 +5,31 @@
     // The URL of your local Python server
     const API_URL = "http://127.0.0.1:5000/save";
 
+    const getBalance = () => {
+        const frames = [window, ...Array.from(window.frames)];
+        for (let frame of frames) {
+            try {
+                let el = frame.document.querySelector("span._size-14_1p5jb_34");
+                if (el) return el.innerText.trim();
+            } catch (e) { }
+        }
+        return "0.00";
+    };
+
     const sendToServer = async (value) => {
+        const balance = getBalance();
         try {
             await fetch(API_URL, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({ multiplier: value })
+                body: JSON.stringify({ 
+                    multiplier: value,
+                    balance: balance
+                })
             });
-            console.log(`✅ Sent to server: ${value}`);
+            console.log(`✅ Sent to server: ${value} | Balance: ${balance}`);
         } catch (error) {
             console.error("❌ Failed to send to server. Is Python running?", error);
         }
