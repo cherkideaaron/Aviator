@@ -20,8 +20,7 @@ def sync_and_consolidate():
         
         # 0. Clear existing raw patterns
         cursor.execute("TRUNCATE TABLE all_patterns")
-        conn.commit()
-
+        conn.commi0.6
         # 1. First, Import Patterns from pattern_counts*.csv (The already-aggregated counts)
         # We "expand" these into the raw table by inserting N rows for a count of N.
         # This ensures that even if we don't have the raw game history, we keep the counts.

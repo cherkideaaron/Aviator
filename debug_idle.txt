@@ -1,0 +1,979 @@
+[1778056837.3272038] Idle loop woke up. idle_active=True, last_bet_click_time=1778056469.4988475, diff=367.82835626602173
+[1778056837.3299372] Moving mouse to 504, 716
+[1778057138.1457596] Idle loop woke up. idle_active=True, last_bet_click_time=1778056838.1410012, diff=300.0047583580017
+[1778057138.148277] Moving mouse to 459, 539
+[1778057438.945042] Idle loop woke up. idle_active=True, last_bet_click_time=1778057138.9315472, diff=300.0140595436096
+[1778057438.9499612] Moving mouse to 157, 890
+[1778057739.7690256] Idle loop woke up. idle_active=True, last_bet_click_time=1778057439.7619092, diff=300.007116317749
+[1778057739.7704067] Moving mouse to 107, 798
+[1778058401.7497866] Idle loop woke up. idle_active=True, last_bet_click_time=1778058043.946565, diff=357.8032217025757
+[1778058401.752712] Moving mouse to 219, 465
+[1778058702.5500855] Idle loop woke up. idle_active=True, last_bet_click_time=1778058402.5415273, diff=300.00855827331543
+[1778058702.5715067] Moving mouse to 525, 419
+[1778059003.3933678] Idle loop woke up. idle_active=True, last_bet_click_time=1778058703.384641, diff=300.00872683525085
+[1778059003.3953047] Moving mouse to 445, 701
+[1778059691.3661714] Idle loop woke up. idle_active=True, last_bet_click_time=1778059662.0152183, diff=29.350953102111816
+[1778059876.2969422] Idle loop woke up. idle_active=True, last_bet_click_time=1778059576.2758071, diff=300.0211350917816
+[1778059876.3005936] Moving mouse to 337, 518
+[1778059970.3130953] Idle loop woke up. idle_active=True, last_bet_click_time=1778059670.2732072, diff=300.03988814353943
+[1778059970.315102] Moving mouse to 357, 566
+[1778059991.4357247] Idle loop woke up. idle_active=True, last_bet_click_time=1778059929.9375904, diff=61.49813437461853
+[1778060047.3464024] Idle loop woke up. idle_active=True, last_bet_click_time=1778059747.3190827, diff=300.0273196697235
+[1778060047.3489823] Moving mouse to 420, 852
+[1778060078.297433] Idle loop woke up. idle_active=True, last_bet_click_time=1778059778.2718048, diff=300.0256280899048
+[1778060078.2989647] Moving mouse to 440, 493
+[1778060128.348142] Idle loop woke up. idle_active=True, last_bet_click_time=1778059828.316473, diff=300.0316689014435
+[1778060128.3496778] Moving mouse to 444, 753
+[1778060177.08957] Idle loop woke up. idle_active=True, last_bet_click_time=1778059877.080287, diff=300.0092830657959
+[1778060177.0911453] Moving mouse to 532, 890
+[1778060215.6903174] Idle loop woke up. idle_active=True, last_bet_click_time=1778059915.6293843, diff=300.06093311309814
+[1778060215.692283] Moving mouse to 304, 472
+[1778060238.5440843] Idle loop woke up. idle_active=True, last_bet_click_time=1778059938.5258436, diff=300.0182406902313
+[1778060238.5450473] Moving mouse to 138, 873
+[1778060271.1047106] Idle loop woke up. idle_active=True, last_bet_click_time=1778059971.093697, diff=300.011013507843
+[1778060271.106837] Moving mouse to 236, 234
+[1778060291.451227] Idle loop woke up. idle_active=True, last_bet_click_time=1778060120.4256098, diff=171.02561712265015
+[1778060338.4652987] Idle loop woke up. idle_active=True, last_bet_click_time=1778060038.4422045, diff=300.0230941772461
+[1778060338.468305] Moving mouse to 456, 622
+[1778060347.3336258] Idle loop woke up. idle_active=True, last_bet_click_time=1778060047.3104346, diff=300.0231912136078
+[1778060347.335163] Moving mouse to 433, 898
+[1778060348.1378033] Idle loop woke up. idle_active=True, last_bet_click_time=1778060048.1310713, diff=300.0067319869995
+[1778060348.1388025] Moving mouse to 284, 529
+[1778060378.4267557] Idle loop woke up. idle_active=True, last_bet_click_time=1778060078.3981366, diff=300.0286190509796
+[1778060378.4296312] Moving mouse to 182, 575
+[1778060379.0889852] Idle loop woke up. idle_active=True, last_bet_click_time=1778060079.0836942, diff=300.0052909851074
+[1778060379.0909436] Moving mouse to 330, 342
+[1778060414.3548863] Idle loop woke up. idle_active=True, last_bet_click_time=1778060114.335932, diff=300.0189542770386
+[1778060414.356817] Moving mouse to 181, 366
+[1778060428.2881887] Idle loop woke up. idle_active=True, last_bet_click_time=1778060128.2704566, diff=300.0177321434021
+[1778060428.2894235] Moving mouse to 472, 519
+[1778060429.1493616] Idle loop woke up. idle_active=True, last_bet_click_time=1778060129.1358256, diff=300.0135359764099
+[1778060429.1502972] Moving mouse to 420, 750
+[1778060477.8847506] Idle loop woke up. idle_active=True, last_bet_click_time=1778060177.878033, diff=300.00671768188477
+[1778060477.8856907] Moving mouse to 311, 343
+[1778060516.4952285] Idle loop woke up. idle_active=True, last_bet_click_time=1778060216.48179, diff=300.01343846321106
+[1778060516.4987066] Moving mouse to 213, 551
+[1778060539.3405905] Idle loop woke up. idle_active=True, last_bet_click_time=1778060239.332286, diff=300.00830459594727
+[1778060539.3431153] Moving mouse to 106, 627
+[1778060571.9035769] Idle loop woke up. idle_active=True, last_bet_click_time=1778060271.896238, diff=300.0073387622833
+[1778060571.9055498] Moving mouse to 406, 812
+[1778060591.46313] Idle loop woke up. idle_active=True, last_bet_click_time=1778060476.9226227, diff=114.54050731658936
+[1778060599.5726614] Idle loop woke up. idle_active=True, last_bet_click_time=1778060299.5441456, diff=300.02851581573486
+[1778060599.5746171] Moving mouse to 344, 442
+[1778060599.6493027] Idle loop woke up. idle_active=True, last_bet_click_time=1778060299.6375425, diff=300.01176023483276
+[1778060599.6514962] Moving mouse to 408, 502
+[1778060626.3681302] Idle loop woke up. idle_active=True, last_bet_click_time=1778060326.3122535, diff=300.05587673187256
+[1778060626.390315] Moving mouse to 488, 212
+[1778060639.2764323] Idle loop woke up. idle_active=True, last_bet_click_time=1778060339.2611384, diff=300.0152938365936
+[1778060639.2774312] Moving mouse to 411, 813
+[1778060643.6500502] Idle loop woke up. idle_active=True, last_bet_click_time=1778060343.634424, diff=300.0156261920929
+[1778060643.6509917] Moving mouse to 364, 823
+[1778060648.1234252] Idle loop woke up. idle_active=True, last_bet_click_time=1778060348.1218917, diff=300.0015335083008
+[1778060648.1250587] Moving mouse to 122, 643
+[1778060648.943026] Idle loop woke up. idle_active=True, last_bet_click_time=1778060348.9299765, diff=300.01304960250854
+[1778060648.9443333] Moving mouse to 500, 839
+[1778060679.2141056] Idle loop woke up. idle_active=True, last_bet_click_time=1778060379.2110424, diff=300.0030632019043
+[1778060679.2150993] Moving mouse to 222, 244
+[1778060679.8904753] Idle loop woke up. idle_active=True, last_bet_click_time=1778060379.8837435, diff=300.00673174858093
+[1778060679.891331] Moving mouse to 468, 409
+[1778060715.1519756] Idle loop woke up. idle_active=True, last_bet_click_time=1778060415.1413767, diff=300.01059889793396
+[1778060715.152975] Moving mouse to 133, 533
+[1778060726.2226067] Idle loop woke up. idle_active=True, last_bet_click_time=1778060426.2150154, diff=300.0075912475586
+[1778060726.224134] Moving mouse to 347, 834
+[1778060729.0901773] Idle loop woke up. idle_active=True, last_bet_click_time=1778060429.07215, diff=300.018027305603
+[1778060729.0955] Moving mouse to 446, 274
+[1778060729.945238] Idle loop woke up. idle_active=True, last_bet_click_time=1778060429.9406097, diff=300.0046284198761
+[1778060729.9509046] Moving mouse to 349, 427
+[1778060778.702591] Idle loop woke up. idle_active=True, last_bet_click_time=1778060478.691166, diff=300.01142501831055
+[1778060778.7035313] Moving mouse to 536, 374
+[1778060784.2964606] Idle loop woke up. idle_active=True, last_bet_click_time=1778060484.2694464, diff=300.0270142555237
+[1778060784.298148] Moving mouse to 210, 592
+[1778060817.2962387] Idle loop woke up. idle_active=True, last_bet_click_time=1778060517.281679, diff=300.0145597457886
+[1778060817.2981951] Moving mouse to 115, 365
+[1778060840.1456575] Idle loop woke up. idle_active=True, last_bet_click_time=1778060540.134306, diff=300.0113515853882
+[1778060840.1472454] Moving mouse to 411, 331
+[1778060872.7012784] Idle loop woke up. idle_active=True, last_bet_click_time=1778060572.6937497, diff=300.00752878189087
+[1778060872.7022026] Moving mouse to 201, 400
+[1778060891.4772353] Idle loop woke up. idle_active=True, last_bet_click_time=1778060886.2946572, diff=5.182578086853027
+[1778060900.3766658] Idle loop woke up. idle_active=True, last_bet_click_time=1778060600.3643956, diff=300.01227021217346
+[1778060900.3776033] Moving mouse to 262, 456
+[1778060900.4543724] Idle loop woke up. idle_active=True, last_bet_click_time=1778060600.4482381, diff=300.0061342716217
+[1778060900.45639] Moving mouse to 404, 797
+[1778060927.1915822] Idle loop woke up. idle_active=True, last_bet_click_time=1778060627.1811604, diff=300.0104217529297
+[1778060927.1925044] Moving mouse to 541, 669
+[1778060928.550894] Idle loop woke up. idle_active=True, last_bet_click_time=1778060628.5000043, diff=300.0508897304535
+[1778060928.5523648] Moving mouse to 206, 616
+[1778060940.0644283] Idle loop woke up. idle_active=True, last_bet_click_time=1778060640.0615845, diff=300.0033552646637
+[1778060940.0674808] Moving mouse to 107, 836
+[1778060944.4469957] Idle loop woke up. idle_active=True, last_bet_click_time=1778060644.4369514, diff=300.01004433631897
+[1778060944.4484656] Moving mouse to 450, 660
+[1778060948.9207466] Idle loop woke up. idle_active=True, last_bet_click_time=1778060648.912121, diff=300.00862550735474
+[1778060948.923748] Moving mouse to 289, 214
+[1778060949.7712932] Idle loop woke up. idle_active=True, last_bet_click_time=1778060649.7616928, diff=300.0096004009247
+[1778060949.7722955] Moving mouse to 430, 480
+[1778060979.9993958] Idle loop woke up. idle_active=True, last_bet_click_time=1778060679.9969664, diff=300.00242948532104
+[1778060980.0002718] Moving mouse to 140, 395
+[1778060980.6787786] Idle loop woke up. idle_active=True, last_bet_click_time=1778060680.6762507, diff=300.0025279521942
+[1778060980.6807702] Moving mouse to 534, 288
+[1778061015.9462168] Idle loop woke up. idle_active=True, last_bet_click_time=1778060715.9416523, diff=300.0045645236969
+[1778061015.9491787] Moving mouse to 517, 507
+[1778061016.5534053] Idle loop woke up. idle_active=True, last_bet_click_time=1778060716.5105023, diff=300.04290294647217
+[1778061016.5550935] Moving mouse to 296, 249
+[1778061027.0231566] Idle loop woke up. idle_active=True, last_bet_click_time=1778060727.0146472, diff=300.0085093975067
+[1778061027.023679] Moving mouse to 434, 791
+[1778061027.30279] Idle loop woke up. idle_active=True, last_bet_click_time=1778060727.2819505, diff=300.02083945274353
+[1778061027.3039665] Moving mouse to 466, 206
+[1778061029.8960948] Idle loop woke up. idle_active=True, last_bet_click_time=1778060729.882403, diff=300.01369190216064
+[1778061029.8996427] Moving mouse to 515, 508
+[1778061030.734148] Idle loop woke up. idle_active=True, last_bet_click_time=1778060730.729159, diff=300.0049889087677
+[1778061030.7361887] Moving mouse to 329, 262
+[1778061068.3753998] Idle loop woke up. idle_active=True, last_bet_click_time=1778060768.3495579, diff=300.02584195137024
+[1778061068.3762786] Moving mouse to 349, 266
+[1778061079.493591] Idle loop woke up. idle_active=True, last_bet_click_time=1778060779.485557, diff=300.00803399086
+[1778061079.4981425] Moving mouse to 447, 648
+[1778061085.0855029] Idle loop woke up. idle_active=True, last_bet_click_time=1778060785.079939, diff=300.0055639743805
+[1778061085.0875068] Moving mouse to 218, 313
+[1778061118.092935] Idle loop woke up. idle_active=True, last_bet_click_time=1778060818.0870092, diff=300.00592589378357
+[1778061118.0942676] Moving mouse to 404, 439
+[1778061140.9425828] Idle loop woke up. idle_active=True, last_bet_click_time=1778060840.9319305, diff=300.0106523036957
+[1778061140.9452055] Moving mouse to 307, 760
+[1778061173.501836] Idle loop woke up. idle_active=True, last_bet_click_time=1778060873.4896047, diff=300.01223134994507
+[1778061173.5029745] Moving mouse to 390, 868
+[1778061191.4817052] Idle loop woke up. idle_active=True, last_bet_click_time=1778061169.1831367, diff=22.29856848716736
+[1778061194.4761791] Idle loop woke up. idle_active=True, last_bet_click_time=1778060894.4518418, diff=300.02433729171753
+[1778061194.479174] Moving mouse to 517, 517
+[1778061201.1823835] Idle loop woke up. idle_active=True, last_bet_click_time=1778060901.1669934, diff=300.0153901576996
+[1778061201.1829183] Moving mouse to 534, 492
+[1778061201.258138] Idle loop woke up. idle_active=True, last_bet_click_time=1778060901.244163, diff=300.01397490501404
+[1778061201.2586665] Moving mouse to 379, 674
+[1778061227.9840214] Idle loop woke up. idle_active=True, last_bet_click_time=1778060927.9792287, diff=300.0047926902771
+[1778061227.9860203] Moving mouse to 454, 505
+[1778061229.3505943] Idle loop woke up. idle_active=True, last_bet_click_time=1778060929.3370311, diff=300.01356315612793
+[1778061229.351583] Moving mouse to 285, 501
+[1778061240.8559995] Idle loop woke up. idle_active=True, last_bet_click_time=1778060940.8511617, diff=300.00483775138855
+[1778061240.8609114] Moving mouse to 256, 278
+[1778061245.2397606] Idle loop woke up. idle_active=True, last_bet_click_time=1778060945.2328393, diff=300.0069212913513
+[1778061245.241767] Moving mouse to 479, 290
+[1778061249.7163439] Idle loop woke up. idle_active=True, last_bet_click_time=1778060949.708149, diff=300.0081949234009
+[1778061249.7174265] Moving mouse to 230, 856
+[1778061250.6120307] Idle loop woke up. idle_active=True, last_bet_click_time=1778060950.5982833, diff=300.0137474536896
+[1778061250.6129658] Moving mouse to 173, 568
+[1778061264.3547218] Idle loop woke up. idle_active=True, last_bet_click_time=1778060964.3409731, diff=300.01374864578247
+[1778061264.358538] Moving mouse to 207, 324
+[1778061280.8161817] Idle loop woke up. idle_active=True, last_bet_click_time=1778060980.8002362, diff=300.0159454345703
+[1778061280.8161817] Moving mouse to 469, 566
+[1778061281.473529] Idle loop woke up. idle_active=True, last_bet_click_time=1778060981.462169, diff=300.01136016845703
+[1778061281.4837685] Moving mouse to 315, 843
+[1778061316.7450516] Idle loop woke up. idle_active=True, last_bet_click_time=1778061016.737921, diff=300.00713062286377
+[1778061316.7465918] Moving mouse to 114, 875
+[1778061317.3510172] Idle loop woke up. idle_active=True, last_bet_click_time=1778061017.340039, diff=300.0109782218933
+[1778061317.3540218] Moving mouse to 111, 716
+[1778061327.823465] Idle loop woke up. idle_active=True, last_bet_click_time=1778061027.8104405, diff=300.01302456855774
+[1778061327.8243868] Moving mouse to 414, 804
+[1778061328.0990167] Idle loop woke up. idle_active=True, last_bet_click_time=1778061028.0857751, diff=300.0132415294647
+[1778061328.1000183] Moving mouse to 243, 520
+[1778061330.6919801] Idle loop woke up. idle_active=True, last_bet_click_time=1778061030.6878843, diff=300.0040957927704
+[1778061330.6969142] Moving mouse to 187, 271
+[1778061331.530935] Idle loop woke up. idle_active=True, last_bet_click_time=1778061031.518704, diff=300.0122311115265
+[1778061331.5314667] Moving mouse to 226, 210
+[1778061369.1703854] Idle loop woke up. idle_active=True, last_bet_click_time=1778061069.1620734, diff=300.0083119869232
+[1778061369.1714327] Moving mouse to 438, 403
+[1778061380.285527] Idle loop woke up. idle_active=True, last_bet_click_time=1778061080.2823892, diff=300.00313782691956
+[1778061380.2864366] Moving mouse to 354, 376
+[1778061385.415446] Idle loop woke up. idle_active=True, last_bet_click_time=1778061085.3977504, diff=300.0176956653595
+[1778061385.4220343] Moving mouse to 177, 712
+[1778061385.87694] Idle loop woke up. idle_active=True, last_bet_click_time=1778061085.8709476, diff=300.00599241256714
+[1778061385.880484] Moving mouse to 125, 414
+[1778061418.8865852] Idle loop woke up. idle_active=True, last_bet_click_time=1778061118.8820255, diff=300.0045597553253
+[1778061418.8881392] Moving mouse to 424, 492
+[1778061430.3030577] Idle loop woke up. idle_active=True, last_bet_click_time=1778061130.288572, diff=300.0144855976105
+[1778061430.3042145] Moving mouse to 162, 302
+[1778061441.7462413] Idle loop woke up. idle_active=True, last_bet_click_time=1778061141.7334695, diff=300.0127718448639
+[1778061441.7497413] Moving mouse to 105, 553
+[1778061474.3159304] Idle loop woke up. idle_active=True, last_bet_click_time=1778061174.306073, diff=300.0108439922333
+[1778061474.3209934] Moving mouse to 102, 257
+[1778061477.4509125] Idle loop woke up. idle_active=True, last_bet_click_time=1778061177.435635, diff=300.01527738571167
+[1778061477.4544537] Moving mouse to 130, 592
+[1778061491.4972448] Idle loop woke up. idle_active=True, last_bet_click_time=1778061470.9927676, diff=20.50447726249695
+[1778061495.2724032] Idle loop woke up. idle_active=True, last_bet_click_time=1778061195.264894, diff=300.0075092315674
+[1778061495.2749453] Moving mouse to 142, 726
+[1778061501.9778101] Idle loop woke up. idle_active=True, last_bet_click_time=1778061201.9706814, diff=300.00712871551514
+[1778061501.9788697] Moving mouse to 425, 253
+[1778061502.056094] Idle loop woke up. idle_active=True, last_bet_click_time=1778061202.0493796, diff=300.00671434402466
+[1778061502.0581095] Moving mouse to 175, 530
+[1778061528.7921515] Idle loop woke up. idle_active=True, last_bet_click_time=1778061228.7772586, diff=300.0148928165436
+[1778061528.79309] Moving mouse to 102, 618
+[1778061530.141124] Idle loop woke up. idle_active=True, last_bet_click_time=1778061230.1359177, diff=300.00520634651184
+[1778061530.1421719] Moving mouse to 315, 855
+[1778061541.647679] Idle loop woke up. idle_active=True, last_bet_click_time=1778061241.6452298, diff=300.0024492740631
+[1778061541.648196] Moving mouse to 234, 836
+[1778061546.0418835] Idle loop woke up. idle_active=True, last_bet_click_time=1778061246.0289602, diff=300.0129232406616
+[1778061546.0438688] Moving mouse to 446, 293
+[1778061550.507249] Idle loop woke up. idle_active=True, last_bet_click_time=1778061250.503966, diff=300.00328302383423
+[1778061550.509222] Moving mouse to 134, 737
+[1778061551.4138448] Idle loop woke up. idle_active=True, last_bet_click_time=1778061251.400164, diff=300.013680934906
+[1778061551.4158952] Moving mouse to 395, 205
+[1778061565.1552134] Idle loop woke up. idle_active=True, last_bet_click_time=1778061265.1403427, diff=300.0148706436157
+[1778061565.1576893] Moving mouse to 130, 549
+[1778061581.651027] Idle loop woke up. idle_active=True, last_bet_click_time=1778061281.6417186, diff=300.0093083381653
+[1778061581.651969] Moving mouse to 400, 815
+[1778061582.2895098] Idle loop woke up. idle_active=True, last_bet_click_time=1778061282.2797897, diff=300.0097200870514
+[1778061582.2907333] Moving mouse to 239, 487
+[1778061617.538969] Idle loop woke up. idle_active=True, last_bet_click_time=1778061317.5368805, diff=300.00208854675293
+[1778061617.5410612] Moving mouse to 279, 519
+[1778061618.1437364] Idle loop woke up. idle_active=True, last_bet_click_time=1778061318.1367218, diff=300.00701451301575
+[1778061618.1447413] Moving mouse to 195, 549
+[1778061628.6138396] Idle loop woke up. idle_active=True, last_bet_click_time=1778061328.604457, diff=300.00938272476196
+[1778061628.6158183] Moving mouse to 314, 612
+[1778061628.8916316] Idle loop woke up. idle_active=True, last_bet_click_time=1778061328.8825731, diff=300.0090584754944
+[1778061628.8926334] Moving mouse to 395, 630
+[1778061631.498555] Idle loop woke up. idle_active=True, last_bet_click_time=1778061331.4822042, diff=300.0163507461548
+[1778061631.500139] Moving mouse to 242, 678
+[1778061632.3330264] Idle loop woke up. idle_active=True, last_bet_click_time=1778061332.322244, diff=300.01078248023987
+[1778061632.334077] Moving mouse to 418, 256
+[1778061660.2952564] Idle loop woke up. idle_active=True, last_bet_click_time=1778061360.2821233, diff=300.01313304901123
+[1778061660.2965555] Moving mouse to 536, 770
+[1778061669.9578547] Idle loop woke up. idle_active=True, last_bet_click_time=1778061369.9551008, diff=300.0027539730072
+[1778061669.9587922] Moving mouse to 118, 567
+[1778061681.0889335] Idle loop woke up. idle_active=True, last_bet_click_time=1778061381.0764725, diff=300.01246094703674
+[1778061681.0908744] Moving mouse to 396, 707
+[1778061686.204364] Idle loop woke up. idle_active=True, last_bet_click_time=1778061386.2016413, diff=300.00272274017334
+[1778061686.2053592] Moving mouse to 477, 229
+[1778061686.6683214] Idle loop woke up. idle_active=True, last_bet_click_time=1778061386.6663728, diff=300.001948595047
+[1778061686.6693704] Moving mouse to 121, 706
+[1778061703.4462976] Idle loop woke up. idle_active=True, last_bet_click_time=1778061403.4327412, diff=300.0135564804077
+[1778061703.4472396] Moving mouse to 360, 522
+[1778061719.6748111] Idle loop woke up. idle_active=True, last_bet_click_time=1778061419.6705482, diff=300.00426292419434
+[1778061719.6760106] Moving mouse to 298, 723
+[1778061731.1042168] Idle loop woke up. idle_active=True, last_bet_click_time=1778061431.0897431, diff=300.0144736766815
+[1778061731.1051538] Moving mouse to 353, 547
+[1778061742.5413651] Idle loop woke up. idle_active=True, last_bet_click_time=1778061442.5394921, diff=300.0018730163574
+[1778061742.5444584] Moving mouse to 508, 437
+[1778061775.1233037] Idle loop woke up. idle_active=True, last_bet_click_time=1778061475.11922, diff=300.00408363342285
+[1778061775.125373] Moving mouse to 150, 830
+[1778061778.2386465] Idle loop woke up. idle_active=True, last_bet_click_time=1778061478.2297244, diff=300.00892210006714
+[1778061778.2406244] Moving mouse to 534, 570
+[1778061779.6418555] Idle loop woke up. idle_active=True, last_bet_click_time=1778061479.6223752, diff=300.0194802284241
+[1778061779.6423786] Moving mouse to 399, 605
+[1778061779.6878083] Idle loop woke up. idle_active=True, last_bet_click_time=1778061479.6769197, diff=300.01088857650757
+[1778061779.6892207] Moving mouse to 121, 470
+[1778061791.5089252] Idle loop woke up. idle_active=True, last_bet_click_time=1778061646.6630135, diff=144.8459117412567
+[1778061796.0684772] Idle loop woke up. idle_active=True, last_bet_click_time=1778061496.0601842, diff=300.0082929134369
+[1778061796.0704165] Moving mouse to 244, 616
+[1778061802.7810113] Idle loop woke up. idle_active=True, last_bet_click_time=1778061502.767515, diff=300.0134963989258
+[1778061802.7819505] Moving mouse to 447, 249
+[1778061802.859512] Idle loop woke up. idle_active=True, last_bet_click_time=1778061502.8452125, diff=300.0142996311188
+[1778061802.8614726] Moving mouse to 378, 267
+[1778061829.5981476] Idle loop woke up. idle_active=True, last_bet_click_time=1778061529.583169, diff=300.01497864723206
+[1778061829.6011593] Moving mouse to 351, 869
+[1778061830.9299247] Idle loop woke up. idle_active=True, last_bet_click_time=1778061530.9253576, diff=300.00456714630127
+[1778061830.933487] Moving mouse to 218, 567
+[1778061842.4463215] Idle loop woke up. idle_active=True, last_bet_click_time=1778061542.4307048, diff=300.01561665534973
+[1778061842.448309] Moving mouse to 257, 307
+[1778061846.833681] Idle loop woke up. idle_active=True, last_bet_click_time=1778061546.8273783, diff=300.00630283355713
+[1778061846.8347297] Moving mouse to 297, 220
+[1778061851.293872] Idle loop woke up. idle_active=True, last_bet_click_time=1778061551.2918382, diff=300.0020339488983
+[1778061851.2948716] Moving mouse to 167, 444
+[1778061852.203758] Idle loop woke up. idle_active=True, last_bet_click_time=1778061552.200347, diff=300.0034110546112
+[1778061852.2068055] Moving mouse to 356, 466
+[1778061865.953962] Idle loop woke up. idle_active=True, last_bet_click_time=1778061565.948149, diff=300.00581312179565
+[1778061865.9549503] Moving mouse to 148, 774
+[1778061882.4512877] Idle loop woke up. idle_active=True, last_bet_click_time=1778061582.4433377, diff=300.00795006752014
+[1778061882.452396] Moving mouse to 103, 323
+[1778061883.1142201] Idle loop woke up. idle_active=True, last_bet_click_time=1778061583.1052036, diff=300.00901651382446
+[1778061883.1172063] Moving mouse to 354, 538
+[1778061918.34174] Idle loop woke up. idle_active=True, last_bet_click_time=1778061618.3297112, diff=300.01202869415283
+[1778061918.342258] Moving mouse to 320, 694
+[1778061918.9403942] Idle loop woke up. idle_active=True, last_bet_click_time=1778061618.9348881, diff=300.00550603866577
+[1778061918.9416978] Moving mouse to 431, 427
+[1778061922.4112513] Idle loop woke up. idle_active=True, last_bet_click_time=1778061622.3909502, diff=300.0203011035919
+[1778061922.4123695] Moving mouse to 251, 884
+[1778061929.4039516] Idle loop woke up. idle_active=True, last_bet_click_time=1778061629.3982573, diff=300.00569438934326
+[1778061929.4051166] Moving mouse to 451, 810
+[1778061929.6830065] Idle loop woke up. idle_active=True, last_bet_click_time=1778061629.6744664, diff=300.0085401535034
+[1778061929.6842096] Moving mouse to 360, 761
+[1778061932.2934306] Idle loop woke up. idle_active=True, last_bet_click_time=1778061632.2874632, diff=300.00596737861633
+[1778061932.2963703] Moving mouse to 106, 713
+[1778061933.1315887] Idle loop woke up. idle_active=True, last_bet_click_time=1778061633.1216612, diff=300.0099275112152
+[1778061933.135575] Moving mouse to 471, 269
+[1778061954.259829] Idle loop woke up. idle_active=True, last_bet_click_time=1778061654.24133, diff=300.01849913597107
+[1778061954.260818] Moving mouse to 430, 277
+[1778061961.0953448] Idle loop woke up. idle_active=True, last_bet_click_time=1778061661.0882726, diff=300.0070722103119
+[1778061961.0964422] Moving mouse to 476, 786
+[1778061970.7510478] Idle loop woke up. idle_active=True, last_bet_click_time=1778061670.7444859, diff=300.0065619945526
+[1778061970.7543423] Moving mouse to 248, 515
+[1778061981.8835216] Idle loop woke up. idle_active=True, last_bet_click_time=1778061681.8727708, diff=300.01075077056885
+[1778061981.8846745] Moving mouse to 191, 496
+[1778061987.003012] Idle loop woke up. idle_active=True, last_bet_click_time=1778061686.9935524, diff=300.00945949554443
+[1778061987.0041697] Moving mouse to 417, 235
+[1778061987.467445] Idle loop woke up. idle_active=True, last_bet_click_time=1778061687.456849, diff=300.01059579849243
+[1778061987.4685419] Moving mouse to 323, 892
+[1778062004.2481413] Idle loop woke up. idle_active=True, last_bet_click_time=1778061704.2338848, diff=300.01425647735596
+[1778062004.250114] Moving mouse to 240, 755
+[1778062020.4695113] Idle loop woke up. idle_active=True, last_bet_click_time=1778061720.459051, diff=300.0104603767395
+[1778062020.4704854] Moving mouse to 291, 606
+[1778062031.9179688] Idle loop woke up. idle_active=True, last_bet_click_time=1778061731.906784, diff=300.0111846923828
+[1778062031.9189568] Moving mouse to 318, 854
+[1778062043.3440845] Idle loop woke up. idle_active=True, last_bet_click_time=1778061743.3310068, diff=300.0130777359009
+[1778062043.347075] Moving mouse to 116, 878
+[1778062075.915403] Idle loop woke up. idle_active=True, last_bet_click_time=1778061775.9115326, diff=300.0048727989197
+[1778062075.9194002] Moving mouse to 255, 388
+[1778062079.0226195] Idle loop woke up. idle_active=True, last_bet_click_time=1778061779.0224657, diff=300.0001537799835
+[1778062079.0236225] Moving mouse to 254, 714
+[1778062080.4403303] Idle loop woke up. idle_active=True, last_bet_click_time=1778061780.4256012, diff=300.01472902297974
+[1778062080.4414613] Moving mouse to 507, 656
+[1778062080.487297] Idle loop woke up. idle_active=True, last_bet_click_time=1778061780.4719234, diff=300.0153737068176
+[1778062080.4885225] Moving mouse to 293, 332
+[1778062091.5154114] Idle loop woke up. idle_active=True, last_bet_click_time=1778061992.1678236, diff=99.3475878238678
+[1778062096.8588152] Idle loop woke up. idle_active=True, last_bet_click_time=1778061796.8572643, diff=300.00155091285706
+[1778062096.862368] Moving mouse to 241, 692
+[1778062103.5806036] Idle loop woke up. idle_active=True, last_bet_click_time=1778061803.571474, diff=300.00912952423096
+[1778062103.5825446] Moving mouse to 258, 235
+[1778062103.6584268] Idle loop woke up. idle_active=True, last_bet_click_time=1778061803.6477585, diff=300.0106682777405
+[1778062103.6594179] Moving mouse to 432, 387
+[1778062119.2502167] Idle loop woke up. idle_active=True, last_bet_click_time=1778061819.238485, diff=300.01173162460327
+[1778062119.2542248] Moving mouse to 249, 592
+[1778062129.3188045] Idle loop woke up. idle_active=True, last_bet_click_time=1778061829.292375, diff=300.02642941474915
+[1778062129.3203304] Moving mouse to 102, 896
+[1778062130.4030323] Idle loop woke up. idle_active=True, last_bet_click_time=1778061830.38798, diff=300.015052318573
+[1778062130.4039707] Moving mouse to 182, 250
+[1778062131.7323444] Idle loop woke up. idle_active=True, last_bet_click_time=1778061831.7180932, diff=300.0142512321472
+[1778062131.7358143] Moving mouse to 495, 259
+[1778062143.2366238] Idle loop woke up. idle_active=True, last_bet_click_time=1778061843.2350457, diff=300.0015780925751
+[1778062143.237151] Moving mouse to 236, 604
+[1778062147.6291027] Idle loop woke up. idle_active=True, last_bet_click_time=1778061847.619943, diff=300.0091598033905
+[1778062147.6302638] Moving mouse to 480, 468
+[1778062152.08701] Idle loop woke up. idle_active=True, last_bet_click_time=1778061852.0795274, diff=300.0074825286865
+[1778062152.0879905] Moving mouse to 436, 553
+[1778062153.0010664] Idle loop woke up. idle_active=True, last_bet_click_time=1778061852.9904082, diff=300.01065826416016
+[1778062153.0023973] Moving mouse to 487, 639
+[1778062166.755702] Idle loop woke up. idle_active=True, last_bet_click_time=1778061866.7433643, diff=300.01233768463135
+[1778062166.7568836] Moving mouse to 187, 546
+[1778062183.2383657] Idle loop woke up. idle_active=True, last_bet_click_time=1778061883.237668, diff=300.00069761276245
+[1778062183.2391403] Moving mouse to 113, 285
+[1778062183.917258] Idle loop woke up. idle_active=True, last_bet_click_time=1778061883.902437, diff=300.01482105255127
+[1778062183.9181888] Moving mouse to 131, 895
+[1778062219.138474] Idle loop woke up. idle_active=True, last_bet_click_time=1778061919.1247253, diff=300.01374864578247
+[1778062219.138994] Moving mouse to 206, 896
+[1778062219.7284622] Idle loop woke up. idle_active=True, last_bet_click_time=1778061919.7247295, diff=300.0037326812744
+[1778062219.7294595] Moving mouse to 315, 743
+[1778062223.2047048] Idle loop woke up. idle_active=True, last_bet_click_time=1778061923.1964078, diff=300.00829696655273
+[1778062223.2056458] Moving mouse to 278, 664
+[1778062230.2051072] Idle loop woke up. idle_active=True, last_bet_click_time=1778061930.190687, diff=300.0144202709198
+[1778062230.2060213] Moving mouse to 529, 601
+[1778062230.4854486] Idle loop woke up. idle_active=True, last_bet_click_time=1778061930.4710913, diff=300.0143573284149
+[1778062230.4864013] Moving mouse to 465, 441
+[1778062233.0911157] Idle loop woke up. idle_active=True, last_bet_click_time=1778061933.0833206, diff=300.0077950954437
+[1778062233.094157] Moving mouse to 529, 735
+[1778062233.9281495] Idle loop woke up. idle_active=True, last_bet_click_time=1778061933.9134827, diff=300.0146667957306
+[1778062233.933713] Moving mouse to 157, 518
+[1778062240.295586] Idle loop woke up. idle_active=True, last_bet_click_time=1778061940.2831686, diff=300.01241755485535
+[1778062240.2989771] Moving mouse to 459, 545
+[1778062255.0531871] Idle loop woke up. idle_active=True, last_bet_click_time=1778061955.051015, diff=300.0021722316742
+[1778062255.0546587] Moving mouse to 482, 280
+[1778062261.8875952] Idle loop woke up. idle_active=True, last_bet_click_time=1778061961.8868363, diff=300.0007588863373
+[1778062261.8910139] Moving mouse to 143, 655
+[1778062271.5440502] Idle loop woke up. idle_active=True, last_bet_click_time=1778061971.5366604, diff=300.00738978385925
+[1778062271.5451126] Moving mouse to 167, 530
+[1778062282.6859586] Idle loop woke up. idle_active=True, last_bet_click_time=1778061982.6680694, diff=300.0178892612457
+[1778062282.6894774] Moving mouse to 335, 757
+[1778062283.4263053] Idle loop woke up. idle_active=True, last_bet_click_time=1778061983.4131498, diff=300.01315546035767
+[1778062283.427839] Moving mouse to 206, 767
+[1778062287.809156] Idle loop woke up. idle_active=True, last_bet_click_time=1778061987.7944055, diff=300.01475048065186
+[1778062287.8101008] Moving mouse to 492, 620
+[1778062288.2702017] Idle loop woke up. idle_active=True, last_bet_click_time=1778061988.259367, diff=300.0108346939087
+[1778062288.2711396] Moving mouse to 440, 299
+[1778062300.2670858] Idle loop woke up. idle_active=True, last_bet_click_time=1778062000.2508974, diff=300.0161883831024
+[1778062300.2680898] Moving mouse to 125, 282
+[1778062305.044841] Idle loop woke up. idle_active=True, last_bet_click_time=1778062005.0338023, diff=300.0110387802124
+[1778062305.0458465] Moving mouse to 540, 824
+[1778062321.267782] Idle loop woke up. idle_active=True, last_bet_click_time=1778062021.2597806, diff=300.00800132751465
+[1778062321.2700768] Moving mouse to 428, 687
+[1778062332.7434266] Idle loop woke up. idle_active=True, last_bet_click_time=1778062032.7332242, diff=300.0102024078369
+[1778062332.7443714] Moving mouse to 431, 213
+[1778062344.1414254] Idle loop woke up. idle_active=True, last_bet_click_time=1778062044.1280673, diff=300.0133581161499
+[1778062344.1449585] Moving mouse to 162, 861
+[1778062376.715261] Idle loop woke up. idle_active=True, last_bet_click_time=1778062076.7044275, diff=300.0108335018158
+[1778062376.7182615] Moving mouse to 326, 574
+[1778062379.8288722] Idle loop woke up. idle_active=True, last_bet_click_time=1778062079.819395, diff=300.0094771385193
+[1778062379.8299727] Moving mouse to 548, 590
+[1778062381.236794] Idle loop woke up. idle_active=True, last_bet_click_time=1778062081.230325, diff=300.00646901130676
+[1778062381.2387722] Moving mouse to 331, 852
+[1778062381.2848418] Idle loop woke up. idle_active=True, last_bet_click_time=1778062081.277088, diff=300.00775384902954
+[1778062381.2863796] Moving mouse to 327, 770
+[1778062391.5247447] Idle loop woke up. idle_active=True, last_bet_click_time=1778062167.382638, diff=224.14210677146912
+[1778062397.6595461] Idle loop woke up. idle_active=True, last_bet_click_time=1778062097.6435559, diff=300.0159902572632
+[1778062397.6615438] Moving mouse to 294, 253
+[1778062404.3789408] Idle loop woke up. idle_active=True, last_bet_click_time=1778062104.3717353, diff=300.0072054862976
+[1778062404.3809202] Moving mouse to 305, 855
+[1778062404.4576175] Idle loop woke up. idle_active=True, last_bet_click_time=1778062104.4500105, diff=300.0076069831848
+[1778062404.4601417] Moving mouse to 455, 787
+[1778062413.320388] Idle loop woke up. idle_active=True, last_bet_click_time=1778062113.3065472, diff=300.0138409137726
+[1778062413.3224192] Moving mouse to 383, 647
+[1778062420.049264] Idle loop woke up. idle_active=True, last_bet_click_time=1778062120.0416896, diff=300.0075743198395
+[1778062420.0527456] Moving mouse to 277, 401
+[1778062430.124516] Idle loop woke up. idle_active=True, last_bet_click_time=1778062130.110362, diff=300.01415395736694
+[1778062430.125518] Moving mouse to 150, 425
+[1778062431.1994257] Idle loop woke up. idle_active=True, last_bet_click_time=1778062131.190691, diff=300.00873470306396
+[1778062431.202503] Moving mouse to 458, 657
+[1778062432.5430934] Idle loop woke up. idle_active=True, last_bet_click_time=1778062132.527432, diff=300.0156614780426
+[1778062432.5451312] Moving mouse to 341, 750
+[1778062444.0417528] Idle loop woke up. idle_active=True, last_bet_click_time=1778062144.0259387, diff=300.0158140659332
+[1778062444.043278] Moving mouse to 277, 356
+[1778062448.427721] Idle loop woke up. idle_active=True, last_bet_click_time=1778062148.4167147, diff=300.01100635528564
+[1778062448.4303565] Moving mouse to 107, 802
+[1778062452.8829038] Idle loop woke up. idle_active=True, last_bet_click_time=1778062152.8759816, diff=300.00692224502563
+[1778062452.8848808] Moving mouse to 397, 377
+[1778062453.7982817] Idle loop woke up. idle_active=True, last_bet_click_time=1778062153.7853224, diff=300.01295924186707
+[1778062453.7995155] Moving mouse to 350, 253
+[1778062467.5489457] Idle loop woke up. idle_active=True, last_bet_click_time=1778062167.5426748, diff=300.00627088546753
+[1778062467.5494657] Moving mouse to 226, 748
+[1778062475.2872927] Idle loop woke up. idle_active=True, last_bet_click_time=1778062175.2692344, diff=300.0180583000183
+[1778062475.288255] Moving mouse to 247, 890
+[1778062484.0362318] Idle loop woke up. idle_active=True, last_bet_click_time=1778062184.0243564, diff=300.01187539100647
+[1778062484.0382092] Moving mouse to 178, 797
+[1778062484.7148745] Idle loop woke up. idle_active=True, last_bet_click_time=1778062184.7054706, diff=300.0094039440155
+[1778062484.7161806] Moving mouse to 478, 340
+[1778062519.940805] Idle loop woke up. idle_active=True, last_bet_click_time=1778062219.9268208, diff=300.0139842033386
+[1778062519.9466684] Moving mouse to 543, 255
+[1778062520.5254908] Idle loop woke up. idle_active=True, last_bet_click_time=1778062220.511887, diff=300.0136036872864
+[1778062520.527433] Moving mouse to 340, 240
+[1778062523.9941692] Idle loop woke up. idle_active=True, last_bet_click_time=1778062223.9921029, diff=300.0020663738251
+[1778062523.9952543] Moving mouse to 174, 270
+[1778062531.0071273] Idle loop woke up. idle_active=True, last_bet_click_time=1778062230.9957964, diff=300.0113308429718
+[1778062531.008128] Moving mouse to 253, 780
+[1778062531.2838643] Idle loop woke up. idle_active=True, last_bet_click_time=1778062231.2710674, diff=300.0127968788147
+[1778062531.286227] Moving mouse to 481, 258
+[1778062533.8934653] Idle loop woke up. idle_active=True, last_bet_click_time=1778062233.881769, diff=300.01169633865356
+[1778062533.894462] Moving mouse to 267, 462
+[1778062534.723124] Idle loop woke up. idle_active=True, last_bet_click_time=1778062234.714108, diff=300.0090160369873
+[1778062534.723647] Moving mouse to 534, 383
+[1778062541.095124] Idle loop woke up. idle_active=True, last_bet_click_time=1778062241.0842545, diff=300.01086950302124
+[1778062541.0978749] Moving mouse to 388, 482
+[1778062555.8424604] Idle loop woke up. idle_active=True, last_bet_click_time=1778062255.8399425, diff=300.0025179386139
+[1778062555.844049] Moving mouse to 214, 450
+[1778062562.68392] Idle loop woke up. idle_active=True, last_bet_click_time=1778062262.6757336, diff=300.00818634033203
+[1778062562.68605] Moving mouse to 162, 786
+[1778062572.329156] Idle loop woke up. idle_active=True, last_bet_click_time=1778062272.3237092, diff=300.0054466724396
+[1778062572.3310976] Moving mouse to 256, 284
+[1778062583.4724894] Idle loop woke up. idle_active=True, last_bet_click_time=1778062283.4720297, diff=300.0004596710205
+[1778062583.4735405] Moving mouse to 497, 586
+[1778062584.2326834] Idle loop woke up. idle_active=True, last_bet_click_time=1778062284.2199326, diff=300.01275086402893
+[1778062584.2352045] Moving mouse to 148, 827
+[1778062588.605521] Idle loop woke up. idle_active=True, last_bet_click_time=1778062288.59503, diff=300.0104908943176
+[1778062588.6065674] Moving mouse to 532, 575
+[1778062589.0669627] Idle loop woke up. idle_active=True, last_bet_click_time=1778062289.0580213, diff=300.00894141197205
+[1778062589.0689454] Moving mouse to 496, 803
+[1778062601.0706372] Idle loop woke up. idle_active=True, last_bet_click_time=1778062301.0559776, diff=300.0146596431732
+[1778062601.071789] Moving mouse to 420, 553
+[1778062605.8343265] Idle loop woke up. idle_active=True, last_bet_click_time=1778062305.8299985, diff=300.00432801246643
+[1778062605.8352797] Moving mouse to 421, 389
+[1778062622.0619473] Idle loop woke up. idle_active=True, last_bet_click_time=1778062322.0558648, diff=300.00608253479004
+[1778062622.0628817] Moving mouse to 472, 809
+[1778062633.532839] Idle loop woke up. idle_active=True, last_bet_click_time=1778062333.5269468, diff=300.0058922767639
+[1778062633.5358772] Moving mouse to 334, 423
+[1778062644.9358366] Idle loop woke up. idle_active=True, last_bet_click_time=1778062344.922161, diff=300.0141832828522
+[1778062644.9373546] Moving mouse to 320, 291
+[1778062677.5120635] Idle loop woke up. idle_active=True, last_bet_click_time=1778062377.5023115, diff=300.009752035141
+[1778062677.5130613] Moving mouse to 334, 893
+[1778062680.6278331] Idle loop woke up. idle_active=True, last_bet_click_time=1778062380.6155753, diff=300.01225781440735
+[1778062680.6297631] Moving mouse to 195, 257
+[1778062682.0364137] Idle loop woke up. idle_active=True, last_bet_click_time=1778062382.0275815, diff=300.0088322162628
+[1778062682.0373542] Moving mouse to 99, 727
+[1778062682.083264] Idle loop woke up. idle_active=True, last_bet_click_time=1778062382.0747025, diff=300.00856161117554
+[1778062682.0853457] Moving mouse to 202, 678
+[1778062691.5291104] Idle loop woke up. idle_active=True, last_bet_click_time=1778062642.4529924, diff=49.07611799240112
+[1778062698.4682167] Idle loop woke up. idle_active=True, last_bet_click_time=1778062398.4501805, diff=300.0190336704254
+[1778062698.4727745] Moving mouse to 467, 553
+[1778062705.1715066] Idle loop woke up. idle_active=True, last_bet_click_time=1778062405.1662798, diff=300.00522685050964
+[1778062705.177055] Moving mouse to 280, 618
+[1778062705.2501714] Idle loop woke up. idle_active=True, last_bet_click_time=1778062405.2436993, diff=300.0064721107483
+[1778062705.2521665] Moving mouse to 344, 414
+[1778062708.4992769] Idle loop woke up. idle_active=True, last_bet_click_time=1778062408.4622922, diff=300.03698468208313
+[1778062708.5002549] Moving mouse to 435, 358
+[1778062714.1156223] Idle loop woke up. idle_active=True, last_bet_click_time=1778062414.10996, diff=300.0056622028351
+[1778062714.1168413] Moving mouse to 209, 630
+[1778062720.8422093] Idle loop woke up. idle_active=True, last_bet_click_time=1778062420.8354366, diff=300.00677275657654
+[1778062720.8444626] Moving mouse to 251, 736
+[1778062730.9278433] Idle loop woke up. idle_active=True, last_bet_click_time=1778062430.9198685, diff=300.00797486305237
+[1778062730.92932] Moving mouse to 248, 269
+[1778062731.9953194] Idle loop woke up. idle_active=True, last_bet_click_time=1778062431.9901335, diff=300.00518584251404
+[1778062731.9965816] Moving mouse to 214, 776
+[1778062733.3362494] Idle loop woke up. idle_active=True, last_bet_click_time=1778062433.3352325, diff=300.00101685523987
+[1778062733.337764] Moving mouse to 152, 599
+[1778062744.839059] Idle loop woke up. idle_active=True, last_bet_click_time=1778062444.8291676, diff=300.00989151000977
+[1778062744.8465517] Moving mouse to 354, 359
+[1778062747.6515796] Idle loop woke up. idle_active=True, last_bet_click_time=1778062447.6205585, diff=300.03102111816406
+[1778062747.6537976] Moving mouse to 174, 482
+[1778062749.2276587] Idle loop woke up. idle_active=True, last_bet_click_time=1778062449.21879, diff=300.0088686943054
+[1778062749.2296548] Moving mouse to 476, 576
+[1778062753.6772041] Idle loop woke up. idle_active=True, last_bet_click_time=1778062453.674467, diff=300.0027370452881
+[1778062753.6791992] Moving mouse to 309, 218
+[1778062754.6561258] Idle loop woke up. idle_active=True, last_bet_click_time=1778062454.583937, diff=300.07218885421753
+[1778062754.7353697] Moving mouse to 317, 260
+[1778062768.3678231] Idle loop woke up. idle_active=True, last_bet_click_time=1778062468.3395119, diff=300.028311252594
+[1778062768.3733335] Moving mouse to 103, 680
+[1778062776.0875075] Idle loop woke up. idle_active=True, last_bet_click_time=1778062476.0747557, diff=300.01275181770325
+[1778062776.1114187] Moving mouse to 337, 710
+[1778062784.8244255] Idle loop woke up. idle_active=True, last_bet_click_time=1778062484.8219538, diff=300.00247168540955
+[1778062784.8253639] Moving mouse to 528, 737
+[1778062785.5050838] Idle loop woke up. idle_active=True, last_bet_click_time=1778062485.4998116, diff=300.0053131580353
+[1778062785.5051248] Moving mouse to 145, 371
+[1778062820.733666] Idle loop woke up. idle_active=True, last_bet_click_time=1778062520.7258503, diff=300.0078155994415
+[1778062820.7372754] Moving mouse to 544, 203
+[1778062821.3094149] Idle loop woke up. idle_active=True, last_bet_click_time=1778062521.3090925, diff=300.00032234191895
+[1778062821.3113813] Moving mouse to 503, 644
+[1778062823.1558878] Idle loop woke up. idle_active=True, last_bet_click_time=1778062523.1222985, diff=300.03358936309814
+[1778062823.1573014] Moving mouse to 273, 397
+[1778062824.781773] Idle loop woke up. idle_active=True, last_bet_click_time=1778062524.780084, diff=300.00168919563293
+[1778062824.784731] Moving mouse to 214, 784
+[1778062831.8060248] Idle loop woke up. idle_active=True, last_bet_click_time=1778062531.798308, diff=300.0077168941498
+[1778062831.8070009] Moving mouse to 427, 822
+[1778062832.085479] Idle loop woke up. idle_active=True, last_bet_click_time=1778062532.0739167, diff=300.0115623474121
+[1778062832.0885696] Moving mouse to 376, 203
+[1778062834.678281] Idle loop woke up. idle_active=True, last_bet_click_time=1778062534.6771123, diff=300.00116872787476
+[1778062834.6798172] Moving mouse to 272, 752
+[1778062835.514652] Idle loop woke up. idle_active=True, last_bet_click_time=1778062535.510329, diff=300.00432300567627
+[1778062835.517766] Moving mouse to 240, 654
+[1778062841.8910158] Idle loop woke up. idle_active=True, last_bet_click_time=1778062541.8801003, diff=300.010915517807
+[1778062841.8920755] Moving mouse to 132, 752
+[1778062856.6363802] Idle loop woke up. idle_active=True, last_bet_click_time=1778062556.624216, diff=300.01216411590576
+[1778062856.637322] Moving mouse to 119, 847
+[1778062863.4718583] Idle loop woke up. idle_active=True, last_bet_click_time=1778062563.468517, diff=300.00334119796753
+[1778062863.4755683] Moving mouse to 239, 324
+[1778062870.6068873] Idle loop woke up. idle_active=True, last_bet_click_time=1778062570.5743477, diff=300.03253960609436
+[1778062870.6083472] Moving mouse to 424, 348
+[1778062873.133517] Idle loop woke up. idle_active=True, last_bet_click_time=1778062573.1183047, diff=300.0152122974396
+[1778062873.1396286] Moving mouse to 175, 633
+[1778062882.5419672] Idle loop woke up. idle_active=True, last_bet_click_time=1778062582.511631, diff=300.0303361415863
+[1778062882.5429108] Moving mouse to 385, 730
+[1778062884.267621] Idle loop woke up. idle_active=True, last_bet_click_time=1778062584.2637663, diff=300.0038547515869
+[1778062884.2747192] Moving mouse to 323, 723
+[1778062885.025373] Idle loop woke up. idle_active=True, last_bet_click_time=1778062585.0221045, diff=300.0032684803009
+[1778062885.0273788] Moving mouse to 170, 276
+[1778062889.3959148] Idle loop woke up. idle_active=True, last_bet_click_time=1778062589.3936448, diff=300.0022699832916
+[1778062889.3980987] Moving mouse to 262, 411
+[1778062889.8600774] Idle loop woke up. idle_active=True, last_bet_click_time=1778062589.856859, diff=300.0032184123993
+[1778062889.861549] Moving mouse to 297, 471
+[1778062901.8700783] Idle loop woke up. idle_active=True, last_bet_click_time=1778062601.8586683, diff=300.01140999794006
+[1778062901.8710191] Moving mouse to 364, 843
+[1778062906.619901] Idle loop woke up. idle_active=True, last_bet_click_time=1778062606.6191373, diff=300.00076365470886
+[1778062906.6218438] Moving mouse to 302, 686
+[1778062922.8617904] Idle loop woke up. idle_active=True, last_bet_click_time=1778062622.8475924, diff=300.0141980648041
+[1778062922.8627589] Moving mouse to 548, 473
+[1778062934.3286948] Idle loop woke up. idle_active=True, last_bet_click_time=1778062634.3175135, diff=300.0111813545227
+[1778062934.329651] Moving mouse to 216, 580
+[1778062945.7344792] Idle loop woke up. idle_active=True, last_bet_click_time=1778062645.72869, diff=300.00578927993774
+[1778062945.735039] Moving mouse to 283, 665
+[1778062950.6225317] Idle loop woke up. idle_active=True, last_bet_click_time=1778062650.6063795, diff=300.0161521434784
+[1778062950.6235824] Moving mouse to 457, 675
+[1778062978.30715] Idle loop woke up. idle_active=True, last_bet_click_time=1778062678.2943485, diff=300.0128014087677
+[1778062978.3080883] Moving mouse to 252, 627
+[1778062981.4200048] Idle loop woke up. idle_active=True, last_bet_click_time=1778062681.4184873, diff=300.001517534256
+[1778062981.4210484] Moving mouse to 325, 874
+[1778062982.8392386] Idle loop woke up. idle_active=True, last_bet_click_time=1778062682.823591, diff=300.015647649765
+[1778062982.840373] Moving mouse to 220, 739
+[1778062982.870006] Idle loop woke up. idle_active=True, last_bet_click_time=1778062682.8689516, diff=300.00105452537537
+[1778062982.8711839] Moving mouse to 254, 651
+[1778062991.5353863] Idle loop woke up. idle_active=True, last_bet_click_time=1778062903.6874464, diff=87.84793996810913
+[1778062999.2577548] Idle loop woke up. idle_active=True, last_bet_click_time=1778062699.24621, diff=300.01154470443726
+[1778062999.261686] Moving mouse to 144, 389
+[1778063005.6724224] Idle loop woke up. idle_active=True, last_bet_click_time=1778062705.6552267, diff=300.0171957015991
+[1778063005.6780236] Moving mouse to 483, 311
+[1778063005.9634333] Idle loop woke up. idle_active=True, last_bet_click_time=1778062705.962248, diff=300.0011851787567
+[1778063005.9644003] Moving mouse to 415, 594
+[1778063006.0574448] Idle loop woke up. idle_active=True, last_bet_click_time=1778062706.0404928, diff=300.0169520378113
+[1778063006.0615063] Moving mouse to 465, 284
+[1778063009.29602] Idle loop woke up. idle_active=True, last_bet_click_time=1778062709.2911732, diff=300.00484681129456
+[1778063009.2979605] Moving mouse to 536, 538
+[1778063014.9085324] Idle loop woke up. idle_active=True, last_bet_click_time=1778062714.90711, diff=300.0014224052429
+[1778063014.9085324] Moving mouse to 341, 407
+[1778063021.6354423] Idle loop woke up. idle_active=True, last_bet_click_time=1778062721.6270018, diff=300.00844049453735
+[1778063021.6364422] Moving mouse to 383, 313
+[1778068416.1769218] Idle loop woke up. idle_active=True, last_bet_click_time=1778068394.1991186, diff=21.977803230285645
+[1778068465.4040673] Idle loop woke up. idle_active=True, last_bet_click_time=1778068165.3916621, diff=300.01240515708923
+[1778068465.4074812] Moving mouse to 338, 363
+[1778068465.4084768] Moving mouse to 312, 233
+[1778068716.1977775] Idle loop woke up. idle_active=True, last_bet_click_time=1778068439.2089877, diff=276.9887897968292
+[1778069016.201036] Idle loop woke up. idle_active=True, last_bet_click_time=1778068439.2089877, diff=576.9920482635498
+[1778072604.8993814] Idle loop woke up. idle_active=True, last_bet_click_time=1778072304.4641337, diff=300.4352476596832
+[1778072604.9004478] Moving mouse to 500, 582
+[1778073158.667742] Idle loop woke up. idle_active=True, last_bet_click_time=1778072858.434906, diff=300.2328360080719
+[1778073158.6762586] Moving mouse to 503, 665
+[1778073459.4770758] Idle loop woke up. idle_active=True, last_bet_click_time=1778073159.472065, diff=300.006151676178
+[1778073459.4812458] Moving mouse to 339, 673
+[1778073760.2719433] Idle loop woke up. idle_active=True, last_bet_click_time=1778073460.2680268, diff=300.0039165019989
+[1778073760.278589] Moving mouse to 192, 249
+[1778074327.3883052] Idle loop woke up. idle_active=True, last_bet_click_time=1778074027.1043487, diff=300.28395652770996
+[1778074327.3917692] Moving mouse to 508, 706
+[1778074628.1951642] Idle loop woke up. idle_active=True, last_bet_click_time=1778074328.1812963, diff=300.013867855072
+[1778074628.1971555] Moving mouse to 155, 599
+[1778074929.000815] Idle loop woke up. idle_active=True, last_bet_click_time=1778074628.986239, diff=300.01457595825195
+[1778074929.0017524] Moving mouse to 515, 399
+[1778075440.7649872] Idle loop woke up. idle_active=True, last_bet_click_time=1778075140.5442026, diff=300.22078466415405
+[1778075440.7672517] Moving mouse to 350, 697
+[1778075778.2312028] Idle loop woke up. idle_active=True, last_bet_click_time=1778075478.0738542, diff=300.1573486328125
+[1778075778.2374449] Moving mouse to 204, 543
+[1778076079.0256243] Idle loop woke up. idle_active=True, last_bet_click_time=1778075779.0217602, diff=300.0048632621765
+[1778076079.0338929] Moving mouse to 452, 463
+[1778076079.0411355] Error: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+[1778084647.8786206] Idle loop woke up. idle_active=True, last_bet_click_time=1778084344.5560172, diff=303.3226034641266
+[1778084647.8798585] Moving mouse to 106, 355
+[1778086399.5944548] Idle loop woke up. idle_active=True, last_bet_click_time=1778086255.0130625, diff=144.581392288208
+[1778086699.6082954] Idle loop woke up. idle_active=True, last_bet_click_time=1778086630.3856895, diff=69.22260594367981
+[1778086999.6144593] Idle loop woke up. idle_active=True, last_bet_click_time=1778086896.1822221, diff=103.43223714828491
+[1778087299.6220443] Idle loop woke up. idle_active=True, last_bet_click_time=1778087271.0470557, diff=28.57498860359192
+[1778087599.6293068] Idle loop woke up. idle_active=True, last_bet_click_time=1778087506.451676, diff=93.17763090133667
+[1778087899.6439412] Idle loop woke up. idle_active=True, last_bet_click_time=1778087884.9261186, diff=14.717822551727295
+[1778088199.652507] Idle loop woke up. idle_active=True, last_bet_click_time=1778088102.0290473, diff=97.623459815979
+[1778088499.6558661] Idle loop woke up. idle_active=True, last_bet_click_time=1778088495.2897122, diff=4.366153955459595
+[1778088799.6694806] Idle loop woke up. idle_active=True, last_bet_click_time=1778088781.2886481, diff=18.38083243370056
+[1778089099.6728563] Idle loop woke up. idle_active=True, last_bet_click_time=1778088930.494587, diff=169.1782693862915
+[1778089399.681827] Idle loop woke up. idle_active=True, last_bet_click_time=1778089379.8704467, diff=19.81138038635254
+[1778089699.6892898] Idle loop woke up. idle_active=True, last_bet_click_time=1778089693.6335866, diff=6.055703163146973
+[1778089999.6918714] Idle loop woke up. idle_active=True, last_bet_click_time=1778089928.6623952, diff=71.02947616577148
+[1778090299.706963] Idle loop woke up. idle_active=True, last_bet_click_time=1778090272.586785, diff=27.12017798423767
+[1778090599.7173471] Idle loop woke up. idle_active=True, last_bet_click_time=1778090537.4550064, diff=62.262340784072876
+[1778090899.7243052] Idle loop woke up. idle_active=True, last_bet_click_time=1778090802.0922606, diff=97.63257837295532
+[1778091199.7285671] Idle loop woke up. idle_active=True, last_bet_click_time=1778091154.6412582, diff=45.08730888366699
+[1778091499.7340336] Idle loop woke up. idle_active=True, last_bet_click_time=1778091489.8020685, diff=9.931965112686157
+[1778091799.7464373] Idle loop woke up. idle_active=True, last_bet_click_time=1778091710.029053, diff=89.7173843383789
+[1778092099.7622147] Idle loop woke up. idle_active=True, last_bet_click_time=1778092072.9725811, diff=26.78963351249695
+[1778092399.7655401] Idle loop woke up. idle_active=True, last_bet_click_time=1778092386.3893988, diff=13.37614130973816
+[1778092699.7702377] Idle loop woke up. idle_active=True, last_bet_click_time=1778092683.3174925, diff=16.45274519920349
+[1778092999.774427] Idle loop woke up. idle_active=True, last_bet_click_time=1778092871.7104695, diff=128.06395745277405
+[1778093299.7839613] Idle loop woke up. idle_active=True, last_bet_click_time=1778093289.3084219, diff=10.475539445877075
+[1778093599.8004427] Idle loop woke up. idle_active=True, last_bet_click_time=1778093478.6463776, diff=121.15406513214111
+[1778093899.8058262] Idle loop woke up. idle_active=True, last_bet_click_time=1778093864.6191378, diff=35.18668842315674
+[1778094199.8199232] Idle loop woke up. idle_active=True, last_bet_click_time=1778093864.6191378, diff=335.2007853984833
+[1778094199.8218675] Moving mouse to 408, 408
+[1778094500.7056706] Idle loop woke up. idle_active=True, last_bet_click_time=1778094200.6125386, diff=300.09313201904297
+[1778094501.0396938] Moving mouse to 197, 749
+[1778094801.923678] Idle loop woke up. idle_active=True, last_bet_click_time=1778094501.9100807, diff=300.01359724998474
+[1778094801.9257703] Moving mouse to 469, 646
+[1778095102.838376] Idle loop woke up. idle_active=True, last_bet_click_time=1778094802.7128754, diff=300.1255006790161
+[1778095103.2190661] Moving mouse to 468, 592
+[1778095404.450717] Idle loop woke up. idle_active=True, last_bet_click_time=1778095104.101356, diff=300.3493609428406
+[1778095404.716886] Moving mouse to 130, 705
+[1778095705.5787427] Idle loop woke up. idle_active=True, last_bet_click_time=1778095405.56469, diff=300.0140526294708
+[1778095705.5816708] Moving mouse to 211, 314
+[1778096006.3850305] Idle loop woke up. idle_active=True, last_bet_click_time=1778095706.3698528, diff=300.0151777267456
+[1778096006.3890274] Moving mouse to 169, 509
+[1778096307.179773] Idle loop woke up. idle_active=True, last_bet_click_time=1778096007.177742, diff=300.00203108787537
+[1778096307.1829264] Moving mouse to 373, 887
+[1778096607.9771564] Idle loop woke up. idle_active=True, last_bet_click_time=1778096307.9710414, diff=300.0061149597168
+[1778096607.9791481] Moving mouse to 512, 262
+[1778096908.7763374] Idle loop woke up. idle_active=True, last_bet_click_time=1778096608.766177, diff=300.010160446167
+[1778096908.779024] Moving mouse to 322, 572
+[1778097209.57889] Idle loop woke up. idle_active=True, last_bet_click_time=1778096909.56373, diff=300.01516008377075
+[1778097209.5804224] Moving mouse to 249, 259
+[1778097510.3827198] Idle loop woke up. idle_active=True, last_bet_click_time=1778097210.3693106, diff=300.01340913772583
+[1778097510.384833] Moving mouse to 462, 635
+[1778097811.1728103] Idle loop woke up. idle_active=True, last_bet_click_time=1778097511.1708632, diff=300.0019471645355
+[1778097811.1753273] Moving mouse to 275, 795
+[1778098111.9778926] Idle loop woke up. idle_active=True, last_bet_click_time=1778097811.9629707, diff=300.01492190361023
+[1778098111.9799664] Moving mouse to 195, 626
+[1778098412.7793257] Idle loop woke up. idle_active=True, last_bet_click_time=1778098112.7690513, diff=300.0102744102478
+[1778098412.7839158] Moving mouse to 503, 348
+[1778098713.5785046] Idle loop woke up. idle_active=True, last_bet_click_time=1778098413.572366, diff=300.0061385631561
+[1778098713.5810533] Moving mouse to 331, 754
+[1778099014.375295] Idle loop woke up. idle_active=True, last_bet_click_time=1778098714.3668408, diff=300.00845408439636
+[1778099014.377296] Moving mouse to 289, 837
+[1778099315.1766534] Idle loop woke up. idle_active=True, last_bet_click_time=1778099015.1680477, diff=300.00860571861267
+[1778099315.1791956] Moving mouse to 372, 218
+[1778099615.9839864] Idle loop woke up. idle_active=True, last_bet_click_time=1778099315.9695885, diff=300.01439785957336
+[1778099615.9869628] Moving mouse to 285, 659
+[1778099916.7757936] Idle loop woke up. idle_active=True, last_bet_click_time=1778099616.7740316, diff=300.00176191329956
+[1778099916.7783396] Moving mouse to 278, 612
+[1778100217.571945] Idle loop woke up. idle_active=True, last_bet_click_time=1778099917.5657315, diff=300.00622725486755
+[1778100217.5729594] Moving mouse to 242, 448
+[1778100518.3624015] Idle loop woke up. idle_active=True, last_bet_click_time=1778100218.3605707, diff=300.0018308162689
+[1778100518.3660705] Moving mouse to 400, 867
+[1778100819.1702316] Idle loop woke up. idle_active=True, last_bet_click_time=1778100519.15705, diff=300.01410818099976
+[1778100819.1731594] Moving mouse to 390, 894
+[1778101119.9605594] Idle loop woke up. idle_active=True, last_bet_click_time=1778100819.9575446, diff=300.00301480293274
+[1778101119.9642906] Moving mouse to 321, 326
+[1778101420.7624617] Idle loop woke up. idle_active=True, last_bet_click_time=1778101120.7482493, diff=300.0142123699188
+[1778101420.7654328] Moving mouse to 308, 482
+[1778101721.5673394] Idle loop woke up. idle_active=True, last_bet_click_time=1778101421.552592, diff=300.0147473812103
+[1778101721.568973] Moving mouse to 491, 545
+[1778102022.3558397] Idle loop woke up. idle_active=True, last_bet_click_time=1778101722.3524303, diff=300.00340938568115
+[1778102022.3584716] Moving mouse to 492, 736
+[1778102323.1544828] Idle loop woke up. idle_active=True, last_bet_click_time=1778102023.1457067, diff=300.00877618789673
+[1778102323.1565442] Moving mouse to 225, 721
+[1778102623.9514096] Idle loop woke up. idle_active=True, last_bet_click_time=1778102323.9442112, diff=300.00719833374023
+[1778102623.954333] Moving mouse to 387, 617
+[1778102924.7535293] Idle loop woke up. idle_active=True, last_bet_click_time=1778102624.7435997, diff=300.0099296569824
+[1778102924.7570393] Moving mouse to 242, 837
+[1778103225.5531182] Idle loop woke up. idle_active=True, last_bet_click_time=1778102925.5453176, diff=300.00872230529785
+[1778103225.5570383] Moving mouse to 449, 759
+[1778103526.352549] Idle loop woke up. idle_active=True, last_bet_click_time=1778103226.34144, diff=300.01110911369324
+[1778103526.3545353] Moving mouse to 202, 712
+[1778103827.1528213] Idle loop woke up. idle_active=True, last_bet_click_time=1778103527.144282, diff=300.0085391998291
+[1778103827.1556687] Moving mouse to 253, 736
+[1778104127.9506354] Idle loop woke up. idle_active=True, last_bet_click_time=1778103827.9463913, diff=300.0042440891266
+[1778104127.9530978] Moving mouse to 373, 346
+[1778104428.75029] Idle loop woke up. idle_active=True, last_bet_click_time=1778104128.7387197, diff=300.0115702152252
+[1778104428.7522886] Moving mouse to 212, 634
+[1778104729.5530565] Idle loop woke up. idle_active=True, last_bet_click_time=1778104429.539217, diff=300.0138394832611
+[1778104729.5549881] Moving mouse to 423, 239
+[1778105030.35801] Idle loop woke up. idle_active=True, last_bet_click_time=1778104730.3456206, diff=300.012389421463
+[1778105030.3626058] Moving mouse to 427, 472
+[1778105331.1645179] Idle loop woke up. idle_active=True, last_bet_click_time=1778105031.148899, diff=300.01561880111694
+[1778105331.1660154] Moving mouse to 262, 484
+[1778105631.9708886] Idle loop woke up. idle_active=True, last_bet_click_time=1778105331.9576359, diff=300.01325273513794
+[1778105631.9724243] Moving mouse to 314, 644
+[1778105932.7652729] Idle loop woke up. idle_active=True, last_bet_click_time=1778105632.7625165, diff=300.002756357193
+[1778105932.7667875] Moving mouse to 549, 515
+[1778106233.5675685] Idle loop woke up. idle_active=True, last_bet_click_time=1778105933.56088, diff=300.0066885948181
+[1778106233.5697155] Moving mouse to 347, 329
+[1778106534.3679426] Idle loop woke up. idle_active=True, last_bet_click_time=1778106234.3577187, diff=300.01022386550903
+[1778106534.3704188] Moving mouse to 245, 553
+[1778106835.1605773] Idle loop woke up. idle_active=True, last_bet_click_time=1778106535.156345, diff=300.0042324066162
+[1778106835.162137] Moving mouse to 262, 643
+[1778107137.3102732] Idle loop woke up. idle_active=True, last_bet_click_time=1778106835.9461558, diff=301.3641173839569
+[1778107137.3134248] Moving mouse to 257, 713
+[1778107438.1086528] Idle loop woke up. idle_active=True, last_bet_click_time=1778107138.1024418, diff=300.0062110424042
+[1778107438.110528] Moving mouse to 214, 839
+[1778107738.9065876] Idle loop woke up. idle_active=True, last_bet_click_time=1778107438.8958702, diff=300.0107173919678
+[1778107738.9075246] Moving mouse to 194, 594
+[1778108039.7113786] Idle loop woke up. idle_active=True, last_bet_click_time=1778107739.6968403, diff=300.01453828811646
+[1778108039.7134426] Moving mouse to 199, 801
+[1778108340.514929] Idle loop woke up. idle_active=True, last_bet_click_time=1778108040.5020754, diff=300.0128536224365
+[1778108340.5159268] Moving mouse to 330, 505
+[1778108641.3055713] Idle loop woke up. idle_active=True, last_bet_click_time=1778108341.3052468, diff=300.00032448768616
+[1778108641.3080735] Moving mouse to 516, 411
+[1778177613.6326776] Idle loop woke up. idle_active=True, last_bet_click_time=1778177309.1278126, diff=304.50486493110657
+[1778177613.685376] Moving mouse to 313, 637
+[1778177914.4745972] Idle loop woke up. idle_active=True, last_bet_click_time=1778177825.1532655, diff=89.32133173942566
+[1778178214.4874215] Idle loop woke up. idle_active=True, last_bet_click_time=1778178088.9988923, diff=125.48852920532227
+[1778178514.495824] Idle loop woke up. idle_active=True, last_bet_click_time=1778178504.9470215, diff=9.548802614212036
+[1778178814.503934] Idle loop woke up. idle_active=True, last_bet_click_time=1778178792.002629, diff=22.50231385231018
+[1778179114.5172317] Idle loop woke up. idle_active=True, last_bet_click_time=1778179003.2856476, diff=111.23158407211304
+[1778179414.5309567] Idle loop woke up. idle_active=True, last_bet_click_time=1778179331.1246781, diff=83.40627861022949
+[1778179714.5420802] Idle loop woke up. idle_active=True, last_bet_click_time=1778179705.3324404, diff=9.20963978767395
+[1778180014.5466747] Idle loop woke up. idle_active=True, last_bet_click_time=1778179881.6404352, diff=132.90623950958252
+[1778180314.553392] Idle loop woke up. idle_active=True, last_bet_click_time=1778180153.623635, diff=160.92975687980652
+[1778180614.558497] Idle loop woke up. idle_active=True, last_bet_click_time=1778180550.4601078, diff=64.09838914871216
+[1778180914.5623105] Idle loop woke up. idle_active=True, last_bet_click_time=1778180876.997114, diff=37.56519651412964
+[1778181214.5755656] Idle loop woke up. idle_active=True, last_bet_click_time=1778181205.0756307, diff=9.499934911727905
+[1778181514.5836697] Idle loop woke up. idle_active=True, last_bet_click_time=1778181472.732711, diff=41.850958585739136
+[1778181814.5848966] Idle loop woke up. idle_active=True, last_bet_click_time=1778181754.5948918, diff=59.990004777908325
+[1778182114.6130757] Idle loop woke up. idle_active=True, last_bet_click_time=1778182048.6486773, diff=65.96439838409424
+[1778182414.6513994] Idle loop woke up. idle_active=True, last_bet_click_time=1778182412.7174242, diff=1.9339752197265625
+[1778182714.658108] Idle loop woke up. idle_active=True, last_bet_click_time=1778182619.3728473, diff=95.28526067733765
+[1778183014.663977] Idle loop woke up. idle_active=True, last_bet_click_time=1778182969.2219958, diff=45.441981077194214
+[1778183314.6664758] Idle loop woke up. idle_active=True, last_bet_click_time=1778183287.4912379, diff=27.175237894058228
+[1778183614.674043] Idle loop woke up. idle_active=True, last_bet_click_time=1778183583.6220565, diff=31.05198645591736
+[1778183914.689874] Idle loop woke up. idle_active=True, last_bet_click_time=1778183872.9861724, diff=41.70370149612427
+[1778184214.6916664] Idle loop woke up. idle_active=True, last_bet_click_time=1778184196.1804352, diff=18.511231184005737
+[1778184514.7027435] Idle loop woke up. idle_active=True, last_bet_click_time=1778184489.9045396, diff=24.798203945159912
+[1778184814.715244] Idle loop woke up. idle_active=True, last_bet_click_time=1778184763.4769642, diff=51.238279819488525
+[1778185114.7178032] Idle loop woke up. idle_active=True, last_bet_click_time=1778185104.0317948, diff=10.68600845336914
+[1778185414.7226186] Idle loop woke up. idle_active=True, last_bet_click_time=1778185399.1636229, diff=15.558995723724365
+[1778185714.724221] Idle loop woke up. idle_active=True, last_bet_click_time=1778185694.0871873, diff=20.637625455856323
+[1778186014.727074] Idle loop woke up. idle_active=True, last_bet_click_time=1778185987.508122, diff=27.2189519405365
+[1778186314.7490895] Idle loop woke up. idle_active=True, last_bet_click_time=1778186314.3706315, diff=0.37845802307128906
+[1778186614.7638953] Idle loop woke up. idle_active=True, last_bet_click_time=1778186437.9302354, diff=176.83365988731384
+[1778186914.77383] Idle loop woke up. idle_active=True, last_bet_click_time=1778186891.06208, diff=23.711750030517578
+[1778187214.776837] Idle loop woke up. idle_active=True, last_bet_click_time=1778187167.8720036, diff=46.90483355522156
+[1778187514.7854187] Idle loop woke up. idle_active=True, last_bet_click_time=1778187506.2600784, diff=8.52534031867981
+[1778187814.797493] Idle loop woke up. idle_active=True, last_bet_click_time=1778187773.967485, diff=40.830008029937744
+[1778188114.7997005] Idle loop woke up. idle_active=True, last_bet_click_time=1778188036.5996668, diff=78.20003366470337
+[1778188414.8156044] Idle loop woke up. idle_active=True, last_bet_click_time=1778188336.4985077, diff=78.31709671020508
+[1778188714.8277109] Idle loop woke up. idle_active=True, last_bet_click_time=1778188669.7218974, diff=45.10581350326538
+[1778189014.8398976] Idle loop woke up. idle_active=True, last_bet_click_time=1778188999.5121741, diff=15.327723503112793
+[1778189314.8518353] Idle loop woke up. idle_active=True, last_bet_click_time=1778189272.919292, diff=41.93254327774048
+[1778189614.858814] Idle loop woke up. idle_active=True, last_bet_click_time=1778189521.5362487, diff=93.32256531715393
+[1778189914.8702395] Idle loop woke up. idle_active=True, last_bet_click_time=1778189800.6968994, diff=114.17334008216858
+[1778190214.8792965] Idle loop woke up. idle_active=True, last_bet_click_time=1778190206.512214, diff=8.367082595825195
+[1778190514.894876] Idle loop woke up. idle_active=True, last_bet_click_time=1778190496.7199168, diff=18.174959182739258
+[1778190814.9068816] Idle loop woke up. idle_active=True, last_bet_click_time=1778190785.9054642, diff=29.00141739845276
+[1778191114.918566] Idle loop woke up. idle_active=True, last_bet_click_time=1778190977.195825, diff=137.72274088859558
+[1778191414.9248188] Idle loop woke up. idle_active=True, last_bet_click_time=1778191393.4727933, diff=21.452025413513184
+[1778191714.9411206] Idle loop woke up. idle_active=True, last_bet_click_time=1778191640.754626, diff=74.18649458885193
+[1778192014.9472315] Idle loop woke up. idle_active=True, last_bet_click_time=1778191988.0948126, diff=26.852418899536133
+[1778192314.959915] Idle loop woke up. idle_active=True, last_bet_click_time=1778192164.700742, diff=150.25917291641235
+[1778192614.9617863] Idle loop woke up. idle_active=True, last_bet_click_time=1778192434.6100307, diff=180.35175561904907
+[1778192914.988661] Idle loop woke up. idle_active=True, last_bet_click_time=1778192838.1421266, diff=76.84653449058533
+[1778193215.0002704] Idle loop woke up. idle_active=True, last_bet_click_time=1778193151.2274473, diff=63.772823095321655
+[1778193515.015695] Idle loop woke up. idle_active=True, last_bet_click_time=1778193502.8580585, diff=12.157636642456055
+[1778193815.0201025] Idle loop woke up. idle_active=True, last_bet_click_time=1778193753.9863918, diff=61.03371071815491
+[1778194115.0229044] Idle loop woke up. idle_active=True, last_bet_click_time=1778194061.8572667, diff=53.165637731552124
+[1778194415.0296507] Idle loop woke up. idle_active=True, last_bet_click_time=1778194384.9323552, diff=30.09729552268982
+[1778194715.0435016] Idle loop woke up. idle_active=True, last_bet_click_time=1778194687.6901948, diff=27.353306770324707
+[1778195015.0846887] Idle loop woke up. idle_active=True, last_bet_click_time=1778194983.82768, diff=31.25700855255127
+[1778195316.5123541] Idle loop woke up. idle_active=True, last_bet_click_time=1778195279.760168, diff=36.75218605995178
+[1778196016.2952197] Idle loop woke up. idle_active=True, last_bet_click_time=1778195932.1321328, diff=84.16308689117432
+[1778196316.3773563] Idle loop woke up. idle_active=True, last_bet_click_time=1778196103.8356879, diff=212.54166841506958
+[1778196616.3814974] Idle loop woke up. idle_active=True, last_bet_click_time=1778196594.6051345, diff=21.776362895965576
+[1778196916.3956451] Idle loop woke up. idle_active=True, last_bet_click_time=1778196891.3090646, diff=25.086580514907837
+[1778197216.4068234] Idle loop woke up. idle_active=True, last_bet_click_time=1778197131.0328658, diff=85.37395763397217
+[1778197516.4175906] Idle loop woke up. idle_active=True, last_bet_click_time=1778197473.3521311, diff=43.06545948982239
+[1778197816.4325042] Idle loop woke up. idle_active=True, last_bet_click_time=1778197812.0211105, diff=4.411393642425537
+[1778198116.440106] Idle loop woke up. idle_active=True, last_bet_click_time=1778198072.2417204, diff=44.19838547706604
+[1778198416.4447505] Idle loop woke up. idle_active=True, last_bet_click_time=1778198414.8782032, diff=1.5665473937988281
+[1778198716.454432] Idle loop woke up. idle_active=True, last_bet_click_time=1778198684.2303364, diff=32.224095582962036
+[1778199016.4583843] Idle loop woke up. idle_active=True, last_bet_click_time=1778198936.4502578, diff=80.00812649726868
+[1778199316.470091] Idle loop woke up. idle_active=True, last_bet_click_time=1778199298.8127751, diff=17.657315969467163
+[1778199616.475565] Idle loop woke up. idle_active=True, last_bet_click_time=1778199597.4143767, diff=19.061188220977783
+[1778199916.5185125] Idle loop woke up. idle_active=True, last_bet_click_time=1778199802.311499, diff=114.20701336860657
+[1778200216.5352426] Idle loop woke up. idle_active=True, last_bet_click_time=1778200197.8657348, diff=18.6695077419281
+[1778200516.541301] Idle loop woke up. idle_active=True, last_bet_click_time=1778200421.2971358, diff=95.24416518211365
+[1778200816.5536282] Idle loop woke up. idle_active=True, last_bet_click_time=1778200678.7769268, diff=137.7767014503479
+[1778201116.5668306] Idle loop woke up. idle_active=True, last_bet_click_time=1778200977.7302132, diff=138.8366174697876
+[1778201416.57309] Idle loop woke up. idle_active=True, last_bet_click_time=1778201271.414045, diff=145.1590449810028
+[1778201716.5771816] Idle loop woke up. idle_active=True, last_bet_click_time=1778201612.9804194, diff=103.59676218032837
+[1778202016.5926518] Idle loop woke up. idle_active=True, last_bet_click_time=1778201935.074618, diff=81.51803374290466
+[1778202316.6102722] Idle loop woke up. idle_active=True, last_bet_click_time=1778202262.216381, diff=54.39487171173096
+[1778202616.6795254] Idle loop woke up. idle_active=True, last_bet_click_time=1778202606.0044782, diff=10.675047159194946
+[1778202916.6826212] Idle loop woke up. idle_active=True, last_bet_click_time=1778202767.291068, diff=149.39155316352844
+[1778203216.691681] Idle loop woke up. idle_active=True, last_bet_click_time=1778203186.5671046, diff=30.124576330184937
+[1778203516.698148] Idle loop woke up. idle_active=True, last_bet_click_time=1778203462.9010124, diff=53.79713559150696
+[1778203816.7154706] Idle loop woke up. idle_active=True, last_bet_click_time=1778203620.8533745, diff=195.8620960712433
+[1778204116.730386] Idle loop woke up. idle_active=True, last_bet_click_time=1778204050.7418911, diff=65.98849487304688
+[1778204416.7485292] Idle loop woke up. idle_active=True, last_bet_click_time=1778204339.385939, diff=77.36259031295776
+[1778204716.7546396] Idle loop woke up. idle_active=True, last_bet_click_time=1778204585.0716612, diff=131.68297839164734
+[1778205016.8361557] Idle loop woke up. idle_active=True, last_bet_click_time=1778204938.9987497, diff=77.83740592002869
+[1778205316.840832] Idle loop woke up. idle_active=True, last_bet_click_time=1778205195.345387, diff=121.49544501304626
+[1778205616.8510606] Idle loop woke up. idle_active=True, last_bet_click_time=1778205603.3153994, diff=13.535661220550537
+[1778205916.8961744] Idle loop woke up. idle_active=True, last_bet_click_time=1778205853.5657485, diff=63.33042597770691
+[1778206216.8979366] Idle loop woke up. idle_active=True, last_bet_click_time=1778206172.6084845, diff=44.28945207595825
+[1778206516.9090219] Idle loop woke up. idle_active=True, last_bet_click_time=1778206441.7249594, diff=75.18406248092651
+[1778206816.9119525] Idle loop woke up. idle_active=True, last_bet_click_time=1778206799.6808422, diff=17.231110334396362
+[1778207116.9453135] Idle loop woke up. idle_active=True, last_bet_click_time=1778207091.7883275, diff=25.156985998153687
+[1778207416.9560974] Idle loop woke up. idle_active=True, last_bet_click_time=1778207275.9303017, diff=141.0257956981659
+[1778207716.9697115] Idle loop woke up. idle_active=True, last_bet_click_time=1778207685.1824927, diff=31.787218809127808
+[1778208016.9802532] Idle loop woke up. idle_active=True, last_bet_click_time=1778207934.2071605, diff=82.77309274673462
+[1778208316.9899845] Idle loop woke up. idle_active=True, last_bet_click_time=1778208231.6117735, diff=85.37821102142334
+[1778208617.0058] Idle loop woke up. idle_active=True, last_bet_click_time=1778208566.8993993, diff=50.10640072822571
+[1778208917.0078652] Idle loop woke up. idle_active=True, last_bet_click_time=1778208888.806244, diff=28.201621294021606
+[1778209217.0202339] Idle loop woke up. idle_active=True, last_bet_click_time=1778209210.1037858, diff=6.91644811630249
+[1778209517.0324383] Idle loop woke up. idle_active=True, last_bet_click_time=1778209411.6238544, diff=105.40858387947083
+[1778209817.0625303] Idle loop woke up. idle_active=True, last_bet_click_time=1778209784.2298, diff=32.832730293273926
+[1778210117.073012] Idle loop woke up. idle_active=True, last_bet_click_time=1778210114.5928478, diff=2.4801642894744873
+[1778210417.0841663] Idle loop woke up. idle_active=True, last_bet_click_time=1778210412.6397645, diff=4.444401741027832
+[1778210717.1177201] Idle loop woke up. idle_active=True, last_bet_click_time=1778210562.2622645, diff=154.85545563697815
+[1778211017.1293135] Idle loop woke up. idle_active=True, last_bet_click_time=1778210957.1366067, diff=59.99270677566528
+[1778211317.1812904] Idle loop woke up. idle_active=True, last_bet_click_time=1778211273.2752311, diff=43.90605926513672
+[1778211617.185304] Idle loop woke up. idle_active=True, last_bet_click_time=1778211561.745989, diff=55.43931484222412
+[1778211917.1953647] Idle loop woke up. idle_active=True, last_bet_click_time=1778211912.5430202, diff=4.652344465255737
+[1778212217.2017076] Idle loop woke up. idle_active=True, last_bet_click_time=1778212213.1260543, diff=4.075653314590454
+[1778212517.2139506] Idle loop woke up. idle_active=True, last_bet_click_time=1778212418.896654, diff=98.31729674339294
+[1778212817.2211218] Idle loop woke up. idle_active=True, last_bet_click_time=1778212749.907264, diff=67.31385779380798
+[1778213117.2303348] Idle loop woke up. idle_active=True, last_bet_click_time=1778213113.5963628, diff=3.633971929550171
+[1778213417.244958] Idle loop woke up. idle_active=True, last_bet_click_time=1778213408.1161797, diff=9.128778219223022
+[1778213717.2525086] Idle loop woke up. idle_active=True, last_bet_click_time=1778213553.4246645, diff=163.82784414291382
+[1778214017.263066] Idle loop woke up. idle_active=True, last_bet_click_time=1778213967.4727123, diff=49.790353775024414
+[1778214317.2928689] Idle loop woke up. idle_active=True, last_bet_click_time=1778214246.3134716, diff=70.97939729690552
+[1778214617.3080442] Idle loop woke up. idle_active=True, last_bet_click_time=1778214499.020039, diff=118.28800511360168
+[1778214917.3179164] Idle loop woke up. idle_active=True, last_bet_click_time=1778214914.1224422, diff=3.195474147796631
+[1778215217.32959] Idle loop woke up. idle_active=True, last_bet_click_time=1778214914.1224422, diff=303.2071478366852
+[1778215217.3507957] Moving mouse to 175, 336
+[1778215518.1491582] Idle loop woke up. idle_active=True, last_bet_click_time=1778215218.1373153, diff=300.0118429660797
+[1778215518.1528058] Moving mouse to 298, 596
+[1778216126.656148] Idle loop woke up. idle_active=True, last_bet_click_time=1778216074.1665368, diff=52.48961114883423
+[1778216426.6653755] Idle loop woke up. idle_active=True, last_bet_click_time=1778216423.8690276, diff=2.7963478565216064
+[1778216726.6708367] Idle loop woke up. idle_active=True, last_bet_click_time=1778216706.2089226, diff=20.4619140625
+[1778217026.6817784] Idle loop woke up. idle_active=True, last_bet_click_time=1778216958.9118125, diff=67.7699658870697
+[1778217326.6958694] Idle loop woke up. idle_active=True, last_bet_click_time=1778217121.5871038, diff=205.10876560211182
+[1778217626.7268467] Idle loop woke up. idle_active=True, last_bet_click_time=1778217578.1211429, diff=48.605703830718994
+[1778217926.7358973] Idle loop woke up. idle_active=True, last_bet_click_time=1778217720.6532755, diff=206.08262181282043
+[1778218226.7458715] Idle loop woke up. idle_active=True, last_bet_click_time=1778218127.106128, diff=99.63974356651306
+[1778218526.7638927] Idle loop woke up. idle_active=True, last_bet_click_time=1778218365.712918, diff=161.05097460746765
+[1778218826.7762423] Idle loop woke up. idle_active=True, last_bet_click_time=1778218819.6633382, diff=7.112904071807861
+[1778219126.7771518] Idle loop woke up. idle_active=True, last_bet_click_time=1778219016.0948768, diff=110.68227505683899
+[1778219426.7923708] Idle loop woke up. idle_active=True, last_bet_click_time=1778219299.685594, diff=127.10677671432495
+[1778219726.8000944] Idle loop woke up. idle_active=True, last_bet_click_time=1778219671.1297255, diff=55.670368909835815
+[1778220026.8237934] Idle loop woke up. idle_active=True, last_bet_click_time=1778220025.9533215, diff=0.8704719543457031
+[1778220326.8267734] Idle loop woke up. idle_active=True, last_bet_click_time=1778220137.6568973, diff=189.1698760986328
+[1778220626.841813] Idle loop woke up. idle_active=True, last_bet_click_time=1778220585.3301888, diff=41.511624336242676
+[1778220926.8439307] Idle loop woke up. idle_active=True, last_bet_click_time=1778220894.392374, diff=32.45155668258667
+[1778221226.849611] Idle loop woke up. idle_active=True, last_bet_click_time=1778221161.3996427, diff=65.4499683380127
+[1778221526.8718917] Idle loop woke up. idle_active=True, last_bet_click_time=1778221524.0208774, diff=2.8510143756866455
+[1778221826.878486] Idle loop woke up. idle_active=True, last_bet_click_time=1778221590.6612854, diff=236.21720051765442
+[1778222126.8819327] Idle loop woke up. idle_active=True, last_bet_click_time=1778222091.678254, diff=35.20367884635925
+[1778222426.8898494] Idle loop woke up. idle_active=True, last_bet_click_time=1778222344.2446685, diff=82.64618587493896
+[1778222726.8937762] Idle loop woke up. idle_active=True, last_bet_click_time=1778222344.2446685, diff=382.64910769462585
+[1778222726.8962724] Moving mouse to 291, 483
+[1778223027.6880484] Idle loop woke up. idle_active=True, last_bet_click_time=1778223024.3052785, diff=3.382769823074341
+[1778223327.7040596] Idle loop woke up. idle_active=True, last_bet_click_time=1778223282.1507447, diff=45.55331492424011
+[1778223627.718396] Idle loop woke up. idle_active=True, last_bet_click_time=1778223626.2898173, diff=1.4285786151885986
+[1778519332.116925] Idle loop woke up. idle_active=True, last_bet_click_time=1778519327.4436924, diff=4.673232555389404
+[1778521062.3599832] Idle loop woke up. idle_active=True, last_bet_click_time=1778520958.997035, diff=103.362948179245
+[1778521362.4298644] Idle loop woke up. idle_active=True, last_bet_click_time=1778521348.3561463, diff=14.073718070983887
+[1778521662.4356117] Idle loop woke up. idle_active=True, last_bet_click_time=1778521651.967023, diff=10.468588829040527
+[1778521962.4368796] Idle loop woke up. idle_active=True, last_bet_click_time=1778521954.9910405, diff=7.445839166641235
+[1778522262.439719] Idle loop woke up. idle_active=True, last_bet_click_time=1778522137.8988473, diff=124.54087162017822
+[1778522562.4460933] Idle loop woke up. idle_active=True, last_bet_click_time=1778522557.374441, diff=5.071652412414551
+[1778522862.4564118] Idle loop woke up. idle_active=True, last_bet_click_time=1778522859.869895, diff=2.586516857147217
+[1778523162.467022] Idle loop woke up. idle_active=True, last_bet_click_time=1778523146.8271325, diff=15.640879392623901
+[1778523462.4794655] Idle loop woke up. idle_active=True, last_bet_click_time=1778523393.48075, diff=68.9987154006958
+[1778523762.4961073] Idle loop woke up. idle_active=True, last_bet_click_time=1778523755.0793042, diff=7.4168031215667725
+[1778524062.505885] Idle loop woke up. idle_active=True, last_bet_click_time=1778524025.7056153, diff=36.80026960372925
+[1778524362.5074732] Idle loop woke up. idle_active=True, last_bet_click_time=1778524180.3079703, diff=182.1995029449463
+[1778524662.519216] Idle loop woke up. idle_active=True, last_bet_click_time=1778524635.5201316, diff=26.99908447265625
+[1778524962.534447] Idle loop woke up. idle_active=True, last_bet_click_time=1778524936.314667, diff=26.21977996826172
+[1778525262.5384238] Idle loop woke up. idle_active=True, last_bet_click_time=1778525151.11758, diff=111.42084383964539
+[1778525562.5460637] Idle loop woke up. idle_active=True, last_bet_click_time=1778525397.4699352, diff=165.0761284828186
+[1778525862.5481577] Idle loop woke up. idle_active=True, last_bet_click_time=1778525856.880484, diff=5.667673587799072
+[1778526162.5576406] Idle loop woke up. idle_active=True, last_bet_click_time=1778526161.0430455, diff=1.5145950317382812
+[1778526462.572199] Idle loop woke up. idle_active=True, last_bet_click_time=1778526390.1850705, diff=72.38715696334839
+[1778526762.5847156] Idle loop woke up. idle_active=True, last_bet_click_time=1778526702.0796008, diff=60.505114793777466
+[1778527062.5913942] Idle loop woke up. idle_active=True, last_bet_click_time=1778526982.689863, diff=79.90153121948242
+[1778527362.6083694] Idle loop woke up. idle_active=True, last_bet_click_time=1778527335.8937325, diff=26.71463680267334
+[1778527662.6122875] Idle loop woke up. idle_active=True, last_bet_click_time=1778527571.2832658, diff=91.329021692276
+[1778527962.6251318] Idle loop woke up. idle_active=True, last_bet_click_time=1778527911.3098397, diff=51.31529211997986
+[1778528262.636948] Idle loop woke up. idle_active=True, last_bet_click_time=1778528202.8598459, diff=59.77710223197937
+[1778528562.642514] Idle loop woke up. idle_active=True, last_bet_click_time=1778528472.877476, diff=89.76503801345825
+[1778528862.6575515] Idle loop woke up. idle_active=True, last_bet_click_time=1778528790.1414852, diff=72.51606631278992
+[1778529162.6616893] Idle loop woke up. idle_active=True, last_bet_click_time=1778529063.0981457, diff=99.56354355812073
+[1778529462.6709056] Idle loop woke up. idle_active=True, last_bet_click_time=1778529461.137248, diff=1.5336575508117676
+[1778529762.6720347] Idle loop woke up. idle_active=True, last_bet_click_time=1778529670.2349317, diff=92.4371030330658
+[1778530062.6744523] Idle loop woke up. idle_active=True, last_bet_click_time=1778529938.3316925, diff=124.34275984764099
+[1778530362.6834095] Idle loop woke up. idle_active=True, last_bet_click_time=1778530242.7927945, diff=119.89061498641968
+[1778530662.6997957] Idle loop woke up. idle_active=True, last_bet_click_time=1778530620.882771, diff=41.81702470779419
+[1778530962.7128375] Idle loop woke up. idle_active=True, last_bet_click_time=1778530913.3222413, diff=49.39059615135193
+[1778531262.7241843] Idle loop woke up. idle_active=True, last_bet_click_time=1778531237.1135755, diff=25.61060881614685
+[1778531562.7394185] Idle loop woke up. idle_active=True, last_bet_click_time=1778531520.9196475, diff=41.81977105140686
+[1778531862.7546098] Idle loop woke up. idle_active=True, last_bet_click_time=1778531844.4105537, diff=18.344056129455566
+[1778532162.761597] Idle loop woke up. idle_active=True, last_bet_click_time=1778532092.7153354, diff=70.04626154899597
+[1778532462.7684155] Idle loop woke up. idle_active=True, last_bet_click_time=1778532374.7356434, diff=88.03277206420898
+[1778532762.7795331] Idle loop woke up. idle_active=True, last_bet_click_time=1778532733.4733455, diff=29.306187629699707
+[1778533062.787771] Idle loop woke up. idle_active=True, last_bet_click_time=1778532990.9497275, diff=71.8380434513092
+[1778533362.79708] Idle loop woke up. idle_active=True, last_bet_click_time=1778533325.8592567, diff=36.93782329559326
+[1778533662.799024] Idle loop woke up. idle_active=True, last_bet_click_time=1778533653.6801143, diff=9.11890983581543
+[1778533962.8013308] Idle loop woke up. idle_active=True, last_bet_click_time=1778533939.3358593, diff=23.465471506118774
+[1778534262.8130176] Idle loop woke up. idle_active=True, last_bet_click_time=1778534208.5627024, diff=54.25031518936157
+[1778534562.8166192] Idle loop woke up. idle_active=True, last_bet_click_time=1778534553.9161518, diff=8.90046739578247
+[1778534862.8222516] Idle loop woke up. idle_active=True, last_bet_click_time=1778534734.7241826, diff=128.09806895256042
+[1778535162.8250904] Idle loop woke up. idle_active=True, last_bet_click_time=1778535109.2985966, diff=53.5264937877655
+[1778535462.837227] Idle loop woke up. idle_active=True, last_bet_click_time=1778535416.7359757, diff=46.10125136375427
+[1778535762.8477318] Idle loop woke up. idle_active=True, last_bet_click_time=1778535757.1729531, diff=5.674778699874878
+[1778536062.862175] Idle loop woke up. idle_active=True, last_bet_click_time=1778535862.4890904, diff=200.3730845451355
+[1778536362.8693795] Idle loop woke up. idle_active=True, last_bet_click_time=1778536325.4651558, diff=37.404223680496216
+[1778536662.8849647] Idle loop woke up. idle_active=True, last_bet_click_time=1778536647.8614545, diff=15.023510217666626
+[1778536962.8989024] Idle loop woke up. idle_active=True, last_bet_click_time=1778536954.6307774, diff=8.268125057220459
+[1778537262.9483173] Idle loop woke up. idle_active=True, last_bet_click_time=1778537262.4363167, diff=0.512000560760498
+[1778537562.9648159] Idle loop woke up. idle_active=True, last_bet_click_time=1778537508.1048958, diff=54.859920024871826
+[1778537862.979138] Idle loop woke up. idle_active=True, last_bet_click_time=1778537764.5335295, diff=98.44560837745667
+[1778538162.9961212] Idle loop woke up. idle_active=True, last_bet_click_time=1778538133.7807505, diff=29.215370655059814
+[1778538463.0117643] Idle loop woke up. idle_active=True, last_bet_click_time=1778538408.8878078, diff=54.12395644187927
+[1778538763.033284] Idle loop woke up. idle_active=True, last_bet_click_time=1778538639.0930665, diff=123.9402174949646
+[1778539063.0424592] Idle loop woke up. idle_active=True, last_bet_click_time=1778538990.1134539, diff=72.92900538444519
+[1778539363.0470421] Idle loop woke up. idle_active=True, last_bet_click_time=1778539331.716502, diff=31.3305401802063
+[1778539663.062889] Idle loop woke up. idle_active=True, last_bet_click_time=1778539644.097985, diff=18.964904069900513
+[1778539963.0740306] Idle loop woke up. idle_active=True, last_bet_click_time=1778539891.4856372, diff=71.58839344978333
+[1778540263.0896597] Idle loop woke up. idle_active=True, last_bet_click_time=1778540248.8447158, diff=14.244943857192993
+[1778540563.097506] Idle loop woke up. idle_active=True, last_bet_click_time=1778540395.7370167, diff=167.36048936843872
+[1778540863.1070008] Idle loop woke up. idle_active=True, last_bet_click_time=1778540395.7370167, diff=467.36998414993286
+[1778540863.21315] Moving mouse to 188, 721
+[1778541164.0289576] Idle loop woke up. idle_active=True, last_bet_click_time=1778540864.0155723, diff=300.0133852958679
+[1778541164.0300071] Moving mouse to 489, 330
+[1778541464.8371916] Idle loop woke up. idle_active=True, last_bet_click_time=1778541164.8233173, diff=300.01387429237366
+[1778541464.8377173] Moving mouse to 337, 352
+[1778541765.6290607] Idle loop woke up. idle_active=True, last_bet_click_time=1778541465.6281993, diff=300.0008614063263
+[1778541765.630993] Moving mouse to 303, 614
+[1778542066.4276724] Idle loop woke up. idle_active=True, last_bet_click_time=1778541766.4216099, diff=300.0060625076294
+[1778542066.4314344] Moving mouse to 168, 887
+[1778542066.471088] Error: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
