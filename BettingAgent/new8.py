@@ -1621,11 +1621,11 @@ if __name__ == '__main__':
     # click_thread = threading.Thread(target=auto_click_center, daemon=True)
     # click_thread.start()
 
-    idle_thread = threading.Thread(target=simulate_idle_activity, daemon=True)
-    idle_thread.start()
+    # idle_thread = threading.Thread(target=simulate_idle_activity, daemon=True)
+    # idle_thread.start()
 
-    pixel_thread = threading.Thread(target=pixel_check_loop, daemon=True)
-    pixel_thread.start()
+    # pixel_thread = threading.Thread(target=pixel_check_loop, daemon=True)
+    # pixel_thread.start()
     # 
 
     kb_thread = threading.Thread(target=keyboard_listener, daemon=True)

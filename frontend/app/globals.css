@@ -517,17 +517,17 @@ body {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* ── Type 1: Parallel betting — up to 3 per row, min 360px each ── */
+/* ── Type 1: Parallel betting — 1 graph per row ── */
 .summary-grid-type1 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.25rem;
 }
 
-/* ── Type 2: Skip pairs — always 2 side by side ── */
+/* ── Type 2: Skip pairs — 1 graph per row ── */
 .summary-grid-type2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1.25rem;
 }
 
