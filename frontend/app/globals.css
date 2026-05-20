@@ -484,3 +484,140 @@ body {
   .nav { padding: 0 1rem; }
   .main { padding: 1rem; }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════
+   SUMMARY PAGE — /summary
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── Section wrapper ── */
+.summary-section {
+  margin-bottom: 3rem;
+}
+
+.summary-section-header {
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.summary-section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.25rem;
+}
+
+.summary-section-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── Type 1: Parallel betting — up to 3 per row, min 360px each ── */
+.summary-grid-type1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ── Type 2: Skip pairs — always 2 side by side ── */
+.summary-grid-type2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+/* ── Skip group (one per skip value) ── */
+.summary-skip-group {
+  margin-bottom: 2.5rem;
+}
+
+.summary-skip-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.summary-skip-badge {
+  padding: 0.25rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: rgba(91, 141, 238, 0.15);
+  color: var(--accent-blue);
+  border: 1px solid rgba(91, 141, 238, 0.3);
+  white-space: nowrap;
+}
+
+.summary-skip-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── Individual balance chart card ── */
+.balance-chart-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.1rem 1.1rem 0.6rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.balance-chart-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: radial-gradient(ellipse 80% 40% at 50% 0%, rgba(91,141,238,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.balance-chart-card:hover {
+  border-color: var(--border-bright);
+  box-shadow: var(--glow-blue);
+}
+
+.balance-chart-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.balance-chart-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.2rem;
+}
+
+.balance-chart-meta {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── Responsive adjustments for summary page ── */
+@media (max-width: 1100px) {
+  .summary-grid-type1 { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .summary-grid-type2 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+  .summary-grid-type1 { grid-template-columns: 1fr; }
+  .summary-section-title { font-size: 1rem; }
+}
+

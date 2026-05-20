@@ -40,6 +40,14 @@ export default function NavBar() {
             📈 Post-Bad Tracking
           </Link>
         </li>
+        <li>
+          <Link
+            href="/summary"
+            className={`nav-link${pathname === '/summary' ? ' active' : ''}`}
+          >
+            📉 Summary
+          </Link>
+        </li>
       </ul>
 
       <div className="nav-status">

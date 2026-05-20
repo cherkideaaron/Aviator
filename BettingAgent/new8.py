@@ -471,6 +471,33 @@ def get_balance_history_data():
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
 
+@app.route('/summary-data', methods=['GET'])
+def get_summary_data():
+    """
+    Returns raw game result values from the current session (game_data) in
+    chronological order for the /summary frontend page.
+    All balance simulation math runs on the frontend — this endpoint is
+    intentionally minimal so a future ML prediction layer can be added here
+    (e.g. a 'predictions' key) without breaking the frontend chart structure.
+    """
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor(dictionary=True)
+        cursor.execute("SELECT id, raw_value FROM game_data ORDER BY id ASC")
+        rows = cursor.fetchall()
+        cursor.close()
+        conn.close()
+        return jsonify({
+            "status": "success",
+            "results": [{"id": int(r["id"]), "value": float(r["raw_value"])} for r in rows],
+            "count": len(rows)
+            # Future ML hook: add "predictions": [...] here alongside "results"
+            # The frontend chart component checks for payload.predictions and
+            # renders it as a second dashed line if present.
+        }), 200
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
 @app.route('/balance-update', methods=['POST'])
 def balance_update():
     try:
