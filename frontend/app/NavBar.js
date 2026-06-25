@@ -48,6 +48,30 @@ export default function NavBar() {
             📉 Summary
           </Link>
         </li>
+        <li>
+          <Link
+            href="/predictions"
+            className={`nav-link${pathname === '/predictions' ? ' active' : ''}`}
+          >
+            🤖 ML Predictions
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/martingale"
+            className={`nav-link${pathname === '/martingale' ? ' active' : ''}`}
+          >
+            🎲 Martingale Strategy
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/straight"
+            className={`nav-link${pathname === '/straight' ? ' active' : ''}`}
+          >
+            📈 Straight Strategy
+          </Link>
+        </li>
       </ul>
 
       <div className="nav-status">

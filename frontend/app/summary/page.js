@@ -162,6 +162,12 @@ function BalanceChart({ series, title, accentColor, chartId }) {
   const minB  = Math.min(...balances);
   const maxB  = Math.max(...balances);
   const range = maxB - minB;
+
+  // Tight Y-axis domain: zoom into actual range + a small buffer so changes are visible
+  const padding = Math.max(range * 0.25, 0.5); // at least ±0.5 buffer
+  const yMin = +(minB - padding).toFixed(4);
+  const yMax = +(maxB + padding).toFixed(4);
+
   let baselinePct = 50;
   if (range > 0) {
     // 0% = top of chart (maxB), 100% = bottom (minB)
@@ -246,10 +252,10 @@ function BalanceChart({ series, title, accentColor, chartId }) {
           <defs>
             {/* Fill gradient: green above baseline, red below */}
             <linearGradient id={gradFillId} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%"           stopColor="#00e5a0" stopOpacity={0.22} />
-              <stop offset={`${baselinePct}%`} stopColor="#00e5a0" stopOpacity={0.06} />
-              <stop offset={`${baselinePct}%`} stopColor="#ff4d6d" stopOpacity={0.06} />
-              <stop offset="100%"         stopColor="#ff4d6d" stopOpacity={0.22} />
+              <stop offset="0%"           stopColor="#00e5a0" stopOpacity={0.45} />
+              <stop offset={`${baselinePct}%`} stopColor="#00e5a0" stopOpacity={0.10} />
+              <stop offset={`${baselinePct}%`} stopColor="#ff4d6d" stopOpacity={0.10} />
+              <stop offset="100%"         stopColor="#ff4d6d" stopOpacity={0.45} />
             </linearGradient>
             {/* Stroke gradient: green above baseline, red below */}
             <linearGradient id={gradLineId} x1="0" y1="0" x2="0" y2="1">
@@ -274,8 +280,10 @@ function BalanceChart({ series, title, accentColor, chartId }) {
             tick={{ fontSize: 9, fill: '#4a5580', fontFamily: 'JetBrains Mono, monospace' }}
             axisLine={false}
             tickLine={false}
-            width={78}
-            tickFormatter={v => v.toLocaleString('en-US', { minimumFractionDigits: 0 })}
+            width={88}
+            domain={[yMin, yMax]}
+            tickFormatter={v => v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+            allowDataOverflow
           />
           <Tooltip content={<ChartTooltip />} />
           <ReferenceLine
@@ -294,11 +302,25 @@ function BalanceChart({ series, title, accentColor, chartId }) {
             type="monotone"
             dataKey="balance"
             stroke={`url(#${gradLineId})`}
-            strokeWidth={2}
+            strokeWidth={2.5}
             fill={`url(#${gradFillId})`}
-            dot={false}
+            dot={(props) => {
+              const { cx, cy, payload } = props;
+              if (!payload.isBet) return null;
+              return (
+                <circle
+                  key={payload.round}
+                  cx={cx}
+                  cy={cy}
+                  r={3}
+                  fill={payload.isWin ? '#00e5a0' : '#ff4d6d'}
+                  stroke="rgba(0,0,0,0.5)"
+                  strokeWidth={1}
+                />
+              );
+            }}
             activeDot={{
-              r: 5,
+              r: 6,
               fill: accentColor,
               stroke: 'rgba(0,0,0,0.7)',
               strokeWidth: 2,

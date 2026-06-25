@@ -1,0 +1,11 @@
+{
+  "toggle": 0,
+  "current_bet": 1.0,
+  "loss_streak": 0,
+  "real_balance": 56.0,
+  "real_min": -3.0,
+  "real_max": 56.0,
+  "sim_balance": 11.200000000000003,
+  "sim_min": -0.6,
+  "sim_max": 11.200000000000003
+}

@@ -5,7 +5,7 @@ import mysql.connector
 import threading
 import time
 import random
-import pyautogui
+# import pyautogui  # DISABLED — no mouse/click automation
 import sys
 import os
 import subprocess
@@ -45,6 +45,194 @@ PATTERN_EVENTS_FILE_121 = 'pattern_events.txt'
 PATTERN_EVENTS_FILE_134 = 'pattern_events2.txt'
 PATTERN_EVENTS_FILE_151 = 'pattern_events3.txt'
 # -------------------------
+
+# --- SIMULATED BALANCE GRAPH CONFIGURATIONS & TABLES FOR ML ---
+GRAPH_CONFIGS = []
+# Parallel betting (5 graphs)
+for odd in [1.5, 2.0, 3.0, 4.0, 5.0]:
+    odd_str = str(odd).replace('.', '_')
+    GRAPH_CONFIGS.append({
+        'table_name': f"graph_p_odd_{odd_str}",
+        'odd': odd,
+        'skip_every': 0
+    })
+# Skip-interval betting (12 graphs)
+for skip in [0, 1, 2, 3, 4, 5]:
+    for odd in [1.5, 2.0]:
+        odd_str = str(odd).replace('.', '_')
+        GRAPH_CONFIGS.append({
+            'table_name': f"graph_s{skip}_odd_{odd_str}",
+            'odd': odd,
+            'skip_every': skip
+        })
+
+def initialize_graph_tables(conn):
+    """Create the 17 graph simulation tables if they do not exist."""
+    print(" [Graphs] Initializing 17 simulation tables in database...", flush=True)
+    cursor = conn.cursor()
+    for cfg in GRAPH_CONFIGS:
+        table_name = cfg['table_name']
+        query = f"""
+        CREATE TABLE IF NOT EXISTS {table_name} (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            game_id BIGINT,
+            timestamp DATETIME,
+            date DATE,
+            raw_value DECIMAL(10, 2),
+            balance DECIMAL(15, 4),
+            balance_change DECIMAL(15, 4),
+            is_bet TINYINT,
+            is_win TINYINT,
+            accumulated_wins INT DEFAULT 0,
+            accumulated_losses INT DEFAULT 0,
+            win_streak INT DEFAULT 0,
+            loss_streak INT DEFAULT 0,
+            INDEX (game_id),
+            INDEX (timestamp),
+            INDEX (date)
+        )
+        """
+        cursor.execute(query)
+    conn.commit()
+    cursor.close()
+    print(" [Graphs] All 17 simulation tables initialized.", flush=True)
+
+def repopulate_all_graphs(conn):
+    """Rebuild all 17 graph simulations chronologically from game_data."""
+    cursor = conn.cursor(dictionary=True)
+    cursor.execute("SELECT id, timestamp, raw_value FROM game_data ORDER BY id ASC")
+    games = cursor.fetchall()
+    cursor.close()
+    
+    if not games:
+        print(" [Graphs] No historical games in game_data. Skipped repopulation.", flush=True)
+        return
+        
+    print(f" [Graphs] Repopulating 17 graph tables from {len(games)} historical games...", flush=True)
+    
+    cursor = conn.cursor()
+    # Clear all 17 tables first
+    for cfg in GRAPH_CONFIGS:
+        cursor.execute(f"DELETE FROM {cfg['table_name']}")
+        
+    # Initialize in-memory state for each graph config
+    states = {}
+    for cfg in GRAPH_CONFIGS:
+        states[cfg['table_name']] = {
+            'balance': 20000.00,
+            'acc_wins': 0,
+            'acc_losses': 0,
+            'w_streak': 0,
+            'l_streak': 0,
+            'count': 0
+        }
+        
+    # Process chronologically
+    for game in games:
+        game_id = game['id']
+        timestamp = game['timestamp']
+        raw_value = float(game['raw_value'])
+        game_date = timestamp.date() if hasattr(timestamp, 'date') else timestamp
+        
+        for cfg in GRAPH_CONFIGS:
+            table_name = cfg['table_name']
+            odd = cfg['odd']
+            skip_every = cfg['skip_every']
+            state = states[table_name]
+            
+            n = state['count']
+            is_bet = 1 if (n % (skip_every + 1) == 0) else 0
+            is_win = 0
+            change = 0.0
+            
+            if is_bet:
+                if raw_value >= odd:
+                    is_win = 1
+                    change = round(0.2 * (odd - 1), 4)
+                    state['acc_wins'] += 1
+                    state['w_streak'] += 1
+                    state['l_streak'] = 0
+                else:
+                    is_win = 0
+                    change = -0.2
+                    state['acc_losses'] += 1
+                    state['w_streak'] = 0
+                    state['l_streak'] += 1
+                state['balance'] = round(state['balance'] + change, 4)
+            else:
+                is_win = 0
+                change = 0.0
+                
+            cursor.execute(f"""
+                INSERT INTO {table_name} (
+                    game_id, timestamp, date, raw_value, balance, balance_change,
+                    is_bet, is_win, accumulated_wins, accumulated_losses,
+                    win_streak, loss_streak
+                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """, (game_id, timestamp, game_date, raw_value, state['balance'], change,
+                  is_bet, is_win, state['acc_wins'], state['acc_losses'],
+                  state['w_streak'], state['l_streak']))
+                  
+            state['count'] += 1
+            
+    conn.commit()
+    cursor.close()
+    print(" [Graphs] Repopulation of 17 graph tables complete.", flush=True)
+
+def record_simulation_step(cursor, game_id, timestamp, raw_value):
+    """Calculate and record the simulation step for all 17 graphs for a single new round."""
+    game_date = timestamp.date() if hasattr(timestamp, 'date') else timestamp
+    for cfg in GRAPH_CONFIGS:
+        table_name = cfg['table_name']
+        odd = cfg['odd']
+        skip_every = cfg['skip_every']
+        
+        cursor.execute(f"SELECT COUNT(*) FROM {table_name}")
+        n = cursor.fetchone()[0]
+        
+        if n > 0:
+            cursor.execute(f"SELECT balance, accumulated_wins, accumulated_losses, win_streak, loss_streak FROM {table_name} ORDER BY id DESC LIMIT 1")
+            last_row = cursor.fetchone()
+            last_balance, acc_wins, acc_losses, w_streak, l_streak = last_row
+        else:
+            last_balance = 20000.00
+            acc_wins = 0
+            acc_losses = 0
+            w_streak = 0
+            l_streak = 0
+            
+        is_bet = 1 if (n % (skip_every + 1) == 0) else 0
+        is_win = 0
+        change = 0.0
+        
+        if is_bet:
+            if raw_value >= odd:
+                is_win = 1
+                change = round(0.2 * (odd - 1), 4)
+                acc_wins += 1
+                w_streak += 1
+                l_streak = 0
+            else:
+                is_win = 0
+                change = -0.2
+                acc_losses += 1
+                w_streak = 0
+                l_streak += 1
+            new_balance = round(float(last_balance) + change, 4)
+        else:
+            is_win = 0
+            change = 0.0
+            new_balance = last_balance
+            
+        cursor.execute(f"""
+            INSERT INTO {table_name} (
+                game_id, timestamp, date, raw_value, balance, balance_change,
+                is_bet, is_win, accumulated_wins, accumulated_losses,
+                win_streak, loss_streak
+            ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """, (game_id, timestamp, game_date, raw_value, new_balance, change,
+              is_bet, is_win, acc_wins, acc_losses, w_streak, l_streak))
+# -----------------------------------------------------------------------------
 
 # --- NEW: BETTING & IDLE STATE ---
 BET_POINTS = [(862, 680), (869, 447)]
@@ -911,6 +1099,12 @@ def save_data():
             cursor.execute(insert_query, (now, clean_value, category, 0, 0, 0, 0, 0, None, None, 0))
             current_game_id = cursor.lastrowid
 
+            # --- RECORD SIMULATED GRAPH STEPS FOR ML ---
+            try:
+                record_simulation_step(cursor, current_game_id, now, clean_value)
+            except Exception as se:
+                print(f" [Graphs] Error recording simulation step: {se}", flush=True)
+
             # print(f" Data: {clean_value}x (ID: {current_game_id}) | G-Target: {gap_click_target_id} | Measured-G: {gap_measured_value}", flush=True)
             print(f" >> Processing ID: {current_game_id} | Target: {gap_click_target_id} | G: {gap_measured_value}", flush=True)
 
@@ -1118,7 +1312,7 @@ def save_data():
                 else:
                     print(f"CLICK! [1.51 GAP] Round {current_game_id} reached target {gap151_target}. Window OK ({_bad_count}/10 < 2.00). Executing...", flush=True)
                     _tp = BET_POINTS[bet_click_toggle]
-                    threading.Thread(target=lambda pt=_tp: pyautogui.click(pt), daemon=True).start()
+                    # threading.Thread(target=lambda pt=_tp: pyautogui.click(pt), daemon=True).start()  # DISABLED
                     
                     # State updates
                     bet_click_toggle = (bet_click_toggle + 1) % len(BET_POINTS)
@@ -1173,7 +1367,7 @@ def save_data():
                 # --- ACTIVE BETTING ENABLED ---
                 target_point = BET_POINTS[bet_click_toggle]
                 print(f"[Toggle {bet_click_toggle}] Clicking at {target_point}", flush=True)
-                threading.Thread(target=lambda: pyautogui.click(target_point), daemon=True).start()
+                # threading.Thread(target=lambda: pyautogui.click(target_point), daemon=True).start()  # DISABLED
                 bet_click_toggle = (bet_click_toggle + 1) % len(BET_POINTS)
                 last_bet_click_time = time.time()
                 # ----------------------------------------------------------
@@ -1450,10 +1644,10 @@ def auto_click_center():
     while True:
         time.sleep(1800)  # Wait 30 minutes BEFORE the first click
         try:
-            screen_width, screen_height = pyautogui.size()
-            center_x = screen_width // 2
-            center_y = screen_height // 2
-            pyautogui.moveTo(center_x, center_y, duration=0.2)
+            # screen_width, screen_height = pyautogui.size()  # DISABLED
+            # center_x = screen_width // 2
+            # center_y = screen_height // 2
+            # pyautogui.moveTo(center_x, center_y, duration=0.2)  # DISABLED
             print(f" Moved to center of screen ({center_x}, {center_y})", flush=True)
         except Exception as e:
             print(f" Auto-click center error: {e}", flush=True)
@@ -1484,7 +1678,7 @@ def simulate_idle_activity():
                 with open("debug_idle.txt", "a") as dbg:
                     dbg.write(f"[{time.time()}] Moving mouse to {rand_x}, {rand_y}\n")
                     
-                pyautogui.moveTo(rand_x, rand_y, duration=0.5)
+                # pyautogui.moveTo(rand_x, rand_y, duration=0.5)  # DISABLED
 
                 # Reset the clock after simulation so we do it again only after another 10 mins idle
                 last_bet_click_time = time.time()
@@ -1507,13 +1701,11 @@ def pixel_check_loop():
     while True:
         time.sleep(INTERVAL)
         try:
-            r, g, b = pyautogui.pixel(CHECK_X, CHECK_Y)
-            if r == 245:
-                print(f" Pixel ({CHECK_X},{CHECK_Y}) R={r}  clicking at ({CLICK_X},{CLICK_Y})", flush=True)
-                pyautogui.click(CLICK_X, CLICK_Y)
-            else:
-                # print(f" Pixel ({CHECK_X},{CHECK_Y}) R={r} (not 245, skipping)", flush=True)
-                pass
+            # r, g, b = pyautogui.pixel(CHECK_X, CHECK_Y)  # DISABLED
+            # if r == 245:  # DISABLED
+            #     print(f" Pixel ({CHECK_X},{CHECK_Y}) R={r}  clicking at ({CLICK_X},{CLICK_Y})", flush=True)
+            #     pyautogui.click(CLICK_X, CLICK_Y)  # DISABLED
+            pass  # pyautogui pixel check DISABLED
         except Exception as e:
             print(f" Pixel check error: {e}", flush=True)
 
@@ -1610,6 +1802,22 @@ if __name__ == '__main__':
             import traceback; traceback.print_exc()
     else:
         print(" RESTART DETECTED: Preserving game_data and tracker_state.")
+
+    # --- INITIALIZE GRAPH TABLES & OPTIONAL HISTORICAL SYNC ---
+    try:
+        conn = mysql.connector.connect(**db_config)
+        initialize_graph_tables(conn)
+        # Always clear 17 graph tables at startup so they start fresh from 0
+        print(" Starting fresh: Clearing 17 graph tables...", flush=True)
+        cursor = conn.cursor()
+        for cfg in GRAPH_CONFIGS:
+            cursor.execute(f"DELETE FROM {cfg['table_name']}")
+        conn.commit()
+        cursor.close()
+        print(" All 17 graph tables cleared and ready to record from 0.", flush=True)
+        conn.close()
+    except Exception as e:
+        print(f" [Graphs] Initialization/Sync error: {e}", flush=True)
 
     print("\n" + "="*50)
     print(" FLYER BACKEND ACTIVE: Port 5000 is listening!")

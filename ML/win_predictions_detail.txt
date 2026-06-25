@@ -1,0 +1,506 @@
+Predicted (win) | Raw Value: 7.70 | Actual: win | Actual 2.0: win | Prob: 51.8% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 70% | Last 20: 70%
+Predicted (win) | Raw Value: 76.66 | Actual: win | Actual 2.0: win | Prob: 55.5% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 80% | Last 20: 75%
+Predicted (win) | Raw Value: 37.01 | Actual: win | Actual 2.0: win | Prob: 63.3% | Conf: High | Last 5: 60% | Last 10: 80% | Last 20: 80%
+Predicted (win) | Raw Value: 6.03 | Actual: win | Actual 2.0: win | Prob: 61.4% | Conf: Medium | Last 5: 80% | Last 10: 80% | Last 20: 80%
+Predicted (win) | Raw Value: 2.77 | Actual: win | Actual 2.0: win | Prob: 56.0% | Conf: Low (skip this one) | Last 5: 100% | Last 10: 80% | Last 20: 80%
+Predicted (win) | Raw Value: 2.35 | Actual: win | Actual 2.0: win | Prob: 57.5% | Conf: Medium | Last 5: 100% | Last 10: 80% | Last 20: 80%
+Predicted (win) | Raw Value: 6.22 | Actual: win | Actual 2.0: win | Prob: 63.3% | Conf: High | Last 5: 80% | Last 10: 70% | Last 20: 75%
+Predicted (win) | Raw Value: 5.66 | Actual: win | Actual 2.0: win | Prob: 60.6% | Conf: Medium | Last 5: 80% | Last 10: 80% | Last 20: 75%
+Predicted (win) | Raw Value: 1.14 | Actual: loss | Actual 2.0: lose | Prob: 68.8% | Conf: High | Last 5: 80% | Last 10: 90% | Last 20: 75%
+Predicted (win) | Raw Value: 1.33 | Actual: loss | Actual 2.0: lose | Prob: 58.8% | Conf: Medium | Last 5: 60% | Last 10: 80% | Last 20: 75%
+Predicted (win) | Raw Value: 1.86 | Actual: loss | Actual 2.0: lose | Prob: 72.0% | Conf: Very High | Last 5: 40% | Last 10: 70% | Last 20: 75%
+Predicted (win) | Raw Value: 1.16 | Actual: loss | Actual 2.0: lose | Prob: 70.2% | Conf: Very High | Last 5: 40% | Last 10: 60% | Last 20: 70%
+Predicted (win) | Raw Value: 6.75 | Actual: win | Actual 2.0: win | Prob: 60.5% | Conf: Medium | Last 5: 20% | Last 10: 50% | Last 20: 65%
+Predicted (win) | Raw Value: 20.05 | Actual: win | Actual 2.0: win | Prob: 73.7% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 60%
+Predicted (win) | Raw Value: 1.22 | Actual: loss | Actual 2.0: lose | Prob: 65.5% | Conf: High | Last 5: 40% | Last 10: 40% | Last 20: 60%
+Predicted (win) | Raw Value: 1.98 | Actual: loss | Actual 2.0: lose | Prob: 60.2% | Conf: Medium | Last 5: 40% | Last 10: 40% | Last 20: 55%
+Predicted (win) | Raw Value: 1.01 | Actual: loss | Actual 2.0: lose | Prob: 63.0% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 55%
+Predicted (win) | Raw Value: 18.93 | Actual: win | Actual 2.0: win | Prob: 58.0% | Conf: Medium | Last 5: 40% | Last 10: 30% | Last 20: 55%
+Predicted (win) | Raw Value: 3.55 | Actual: win | Actual 2.0: win | Prob: 55.1% | Conf: Low (skip this one) | Last 5: 100% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 6.46 | Actual: win | Actual 2.0: win | Prob: 63.3% | Conf: High | Last 5: 80% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 28.93 | Actual: win | Actual 2.0: win | Prob: 54.2% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 90% | Last 20: 55%
+Predicted (win) | Raw Value: 1.78 | Actual: loss | Actual 2.0: lose | Prob: 53.4% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 60% | Last 20: 60%
+Predicted (win) | Raw Value: 1.76 | Actual: loss | Actual 2.0: lose | Prob: 62.2% | Conf: High | Last 5: 20% | Last 10: 50% | Last 20: 60%
+Predicted (win) | Raw Value: 3.42 | Actual: win | Actual 2.0: win | Prob: 53.5% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 6.31 | Actual: win | Actual 2.0: win | Prob: 58.6% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 60%
+Predicted (win) | Raw Value: 1.13 | Actual: loss | Actual 2.0: lose | Prob: 58.4% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 65%
+Predicted (win) | Raw Value: 15.40 | Actual: win | Actual 2.0: win | Prob: 55.9% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 65%
+Predicted (win) | Raw Value: 4.66 | Actual: win | Actual 2.0: win | Prob: 59.3% | Conf: Medium | Last 5: 60% | Last 10: 40% | Last 20: 65%
+Predicted (win) | Raw Value: 1.33 | Actual: loss | Actual 2.0: lose | Prob: 66.2% | Conf: High | Last 5: 80% | Last 10: 50% | Last 20: 65%
+Predicted (win) | Raw Value: 4.45 | Actual: win | Actual 2.0: win | Prob: 65.9% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 60%
+Predicted (win) | Raw Value: 1.56 | Actual: loss | Actual 2.0: lose | Prob: 56.2% | Conf: Medium | Last 5: 60% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 5.92 | Actual: win | Actual 2.0: win | Prob: 56.4% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.01 | Actual: loss | Actual 2.0: lose | Prob: 54.1% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.09 | Actual: loss | Actual 2.0: lose | Prob: 54.7% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 10.96 | Actual: win | Actual 2.0: win | Prob: 62.5% | Conf: High | Last 5: 20% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.51 | Actual: loss | Actual 2.0: lose | Prob: 54.3% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 4.54 | Actual: win | Actual 2.0: win | Prob: 61.4% | Conf: Medium | Last 5: 40% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 12.96 | Actual: win | Actual 2.0: win | Prob: 50.1% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 10.17 | Actual: win | Actual 2.0: win | Prob: 55.4% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.11 | Actual: loss | Actual 2.0: lose | Prob: 55.4% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.87 | Actual: loss | Actual 2.0: lose | Prob: 60.8% | Conf: Medium | Last 5: 60% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 4.71 | Actual: win | Actual 2.0: win | Prob: 69.2% | Conf: High | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.05 | Actual: loss | Actual 2.0: lose | Prob: 55.7% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 37.59 | Actual: win | Actual 2.0: win | Prob: 52.9% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.79 | Actual: loss | Actual 2.0: lose | Prob: 52.9% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.03 | Actual: loss | Actual 2.0: lose | Prob: 54.6% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 71.9% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 2.34 | Actual: win | Actual 2.0: win | Prob: 59.6% | Conf: Medium | Last 5: 20% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.32 | Actual: loss | Actual 2.0: lose | Prob: 51.2% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 2.20 | Actual: win | Actual 2.0: win | Prob: 57.0% | Conf: Medium | Last 5: 20% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.72 | Actual: loss | Actual 2.0: lose | Prob: 66.7% | Conf: High | Last 5: 40% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 1.49 | Actual: loss | Actual 2.0: lose | Prob: 54.0% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.10 | Actual: loss | Actual 2.0: lose | Prob: 67.7% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.45 | Actual: loss | Actual 2.0: lose | Prob: 61.5% | Conf: Medium | Last 5: 20% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.38 | Actual: loss | Actual 2.0: lose | Prob: 69.9% | Conf: High | Last 5: 0% | Last 10: 30% | Last 20: 50%
+Predicted (win) | Raw Value: 1.47 | Actual: loss | Actual 2.0: lose | Prob: 63.9% | Conf: High | Last 5: 0% | Last 10: 20% | Last 20: 45%
+Predicted (win) | Raw Value: 1.36 | Actual: loss | Actual 2.0: lose | Prob: 53.1% | Conf: Low (skip this one) | Last 5: 0% | Last 10: 10% | Last 20: 40%
+Predicted (win) | Raw Value: 1.14 | Actual: loss | Actual 2.0: lose | Prob: 52.7% | Conf: Low (skip this one) | Last 5: 0% | Last 10: 0% | Last 20: 35%
+Predicted (win) | Raw Value: 5.83 | Actual: win | Actual 2.0: win | Prob: 52.8% | Conf: Low (skip this one) | Last 5: 0% | Last 10: 0% | Last 20: 30%
+Predicted (win) | Raw Value: 3.82 | Actual: win | Actual 2.0: win | Prob: 51.2% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 20% | Last 20: 30%
+Predicted (win) | Raw Value: 2.31 | Actual: win | Actual 2.0: win | Prob: 51.7% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 40% | Last 20: 30%
+Predicted (win) | Raw Value: 1.59 | Actual: loss | Actual 2.0: lose | Prob: 54.1% | Conf: Low (skip this one) | Last 5: 100% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 13.13 | Actual: win | Actual 2.0: win | Prob: 65.8% | Conf: High | Last 5: 80% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 22.46 | Actual: win | Actual 2.0: win | Prob: 51.2% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 60% | Last 20: 30%
+Predicted (win) | Raw Value: 4.00 | Actual: win | Actual 2.0: win | Prob: 51.0% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 70% | Last 20: 35%
+Predicted (win) | Raw Value: 1.46 | Actual: loss | Actual 2.0: lose | Prob: 59.4% | Conf: Medium | Last 5: 60% | Last 10: 80% | Last 20: 40%
+Predicted (win) | Raw Value: 3.24 | Actual: win | Actual 2.0: win | Prob: 56.9% | Conf: Medium | Last 5: 60% | Last 10: 70% | Last 20: 40%
+Predicted (win) | Raw Value: 2.40 | Actual: win | Actual 2.0: win | Prob: 64.3% | Conf: High | Last 5: 60% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 4.06 | Actual: win | Actual 2.0: win | Prob: 61.0% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 4.75 | Actual: win | Actual 2.0: win | Prob: 51.7% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 60%
+Predicted (win) | Raw Value: 11.95 | Actual: win | Actual 2.0: win | Prob: 50.8% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 65%
+Predicted (win) | Raw Value: 1.72 | Actual: loss | Actual 2.0: lose | Prob: 51.9% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 60%
+Predicted (win) | Raw Value: 1.01 | Actual: loss | Actual 2.0: lose | Prob: 65.3% | Conf: High | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.51 | Actual: loss | Actual 2.0: lose | Prob: 61.6% | Conf: Medium | Last 5: 0% | Last 10: 30% | Last 20: 45%
+Predicted (win) | Raw Value: 2.92 | Actual: win | Actual 2.0: win | Prob: 52.7% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 5.36 | Actual: win | Actual 2.0: win | Prob: 51.5% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 57.8% | Conf: Medium | Last 5: 60% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.88 | Actual: loss | Actual 2.0: lose | Prob: 53.1% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.98 | Actual: loss | Actual 2.0: lose | Prob: 67.8% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.36 | Actual: loss | Actual 2.0: lose | Prob: 51.7% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 2.81 | Actual: win | Actual 2.0: win | Prob: 66.5% | Conf: High | Last 5: 20% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.05 | Actual: loss | Actual 2.0: lose | Prob: 53.7% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 1.52 | Actual: loss | Actual 2.0: lose | Prob: 71.1% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 30%
+Predicted (win) | Raw Value: 1.51 | Actual: loss | Actual 2.0: lose | Prob: 57.6% | Conf: Medium | Last 5: 40% | Last 10: 30% | Last 20: 25%
+Predicted (win) | Raw Value: 299.23 | Actual: win | Actual 2.0: win | Prob: 54.8% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 20% | Last 20: 25%
+Predicted (win) | Raw Value: 2.42 | Actual: win | Actual 2.0: win | Prob: 55.8% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 80% | Last 20: 65%
+Predicted (win) | Raw Value: 10.83 | Actual: win | Actual 2.0: win | Prob: 56.9% | Conf: Medium | Last 5: 40% | Last 10: 70% | Last 20: 70%
+Predicted (win) | Raw Value: 1.20 | Actual: loss | Actual 2.0: lose | Prob: 55.4% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 60% | Last 20: 75%
+Predicted (win) | Raw Value: 3.96 | Actual: win | Actual 2.0: win | Prob: 54.2% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 50% | Last 20: 70%
+Predicted (win) | Raw Value: 1.87 | Actual: loss | Actual 2.0: lose | Prob: 63.6% | Conf: High | Last 5: 20% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.42 | Actual: loss | Actual 2.0: lose | Prob: 64.9% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 2.00 | Actual: win | Actual 2.0: win | Prob: 58.4% | Conf: Medium | Last 5: 0% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.04 | Actual: loss | Actual 2.0: lose | Prob: 64.3% | Conf: High | Last 5: 40% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 6.43 | Actual: win | Actual 2.0: win | Prob: 59.0% | Conf: Medium | Last 5: 40% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 1.46 | Actual: loss | Actual 2.0: lose | Prob: 64.2% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 61.0% | Conf: Medium | Last 5: 20% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 3.00 | Actual: win | Actual 2.0: win | Prob: 56.5% | Conf: Medium | Last 5: 40% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 2.90 | Actual: win | Actual 2.0: win | Prob: 63.6% | Conf: High | Last 5: 40% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 1.02 | Actual: loss | Actual 2.0: lose | Prob: 62.4% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.31 | Actual: loss | Actual 2.0: lose | Prob: 69.6% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 3.07 | Actual: win | Actual 2.0: win | Prob: 68.9% | Conf: High | Last 5: 20% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 4.48 | Actual: win | Actual 2.0: win | Prob: 66.1% | Conf: High | Last 5: 20% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 1.10 | Actual: loss | Actual 2.0: lose | Prob: 74.1% | Conf: Very High | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 7.70 | Actual: win | Actual 2.0: win | Prob: 67.5% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 4.97 | Actual: win | Actual 2.0: win | Prob: 73.0% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 8.38 | Actual: win | Actual 2.0: win | Prob: 74.9% | Conf: Very High | Last 5: 60% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 2.26 | Actual: win | Actual 2.0: win | Prob: 51.2% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.12 | Actual: loss | Actual 2.0: lose | Prob: 53.4% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 6.31 | Actual: win | Actual 2.0: win | Prob: 71.2% | Conf: Very High | Last 5: 60% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 2.35 | Actual: win | Actual 2.0: win | Prob: 74.1% | Conf: Very High | Last 5: 40% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 852.03 | Actual: win | Actual 2.0: win | Prob: 54.6% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.17 | Actual: loss | Actual 2.0: lose | Prob: 71.4% | Conf: Very High | Last 5: 60% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.12 | Actual: loss | Actual 2.0: lose | Prob: 62.6% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 361.04 | Actual: win | Actual 2.0: win | Prob: 76.6% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.05 | Actual: loss | Actual 2.0: lose | Prob: 53.7% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.61 | Actual: loss | Actual 2.0: lose | Prob: 75.2% | Conf: Very High | Last 5: 60% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.53 | Actual: loss | Actual 2.0: lose | Prob: 51.4% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 45%
+Predicted (win) | Raw Value: 9.87 | Actual: win | Actual 2.0: win | Prob: 73.4% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 2.41 | Actual: win | Actual 2.0: win | Prob: 66.9% | Conf: High | Last 5: 20% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 1.10 | Actual: loss | Actual 2.0: lose | Prob: 69.6% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 72.1% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 1.71 | Actual: loss | Actual 2.0: lose | Prob: 66.4% | Conf: High | Last 5: 20% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 1.21 | Actual: loss | Actual 2.0: lose | Prob: 69.0% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 30%
+Predicted (win) | Raw Value: 2.27 | Actual: win | Actual 2.0: win | Prob: 65.4% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 25%
+Predicted (win) | Raw Value: 2.15 | Actual: win | Actual 2.0: win | Prob: 63.7% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 25%
+Predicted (win) | Raw Value: 1.01 | Actual: loss | Actual 2.0: lose | Prob: 69.9% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 1.62 | Actual: loss | Actual 2.0: lose | Prob: 67.6% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 17.48 | Actual: win | Actual 2.0: win | Prob: 68.1% | Conf: High | Last 5: 20% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 1.32 | Actual: loss | Actual 2.0: lose | Prob: 51.5% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 5.36 | Actual: win | Actual 2.0: win | Prob: 73.7% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 70.4% | Conf: Very High | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.97 | Actual: loss | Actual 2.0: lose | Prob: 62.3% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 4.08 | Actual: win | Actual 2.0: win | Prob: 67.0% | Conf: High | Last 5: 20% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 6.28 | Actual: win | Actual 2.0: win | Prob: 59.9% | Conf: Medium | Last 5: 60% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 1.30 | Actual: loss | Actual 2.0: lose | Prob: 50.3% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.10 | Actual: loss | Actual 2.0: lose | Prob: 53.6% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.47 | Actual: loss | Actual 2.0: lose | Prob: 57.3% | Conf: Medium | Last 5: 20% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.03 | Actual: loss | Actual 2.0: lose | Prob: 80.1% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 45%
+Predicted (win) | Raw Value: 1.50 | Actual: loss | Actual 2.0: lose | Prob: 58.8% | Conf: Medium | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.95 | Actual: loss | Actual 2.0: lose | Prob: 75.4% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 3.39 | Actual: win | Actual 2.0: win | Prob: 80.7% | Conf: Very High | Last 5: 0% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 1.33 | Actual: loss | Actual 2.0: lose | Prob: 51.5% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 2.56 | Actual: win | Actual 2.0: win | Prob: 72.4% | Conf: Very High | Last 5: 20% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 1.19 | Actual: loss | Actual 2.0: lose | Prob: 50.4% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.10 | Actual: loss | Actual 2.0: lose | Prob: 70.0% | Conf: High | Last 5: 60% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 2.45 | Actual: win | Actual 2.0: win | Prob: 76.0% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 1.38 | Actual: loss | Actual 2.0: lose | Prob: 66.8% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 2.19 | Actual: win | Actual 2.0: win | Prob: 68.5% | Conf: High | Last 5: 40% | Last 10: 40% | Last 20: 30%
+Predicted (win) | Raw Value: 2.18 | Actual: win | Actual 2.0: win | Prob: 64.6% | Conf: High | Last 5: 40% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 423.67 | Actual: win | Actual 2.0: win | Prob: 66.0% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 8.39 | Actual: win | Actual 2.0: win | Prob: 76.5% | Conf: Very High | Last 5: 60% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.16 | Actual: loss | Actual 2.0: lose | Prob: 67.8% | Conf: High | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.66 | Actual: loss | Actual 2.0: lose | Prob: 68.2% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.05 | Actual: loss | Actual 2.0: lose | Prob: 70.2% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.70 | Actual: loss | Actual 2.0: lose | Prob: 73.4% | Conf: Very High | Last 5: 20% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 5.74 | Actual: win | Actual 2.0: win | Prob: 51.5% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.21 | Actual: loss | Actual 2.0: lose | Prob: 75.7% | Conf: Very High | Last 5: 60% | Last 10: 50% | Last 20: 40%
+Predicted (win) | Raw Value: 4.02 | Actual: win | Actual 2.0: win | Prob: 70.9% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 2.59 | Actual: win | Actual 2.0: win | Prob: 72.6% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 30%
+Predicted (win) | Raw Value: 1.85 | Actual: loss | Actual 2.0: lose | Prob: 76.3% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.05 | Actual: loss | Actual 2.0: lose | Prob: 52.3% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.24 | Actual: loss | Actual 2.0: lose | Prob: 77.6% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.66 | Actual: loss | Actual 2.0: lose | Prob: 60.1% | Conf: Medium | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 58.9% | Conf: Medium | Last 5: 20% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 5.01 | Actual: win | Actual 2.0: win | Prob: 57.0% | Conf: Medium | Last 5: 20% | Last 10: 20% | Last 20: 30%
+Predicted (win) | Raw Value: 3.54 | Actual: win | Actual 2.0: win | Prob: 51.3% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 2.77 | Actual: win | Actual 2.0: win | Prob: 52.4% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 3.95 | Actual: win | Actual 2.0: win | Prob: 55.1% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 94.56 | Actual: win | Actual 2.0: win | Prob: 60.2% | Conf: Medium | Last 5: 80% | Last 10: 50% | Last 20: 40%
+Predicted (win) | Raw Value: 7.42 | Actual: win | Actual 2.0: win | Prob: 78.3% | Conf: Very High | Last 5: 60% | Last 10: 60% | Last 20: 40%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 68.9% | Conf: High | Last 5: 40% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 1.02 | Actual: loss | Actual 2.0: lose | Prob: 73.6% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.02 | Actual: loss | Actual 2.0: lose | Prob: 69.9% | Conf: High | Last 5: 0% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 1.29 | Actual: loss | Actual 2.0: lose | Prob: 71.4% | Conf: Very High | Last 5: 0% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 2.04 | Actual: win | Actual 2.0: win | Prob: 71.0% | Conf: Very High | Last 5: 0% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 1.08 | Actual: loss | Actual 2.0: lose | Prob: 66.5% | Conf: High | Last 5: 20% | Last 10: 10% | Last 20: 35%
+Predicted (win) | Raw Value: 1.07 | Actual: loss | Actual 2.0: lose | Prob: 54.6% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 20% | Last 20: 25%
+Predicted (win) | Raw Value: 7.09 | Actual: win | Actual 2.0: win | Prob: 72.8% | Conf: Very High | Last 5: 20% | Last 10: 20% | Last 20: 20%
+Predicted (win) | Raw Value: 3.54 | Actual: win | Actual 2.0: win | Prob: 73.5% | Conf: Very High | Last 5: 20% | Last 10: 20% | Last 20: 15%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 51.8% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 30% | Last 20: 20%
+Predicted (win) | Raw Value: 2.86 | Actual: win | Actual 2.0: win | Prob: 77.7% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 20%
+Predicted (win) | Raw Value: 6.19 | Actual: win | Actual 2.0: win | Prob: 72.9% | Conf: Very High | Last 5: 60% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 53.6% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 70% | Last 20: 50%
+Predicted (win) | Raw Value: 1.31 | Actual: loss | Actual 2.0: lose | Prob: 59.5% | Conf: Medium | Last 5: 60% | Last 10: 70% | Last 20: 45%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 53.8% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 3.53 | Actual: win | Actual 2.0: win | Prob: 76.6% | Conf: Very High | Last 5: 20% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 8.30 | Actual: win | Actual 2.0: win | Prob: 61.3% | Conf: Medium | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.68 | Actual: loss | Actual 2.0: lose | Prob: 63.4% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 40%
+Predicted (win) | Raw Value: 1.41 | Actual: loss | Actual 2.0: lose | Prob: 64.8% | Conf: High | Last 5: 0% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 1.41 | Actual: loss | Actual 2.0: lose | Prob: 63.3% | Conf: High | Last 5: 0% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 1.11 | Actual: loss | Actual 2.0: lose | Prob: 66.9% | Conf: High | Last 5: 0% | Last 10: 10% | Last 20: 30%
+Predicted (win) | Raw Value: 4.65 | Actual: win | Actual 2.0: win | Prob: 67.7% | Conf: High | Last 5: 20% | Last 10: 10% | Last 20: 30%
+Predicted (win) | Raw Value: 3.09 | Actual: win | Actual 2.0: win | Prob: 60.4% | Conf: Medium | Last 5: 60% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 4.77 | Actual: win | Actual 2.0: win | Prob: 72.9% | Conf: Very High | Last 5: 60% | Last 10: 60% | Last 20: 40%
+Predicted (win) | Raw Value: 1.29 | Actual: loss | Actual 2.0: lose | Prob: 75.1% | Conf: Very High | Last 5: 60% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.19 | Actual: loss | Actual 2.0: lose | Prob: 77.9% | Conf: Very High | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.49 | Actual: loss | Actual 2.0: lose | Prob: 57.2% | Conf: Medium | Last 5: 20% | Last 10: 40% | Last 20: 55%
+Predicted (win) | Raw Value: 3.52 | Actual: win | Actual 2.0: win | Prob: 76.8% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.20 | Actual: loss | Actual 2.0: lose | Prob: 53.8% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 55%
+Predicted (win) | Raw Value: 1.59 | Actual: loss | Actual 2.0: lose | Prob: 79.0% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 42.89 | Actual: win | Actual 2.0: win | Prob: 76.1% | Conf: Very High | Last 5: 40% | Last 10: 30% | Last 20: 45%
+Predicted (win) | Raw Value: 10.70 | Actual: win | Actual 2.0: win | Prob: 52.6% | Conf: Low (skip this one) | Last 5: 100% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 1.15 | Actual: loss | Actual 2.0: lose | Prob: 73.9% | Conf: Very High | Last 5: 80% | Last 10: 80% | Last 20: 55%
+Predicted (win) | Raw Value: 5609.55 | Actual: win | Actual 2.0: win | Prob: 55.9% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 10% | Last 20: 30%
+Predicted (win) | Raw Value: 6.44 | Actual: win | Actual 2.0: win | Prob: 58.0% | Conf: Medium | Last 5: 20% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 1.84 | Actual: loss | Actual 2.0: lose | Prob: 71.1% | Conf: Very High | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.85 | Actual: loss | Actual 2.0: lose | Prob: 64.7% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.11 | Actual: loss | Actual 2.0: lose | Prob: 63.1% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 1.56 | Actual: loss | Actual 2.0: lose | Prob: 58.7% | Conf: Medium | Last 5: 20% | Last 10: 20% | Last 20: 25%
+Predicted (win) | Raw Value: 1.03 | Actual: loss | Actual 2.0: lose | Prob: 57.8% | Conf: Medium | Last 5: 80% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 1.58 | Actual: loss | Actual 2.0: lose | Prob: 56.3% | Conf: Medium | Last 5: 60% | Last 10: 60% | Last 20: 40%
+Predicted (win) | Raw Value: 1.10 | Actual: loss | Actual 2.0: lose | Prob: 54.5% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 60% | Last 20: 40%
+Predicted (win) | Raw Value: 3.13 | Actual: win | Actual 2.0: win | Prob: 54.7% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 60% | Last 20: 40%
+Predicted (win) | Raw Value: 9.66 | Actual: win | Actual 2.0: win | Prob: 55.1% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 1.53 | Actual: loss | Actual 2.0: lose | Prob: 57.1% | Conf: Medium | Last 5: 80% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.72 | Actual: loss | Actual 2.0: lose | Prob: 54.0% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.78 | Actual: loss | Actual 2.0: lose | Prob: 53.3% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 60% | Last 20: 60%
+Predicted (win) | Raw Value: 2.03 | Actual: win | Actual 2.0: win | Prob: 63.5% | Conf: High | Last 5: 40% | Last 10: 60% | Last 20: 60%
+Predicted (win) | Raw Value: 1.07 | Actual: loss | Actual 2.0: lose | Prob: 50.5% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 3.94 | Actual: win | Actual 2.0: win | Prob: 64.1% | Conf: High | Last 5: 40% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 53.4% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.92 | Actual: loss | Actual 2.0: lose | Prob: 50.3% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 22.87 | Actual: win | Actual 2.0: win | Prob: 58.5% | Conf: Medium | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 3.92 | Actual: win | Actual 2.0: win | Prob: 55.5% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 2.65 | Actual: win | Actual 2.0: win | Prob: 55.8% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 5.24 | Actual: win | Actual 2.0: win | Prob: 57.4% | Conf: Medium | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 3.00 | Actual: win | Actual 2.0: win | Prob: 54.6% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 70% | Last 20: 50%
+Predicted (win) | Raw Value: 1.32 | Actual: loss | Actual 2.0: lose | Prob: 53.9% | Conf: Low (skip this one) | Last 5: 100% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 2.57 | Actual: win | Actual 2.0: win | Prob: 59.5% | Conf: Medium | Last 5: 80% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.21 | Actual: loss | Actual 2.0: lose | Prob: 55.9% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 1.03 | Actual: loss | Actual 2.0: lose | Prob: 64.3% | Conf: High | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.62 | Actual: loss | Actual 2.0: lose | Prob: 59.7% | Conf: Medium | Last 5: 40% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 7.14 | Actual: win | Actual 2.0: win | Prob: 63.1% | Conf: High | Last 5: 20% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 2.68 | Actual: win | Actual 2.0: win | Prob: 61.9% | Conf: Medium | Last 5: 40% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 11.36 | Actual: win | Actual 2.0: win | Prob: 59.2% | Conf: Medium | Last 5: 60% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.09 | Actual: loss | Actual 2.0: lose | Prob: 57.1% | Conf: Medium | Last 5: 60% | Last 10: 50% | Last 20: 60%
+Predicted (win) | Raw Value: 1.13 | Actual: loss | Actual 2.0: lose | Prob: 61.4% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.74 | Actual: loss | Actual 2.0: lose | Prob: 60.3% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 64.4% | Conf: High | Last 5: 20% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.41 | Actual: loss | Actual 2.0: lose | Prob: 65.7% | Conf: High | Last 5: 0% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 2.05 | Actual: win | Actual 2.0: win | Prob: 68.5% | Conf: High | Last 5: 0% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 1.33 | Actual: loss | Actual 2.0: lose | Prob: 62.5% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 54.61 | Actual: win | Actual 2.0: win | Prob: 67.7% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 1.47 | Actual: loss | Actual 2.0: lose | Prob: 54.1% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 57.15 | Actual: win | Actual 2.0: win | Prob: 65.9% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 40%
+Predicted (win) | Raw Value: 1.19 | Actual: loss | Actual 2.0: lose | Prob: 66.7% | Conf: High | Last 5: 60% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.77 | Actual: loss | Actual 2.0: lose | Prob: 54.1% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 5.26 | Actual: win | Actual 2.0: win | Prob: 74.2% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 3.85 | Actual: win | Actual 2.0: win | Prob: 62.6% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 3.90 | Actual: win | Actual 2.0: win | Prob: 59.7% | Conf: Medium | Last 5: 80% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.15 | Actual: loss | Actual 2.0: lose | Prob: 51.4% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 15.68 | Actual: win | Actual 2.0: win | Prob: 67.3% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 2.19 | Actual: win | Actual 2.0: win | Prob: 64.7% | Conf: High | Last 5: 60% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 1.12 | Actual: loss | Actual 2.0: lose | Prob: 61.9% | Conf: Medium | Last 5: 60% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.32 | Actual: loss | Actual 2.0: lose | Prob: 61.7% | Conf: Medium | Last 5: 20% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 4.20 | Actual: win | Actual 2.0: win | Prob: 54.2% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 64.8% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.31 | Actual: loss | Actual 2.0: lose | Prob: 68.8% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 3.02 | Actual: win | Actual 2.0: win | Prob: 69.9% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 30%
+Predicted (win) | Raw Value: 1.11 | Actual: loss | Actual 2.0: lose | Prob: 50.4% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 2.15 | Actual: win | Actual 2.0: win | Prob: 65.7% | Conf: High | Last 5: 20% | Last 10: 30% | Last 20: 25%
+Predicted (win) | Raw Value: 1.49 | Actual: loss | Actual 2.0: lose | Prob: 53.8% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 30%
+Predicted (win) | Raw Value: 1.37 | Actual: loss | Actual 2.0: lose | Prob: 58.3% | Conf: Medium | Last 5: 40% | Last 10: 30% | Last 20: 25%
+Predicted (win) | Raw Value: 2.45 | Actual: win | Actual 2.0: win | Prob: 63.7% | Conf: High | Last 5: 20% | Last 10: 30% | Last 20: 25%
+Predicted (win) | Raw Value: 1.38 | Actual: loss | Actual 2.0: lose | Prob: 50.5% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 1.25 | Actual: loss | Actual 2.0: lose | Prob: 71.1% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 30%
+Predicted (win) | Raw Value: 1.15 | Actual: loss | Actual 2.0: lose | Prob: 59.3% | Conf: Medium | Last 5: 40% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 73.1% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.05 | Actual: loss | Actual 2.0: lose | Prob: 74.9% | Conf: Very High | Last 5: 80% | Last 10: 50% | Last 20: 40%
+Predicted (win) | Raw Value: 4.03 | Actual: win | Actual 2.0: win | Prob: 72.7% | Conf: Very High | Last 5: 60% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 1.29 | Actual: loss | Actual 2.0: lose | Prob: 60.1% | Conf: Medium | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.11 | Actual: loss | Actual 2.0: lose | Prob: 56.3% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 2.27 | Actual: win | Actual 2.0: win | Prob: 50.8% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 5.48 | Actual: win | Actual 2.0: win | Prob: 73.6% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 50%
+Predicted (win) | Raw Value: 1.57 | Actual: loss | Actual 2.0: lose | Prob: 53.0% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 55%
+Predicted (win) | Raw Value: 1.13 | Actual: loss | Actual 2.0: lose | Prob: 78.3% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.83 | Actual: loss | Actual 2.0: lose | Prob: 76.8% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 45%
+Predicted (win) | Raw Value: 1.21 | Actual: loss | Actual 2.0: lose | Prob: 59.7% | Conf: Medium | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.17 | Actual: loss | Actual 2.0: lose | Prob: 57.1% | Conf: Medium | Last 5: 20% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 2.53 | Actual: win | Actual 2.0: win | Prob: 56.0% | Conf: Medium | Last 5: 0% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 7.17 | Actual: win | Actual 2.0: win | Prob: 74.0% | Conf: Very High | Last 5: 40% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.57 | Actual: loss | Actual 2.0: lose | Prob: 53.2% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 1.80 | Actual: loss | Actual 2.0: lose | Prob: 67.4% | Conf: High | Last 5: 60% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.91 | Actual: loss | Actual 2.0: lose | Prob: 67.4% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 1.01 | Actual: loss | Actual 2.0: lose | Prob: 64.7% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 1.06 | Actual: loss | Actual 2.0: lose | Prob: 56.6% | Conf: Medium | Last 5: 20% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 2.50 | Actual: win | Actual 2.0: win | Prob: 73.7% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 1.01 | Actual: loss | Actual 2.0: lose | Prob: 62.4% | Conf: High | Last 5: 20% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 1.53 | Actual: loss | Actual 2.0: lose | Prob: 56.2% | Conf: Medium | Last 5: 20% | Last 10: 20% | Last 20: 25%
+Predicted (win) | Raw Value: 5.41 | Actual: win | Actual 2.0: win | Prob: 56.4% | Conf: Medium | Last 5: 20% | Last 10: 20% | Last 20: 25%
+Predicted (win) | Raw Value: 1.25 | Actual: loss | Actual 2.0: lose | Prob: 51.6% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 4.89 | Actual: win | Actual 2.0: win | Prob: 67.8% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 65.8% | Conf: High | Last 5: 80% | Last 10: 60% | Last 20: 40%
+Predicted (win) | Raw Value: 1.07 | Actual: loss | Actual 2.0: lose | Prob: 59.8% | Conf: Medium | Last 5: 60% | Last 10: 50% | Last 20: 40%
+Predicted (win) | Raw Value: 1.47 | Actual: loss | Actual 2.0: lose | Prob: 63.2% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 67.2% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.02 | Actual: loss | Actual 2.0: lose | Prob: 60.4% | Conf: Medium | Last 5: 20% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 1.18 | Actual: loss | Actual 2.0: lose | Prob: 69.6% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 1.29 | Actual: loss | Actual 2.0: lose | Prob: 66.8% | Conf: High | Last 5: 0% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 3.94 | Actual: win | Actual 2.0: win | Prob: 64.0% | Conf: High | Last 5: 0% | Last 10: 10% | Last 20: 30%
+Predicted (win) | Raw Value: 2.79 | Actual: win | Actual 2.0: win | Prob: 65.7% | Conf: High | Last 5: 40% | Last 10: 20% | Last 20: 20%
+Predicted (win) | Raw Value: 1.78 | Actual: loss | Actual 2.0: lose | Prob: 72.2% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 30%
+Predicted (win) | Raw Value: 46.74 | Actual: win | Actual 2.0: win | Prob: 68.6% | Conf: High | Last 5: 40% | Last 10: 40% | Last 20: 30%
+Predicted (win) | Raw Value: 2.58 | Actual: win | Actual 2.0: win | Prob: 73.3% | Conf: Very High | Last 5: 80% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 1.19 | Actual: loss | Actual 2.0: lose | Prob: 72.4% | Conf: Very High | Last 5: 60% | Last 10: 80% | Last 20: 60%
+Predicted (win) | Raw Value: 1.10 | Actual: loss | Actual 2.0: lose | Prob: 65.0% | Conf: High | Last 5: 40% | Last 10: 70% | Last 20: 60%
+Predicted (win) | Raw Value: 4.12 | Actual: win | Actual 2.0: win | Prob: 69.9% | Conf: High | Last 5: 20% | Last 10: 60% | Last 20: 60%
+Predicted (win) | Raw Value: 2.57 | Actual: win | Actual 2.0: win | Prob: 74.5% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 55%
+Predicted (win) | Raw Value: 1.10 | Actual: loss | Actual 2.0: lose | Prob: 53.0% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 2.78 | Actual: win | Actual 2.0: win | Prob: 51.4% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.27 | Actual: loss | Actual 2.0: lose | Prob: 63.8% | Conf: High | Last 5: 80% | Last 10: 70% | Last 20: 50%
+Predicted (win) | Raw Value: 2.34 | Actual: win | Actual 2.0: win | Prob: 50.5% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 5.68 | Actual: win | Actual 2.0: win | Prob: 58.2% | Conf: Medium | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.10 | Actual: loss | Actual 2.0: lose | Prob: 55.5% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 2.80 | Actual: win | Actual 2.0: win | Prob: 52.4% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 2.53 | Actual: win | Actual 2.0: win | Prob: 76.9% | Conf: Very High | Last 5: 60% | Last 10: 60% | Last 20: 65%
+Predicted (win) | Raw Value: 1.67 | Actual: loss | Actual 2.0: lose | Prob: 75.4% | Conf: Very High | Last 5: 40% | Last 10: 50% | Last 20: 60%
+Predicted (win) | Raw Value: 5.04 | Actual: win | Actual 2.0: win | Prob: 71.3% | Conf: Very High | Last 5: 20% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.64 | Actual: loss | Actual 2.0: lose | Prob: 74.8% | Conf: Very High | Last 5: 20% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.16 | Actual: loss | Actual 2.0: lose | Prob: 78.9% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.67 | Actual: loss | Actual 2.0: lose | Prob: 72.1% | Conf: Very High | Last 5: 40% | Last 10: 30% | Last 20: 50%
+Predicted (win) | Raw Value: 1.61 | Actual: loss | Actual 2.0: lose | Prob: 50.1% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.82 | Actual: loss | Actual 2.0: lose | Prob: 64.4% | Conf: High | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 2.51 | Actual: win | Actual 2.0: win | Prob: 65.3% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 30%
+Predicted (win) | Raw Value: 1.01 | Actual: loss | Actual 2.0: lose | Prob: 65.3% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 3.50 | Actual: win | Actual 2.0: win | Prob: 62.1% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.04 | Actual: loss | Actual 2.0: lose | Prob: 67.4% | Conf: High | Last 5: 60% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 2.74 | Actual: win | Actual 2.0: win | Prob: 70.0% | Conf: Very High | Last 5: 40% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 1.48 | Actual: loss | Actual 2.0: lose | Prob: 70.8% | Conf: Very High | Last 5: 40% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.22 | Actual: loss | Actual 2.0: lose | Prob: 71.2% | Conf: Very High | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 60.36 | Actual: win | Actual 2.0: win | Prob: 72.3% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 2.29 | Actual: win | Actual 2.0: win | Prob: 68.4% | Conf: High | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 9.73 | Actual: win | Actual 2.0: win | Prob: 66.1% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.13 | Actual: loss | Actual 2.0: lose | Prob: 62.7% | Conf: High | Last 5: 20% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 2.38 | Actual: win | Actual 2.0: win | Prob: 67.1% | Conf: High | Last 5: 0% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.55 | Actual: loss | Actual 2.0: lose | Prob: 67.4% | Conf: High | Last 5: 20% | Last 10: 30% | Last 20: 45%
+Predicted (win) | Raw Value: 1.83 | Actual: loss | Actual 2.0: lose | Prob: 65.6% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 4.03 | Actual: win | Actual 2.0: win | Prob: 72.0% | Conf: Very High | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 9.16 | Actual: win | Actual 2.0: win | Prob: 62.3% | Conf: High | Last 5: 60% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 1.38 | Actual: loss | Actual 2.0: lose | Prob: 74.4% | Conf: Very High | Last 5: 60% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 1.39 | Actual: loss | Actual 2.0: lose | Prob: 78.1% | Conf: Very High | Last 5: 40% | Last 10: 50% | Last 20: 30%
+Predicted (win) | Raw Value: 3.71 | Actual: win | Actual 2.0: win | Prob: 50.6% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 5.34 | Actual: win | Actual 2.0: win | Prob: 76.0% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 3.25 | Actual: win | Actual 2.0: win | Prob: 72.9% | Conf: Very High | Last 5: 60% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 3.89 | Actual: win | Actual 2.0: win | Prob: 70.1% | Conf: Very High | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 2.10 | Actual: win | Actual 2.0: win | Prob: 66.4% | Conf: High | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.75 | Actual: loss | Actual 2.0: lose | Prob: 52.2% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.22 | Actual: loss | Actual 2.0: lose | Prob: 77.6% | Conf: Very High | Last 5: 40% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.32 | Actual: loss | Actual 2.0: lose | Prob: 77.0% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 50.3% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 30% | Last 20: 45%
+Predicted (win) | Raw Value: 10.40 | Actual: win | Actual 2.0: win | Prob: 56.5% | Conf: Medium | Last 5: 0% | Last 10: 20% | Last 20: 45%
+Predicted (win) | Raw Value: 2.22 | Actual: win | Actual 2.0: win | Prob: 52.3% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 30% | Last 20: 45%
+Predicted (win) | Raw Value: 1.52 | Actual: loss | Actual 2.0: lose | Prob: 55.1% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 45%
+Predicted (win) | Raw Value: 3.82 | Actual: win | Actual 2.0: win | Prob: 79.1% | Conf: Very High | Last 5: 40% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 5.58 | Actual: win | Actual 2.0: win | Prob: 59.2% | Conf: Medium | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.34 | Actual: loss | Actual 2.0: lose | Prob: 66.2% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 1.33 | Actual: loss | Actual 2.0: lose | Prob: 67.5% | Conf: High | Last 5: 60% | Last 10: 70% | Last 20: 65%
+Predicted (win) | Raw Value: 3.90 | Actual: win | Actual 2.0: win | Prob: 63.6% | Conf: High | Last 5: 20% | Last 10: 60% | Last 20: 60%
+Predicted (win) | Raw Value: 1.68 | Actual: loss | Actual 2.0: lose | Prob: 80.9% | Conf: Very High | Last 5: 80% | Last 10: 50% | Last 20: 65%
+Predicted (win) | Raw Value: 1.39 | Actual: loss | Actual 2.0: lose | Prob: 78.4% | Conf: Very High | Last 5: 40% | Last 10: 60% | Last 20: 60%
+Predicted (win) | Raw Value: 1.65 | Actual: loss | Actual 2.0: lose | Prob: 67.4% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.09 | Actual: loss | Actual 2.0: lose | Prob: 56.2% | Conf: Medium | Last 5: 20% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.42 | Actual: loss | Actual 2.0: lose | Prob: 69.2% | Conf: High | Last 5: 0% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 13.82 | Actual: win | Actual 2.0: win | Prob: 75.7% | Conf: Very High | Last 5: 0% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 2.55 | Actual: win | Actual 2.0: win | Prob: 74.5% | Conf: Very High | Last 5: 60% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 9.13 | Actual: win | Actual 2.0: win | Prob: 72.2% | Conf: Very High | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.11 | Actual: loss | Actual 2.0: lose | Prob: 56.4% | Conf: Medium | Last 5: 60% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 1.22 | Actual: loss | Actual 2.0: lose | Prob: 74.8% | Conf: Very High | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 5.27 | Actual: win | Actual 2.0: win | Prob: 72.2% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 55%
+Predicted (win) | Raw Value: 25.60 | Actual: win | Actual 2.0: win | Prob: 73.1% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 55%
+Predicted (win) | Raw Value: 1.11 | Actual: loss | Actual 2.0: lose | Prob: 73.0% | Conf: Very High | Last 5: 60% | Last 10: 40% | Last 20: 55%
+Predicted (win) | Raw Value: 3.10 | Actual: win | Actual 2.0: win | Prob: 71.1% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 3.91 | Actual: win | Actual 2.0: win | Prob: 69.8% | Conf: High | Last 5: 20% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.73 | Actual: loss | Actual 2.0: lose | Prob: 68.7% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 2.00 | Actual: win | Actual 2.0: win | Prob: 71.6% | Conf: Very High | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 6.46 | Actual: win | Actual 2.0: win | Prob: 71.2% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 64.7% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 2.05 | Actual: win | Actual 2.0: win | Prob: 68.3% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.12 | Actual: loss | Actual 2.0: lose | Prob: 67.4% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.01 | Actual: loss | Actual 2.0: lose | Prob: 65.3% | Conf: High | Last 5: 60% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.13 | Actual: loss | Actual 2.0: lose | Prob: 69.7% | Conf: High | Last 5: 40% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 72.4% | Conf: Very High | Last 5: 20% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.80 | Actual: loss | Actual 2.0: lose | Prob: 70.4% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.30 | Actual: loss | Actual 2.0: lose | Prob: 72.4% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.32 | Actual: loss | Actual 2.0: lose | Prob: 69.2% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 8.13 | Actual: win | Actual 2.0: win | Prob: 73.3% | Conf: Very High | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.24 | Actual: loss | Actual 2.0: lose | Prob: 75.1% | Conf: Very High | Last 5: 60% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.53 | Actual: loss | Actual 2.0: lose | Prob: 77.4% | Conf: Very High | Last 5: 40% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 1.44 | Actual: loss | Actual 2.0: lose | Prob: 73.1% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 3.18 | Actual: win | Actual 2.0: win | Prob: 72.7% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 25%
+Predicted (win) | Raw Value: 4.90 | Actual: win | Actual 2.0: win | Prob: 69.3% | Conf: High | Last 5: 20% | Last 10: 40% | Last 20: 25%
+Predicted (win) | Raw Value: 1.97 | Actual: loss | Actual 2.0: lose | Prob: 71.1% | Conf: Very High | Last 5: 40% | Last 10: 30% | Last 20: 30%
+Predicted (win) | Raw Value: 1.13 | Actual: loss | Actual 2.0: lose | Prob: 52.6% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 50%
+Predicted (win) | Raw Value: 11.67 | Actual: win | Actual 2.0: win | Prob: 69.4% | Conf: High | Last 5: 20% | Last 10: 30% | Last 20: 45%
+Predicted (win) | Raw Value: 3.65 | Actual: win | Actual 2.0: win | Prob: 50.2% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 2.83 | Actual: win | Actual 2.0: win | Prob: 51.6% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 10.66 | Actual: win | Actual 2.0: win | Prob: 53.9% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.63 | Actual: loss | Actual 2.0: lose | Prob: 52.2% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.39 | Actual: loss | Actual 2.0: lose | Prob: 51.0% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.12 | Actual: loss | Actual 2.0: lose | Prob: 50.3% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 2.66 | Actual: win | Actual 2.0: win | Prob: 70.5% | Conf: Very High | Last 5: 40% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 9.11 | Actual: win | Actual 2.0: win | Prob: 59.5% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 2.84 | Actual: win | Actual 2.0: win | Prob: 55.3% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 1.20 | Actual: loss | Actual 2.0: lose | Prob: 57.0% | Conf: Medium | Last 5: 60% | Last 10: 70% | Last 20: 50%
+Predicted (win) | Raw Value: 1.49 | Actual: loss | Actual 2.0: lose | Prob: 76.2% | Conf: Very High | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 2.39 | Actual: win | Actual 2.0: win | Prob: 57.3% | Conf: Medium | Last 5: 60% | Last 10: 50% | Last 20: 45%
+Predicted (win) | Raw Value: 1.30 | Actual: loss | Actual 2.0: lose | Prob: 50.1% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 2.18 | Actual: win | Actual 2.0: win | Prob: 57.1% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 2.17 | Actual: win | Actual 2.0: win | Prob: 52.2% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 54.6% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 60%
+Predicted (win) | Raw Value: 6.41 | Actual: win | Actual 2.0: win | Prob: 59.8% | Conf: Medium | Last 5: 80% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.10 | Actual: loss | Actual 2.0: lose | Prob: 54.3% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.06 | Actual: loss | Actual 2.0: lose | Prob: 64.9% | Conf: High | Last 5: 60% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 3.23 | Actual: win | Actual 2.0: win | Prob: 56.8% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.30 | Actual: loss | Actual 2.0: lose | Prob: 53.9% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 40.59 | Actual: win | Actual 2.0: win | Prob: 56.1% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 3.10 | Actual: win | Actual 2.0: win | Prob: 55.1% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 44.64 | Actual: win | Actual 2.0: win | Prob: 64.5% | Conf: High | Last 5: 80% | Last 10: 70% | Last 20: 60%
+Predicted (win) | Raw Value: 1.09 | Actual: loss | Actual 2.0: lose | Prob: 69.5% | Conf: High | Last 5: 80% | Last 10: 70% | Last 20: 60%
+Predicted (win) | Raw Value: 1.52 | Actual: loss | Actual 2.0: lose | Prob: 70.1% | Conf: Very High | Last 5: 60% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 1.33 | Actual: loss | Actual 2.0: lose | Prob: 63.6% | Conf: High | Last 5: 40% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 3.34 | Actual: win | Actual 2.0: win | Prob: 72.1% | Conf: Very High | Last 5: 20% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.42 | Actual: loss | Actual 2.0: lose | Prob: 69.5% | Conf: High | Last 5: 40% | Last 10: 60% | Last 20: 60%
+Predicted (win) | Raw Value: 1.71 | Actual: loss | Actual 2.0: lose | Prob: 62.7% | Conf: High | Last 5: 20% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.70 | Actual: loss | Actual 2.0: lose | Prob: 65.9% | Conf: High | Last 5: 20% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 5.19 | Actual: win | Actual 2.0: win | Prob: 66.3% | Conf: High | Last 5: 20% | Last 10: 30% | Last 20: 50%
+Predicted (win) | Raw Value: 1.44 | Actual: loss | Actual 2.0: lose | Prob: 67.8% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 55%
+Predicted (win) | Raw Value: 1.08 | Actual: loss | Actual 2.0: lose | Prob: 53.2% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 30% | Last 20: 50%
+Predicted (win) | Raw Value: 3.70 | Actual: win | Actual 2.0: win | Prob: 62.2% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 45%
+Predicted (win) | Raw Value: 6.44 | Actual: win | Actual 2.0: win | Prob: 50.2% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 50%
+Predicted (win) | Raw Value: 1.06 | Actual: loss | Actual 2.0: lose | Prob: 50.9% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 40% | Last 20: 55%
+Predicted (win) | Raw Value: 1.29 | Actual: loss | Actual 2.0: lose | Prob: 66.6% | Conf: High | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 2.43 | Actual: win | Actual 2.0: win | Prob: 65.3% | Conf: High | Last 5: 40% | Last 10: 30% | Last 20: 45%
+Predicted (win) | Raw Value: 28.54 | Actual: win | Actual 2.0: win | Prob: 53.3% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 1.04 | Actual: loss | Actual 2.0: lose | Prob: 50.1% | Conf: Low (skip this one) | Last 5: 100% | Last 10: 80% | Last 20: 50%
+Predicted (win) | Raw Value: 5.00 | Actual: win | Actual 2.0: win | Prob: 54.3% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 1.78 | Actual: loss | Actual 2.0: lose | Prob: 56.0% | Conf: Medium | Last 5: 20% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.01 | Actual: loss | Actual 2.0: lose | Prob: 55.2% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 4.42 | Actual: win | Actual 2.0: win | Prob: 55.5% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.42 | Actual: loss | Actual 2.0: lose | Prob: 55.5% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.95 | Actual: loss | Actual 2.0: lose | Prob: 53.8% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 50%
+Predicted (win) | Raw Value: 1.25 | Actual: loss | Actual 2.0: lose | Prob: 62.8% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 40%
+Predicted (win) | Raw Value: 4.28 | Actual: win | Actual 2.0: win | Prob: 51.9% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 2.36 | Actual: win | Actual 2.0: win | Prob: 50.6% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 1.27 | Actual: loss | Actual 2.0: lose | Prob: 55.4% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 60% | Last 20: 40%
+Predicted (win) | Raw Value: 39.15 | Actual: win | Actual 2.0: win | Prob: 53.6% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 70% | Last 20: 45%
+Predicted (win) | Raw Value: 5.13 | Actual: win | Actual 2.0: win | Prob: 62.9% | Conf: High | Last 5: 80% | Last 10: 70% | Last 20: 55%
+Predicted (win) | Raw Value: 2.76 | Actual: win | Actual 2.0: win | Prob: 55.7% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 65%
+Predicted (win) | Raw Value: 1.75 | Actual: loss | Actual 2.0: lose | Prob: 54.5% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.01 | Actual: loss | Actual 2.0: lose | Prob: 68.2% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 60%
+Predicted (win) | Raw Value: 2.44 | Actual: win | Actual 2.0: win | Prob: 61.5% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.33 | Actual: loss | Actual 2.0: lose | Prob: 66.3% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 60%
+Predicted (win) | Raw Value: 11.41 | Actual: win | Actual 2.0: win | Prob: 69.0% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 65.5% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.22 | Actual: loss | Actual 2.0: lose | Prob: 57.2% | Conf: Medium | Last 5: 40% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 17.28 | Actual: win | Actual 2.0: win | Prob: 52.3% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.79 | Actual: loss | Actual 2.0: lose | Prob: 71.4% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 2.73 | Actual: win | Actual 2.0: win | Prob: 50.5% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 66.7% | Conf: High | Last 5: 20% | Last 10: 20% | Last 20: 35%
+Predicted (win) | Raw Value: 1.50 | Actual: loss | Actual 2.0: lose | Prob: 51.7% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.96 | Actual: loss | Actual 2.0: lose | Prob: 50.9% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 50% | Last 20: 40%
+Predicted (win) | Raw Value: 4.07 | Actual: win | Actual 2.0: win | Prob: 69.8% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 40%
+Predicted (win) | Raw Value: 1.91 | Actual: loss | Actual 2.0: lose | Prob: 65.3% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 40%
+Predicted (win) | Raw Value: 5.38 | Actual: win | Actual 2.0: win | Prob: 54.5% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 6.24 | Actual: win | Actual 2.0: win | Prob: 55.9% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.03 | Actual: loss | Actual 2.0: lose | Prob: 53.6% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 13.42 | Actual: win | Actual 2.0: win | Prob: 56.3% | Conf: Medium | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 6.46 | Actual: win | Actual 2.0: win | Prob: 64.8% | Conf: High | Last 5: 60% | Last 10: 40% | Last 20: 45%
+Predicted (win) | Raw Value: 1.06 | Actual: loss | Actual 2.0: lose | Prob: 57.9% | Conf: Medium | Last 5: 20% | Last 10: 50% | Last 20: 40%
+Predicted (win) | Raw Value: 1.23 | Actual: loss | Actual 2.0: lose | Prob: 64.5% | Conf: High | Last 5: 20% | Last 10: 30% | Last 20: 35%
+Predicted (win) | Raw Value: 2.23 | Actual: win | Actual 2.0: win | Prob: 58.5% | Conf: Medium | Last 5: 20% | Last 10: 20% | Last 20: 30%
+Predicted (win) | Raw Value: 1.18 | Actual: loss | Actual 2.0: lose | Prob: 51.0% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 1.23 | Actual: loss | Actual 2.0: lose | Prob: 54.1% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 1.01 | Actual: loss | Actual 2.0: lose | Prob: 52.1% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 2.12 | Actual: win | Actual 2.0: win | Prob: 74.5% | Conf: Very High | Last 5: 20% | Last 10: 30% | Last 20: 40%
+Predicted (win) | Raw Value: 4.40 | Actual: win | Actual 2.0: win | Prob: 51.0% | Conf: Low (skip this one) | Last 5: 20% | Last 10: 40% | Last 20: 35%
+Predicted (win) | Raw Value: 3.56 | Actual: win | Actual 2.0: win | Prob: 54.6% | Conf: Low (skip this one) | Last 5: 40% | Last 10: 50% | Last 20: 35%
+Predicted (win) | Raw Value: 2.77 | Actual: win | Actual 2.0: win | Prob: 58.5% | Conf: Medium | Last 5: 80% | Last 10: 50% | Last 20: 40%
+Predicted (win) | Raw Value: 2.45 | Actual: win | Actual 2.0: win | Prob: 52.3% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 1.44 | Actual: loss | Actual 2.0: lose | Prob: 51.0% | Conf: Low (skip this one) | Last 5: 100% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 3.53 | Actual: win | Actual 2.0: win | Prob: 56.8% | Conf: Medium | Last 5: 80% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.15 | Actual: loss | Actual 2.0: lose | Prob: 61.5% | Conf: Medium | Last 5: 60% | Last 10: 70% | Last 20: 50%
+Predicted (win) | Raw Value: 21.39 | Actual: win | Actual 2.0: win | Prob: 62.3% | Conf: High | Last 5: 40% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.98 | Actual: loss | Actual 2.0: lose | Prob: 69.9% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.28 | Actual: loss | Actual 2.0: lose | Prob: 60.8% | Conf: Medium | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 3.27 | Actual: win | Actual 2.0: win | Prob: 67.2% | Conf: High | Last 5: 60% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 1.43 | Actual: loss | Actual 2.0: lose | Prob: 72.8% | Conf: Very High | Last 5: 40% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 2.87 | Actual: win | Actual 2.0: win | Prob: 73.2% | Conf: Very High | Last 5: 20% | Last 10: 40% | Last 20: 40%
+Predicted (win) | Raw Value: 2.39 | Actual: win | Actual 2.0: win | Prob: 52.7% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 1.08 | Actual: loss | Actual 2.0: lose | Prob: 51.3% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 70% | Last 20: 65%
+Predicted (win) | Raw Value: 2.97 | Actual: win | Actual 2.0: win | Prob: 69.9% | Conf: High | Last 5: 60% | Last 10: 70% | Last 20: 60%
+Predicted (win) | Raw Value: 1.07 | Actual: loss | Actual 2.0: lose | Prob: 77.1% | Conf: Very High | Last 5: 60% | Last 10: 60% | Last 20: 60%
+Predicted (win) | Raw Value: 2.41 | Actual: win | Actual 2.0: win | Prob: 73.3% | Conf: Very High | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 3.12 | Actual: win | Actual 2.0: win | Prob: 75.4% | Conf: Very High | Last 5: 40% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 7.75 | Actual: win | Actual 2.0: win | Prob: 51.0% | Conf: Low (skip this one) | Last 5: 60% | Last 10: 60% | Last 20: 65%
+Predicted (win) | Raw Value: 1.16 | Actual: loss | Actual 2.0: lose | Prob: 50.3% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 60% | Last 20: 70%
+Predicted (win) | Raw Value: 1.38 | Actual: loss | Actual 2.0: lose | Prob: 53.4% | Conf: Low (skip this one) | Last 5: 80% | Last 10: 70% | Last 20: 65%
+Predicted (win) | Raw Value: 1.00 | Actual: loss | Actual 2.0: lose | Prob: 72.0% | Conf: Very High | Last 5: 60% | Last 10: 70% | Last 20: 60%
+Predicted (win) | Raw Value: 3.76 | Actual: win | Actual 2.0: win | Prob: 69.9% | Conf: High | Last 5: 40% | Last 10: 60% | Last 20: 55%
+Predicted (win) | Raw Value: 3.46 | Actual: win | Actual 2.0: win | Prob: 65.1% | Conf: High | Last 5: 20% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.13 | Actual: loss | Actual 2.0: lose | Prob: 67.7% | Conf: High | Last 5: 60% | Last 10: 50% | Last 20: 55%
+Predicted (win) | Raw Value: 1.35 | Actual: loss | Actual 2.0: lose | Prob: 61.9% | Conf: Medium | Last 5: 40% | Last 10: 40% | Last 20: 50%
+Predicted (win) | Raw Value: 2.34 | Actual: win | Actual 2.0: win | Prob: 71.9% | Conf: Very High | Last 5: 60% | Last 10: 50% | Last 20: 50%
+Predicted (win) | Raw Value: 1.16 | Actual: loss | Actual 2.0: lose | Prob: 65.6% | Conf: High | Last 5: 60% | Last 10: 60% | Last 20: 50%
+Predicted (win) | Raw Value: 1.90 | Actual: loss | Actual 2.0: lose | Prob: 68.6% | Conf: High | Last 5: 60% | Last 10: 60% | Last 20: 45%
+Predicted (win) | Raw Value: 2.01 | Actual: win | Actual 2.0: win | Prob: 69.1% | Conf: High | Last 5: 40% | Last 10: 50% | Last 20: 45%
