@@ -18,112 +18,137 @@ function recentWinRate(history, lookback = 20) {
   return wins / slice.length; // 0.0 – 1.0
 }
 
-/** Returns true if EITHER resume condition is met */
-function shouldResume(history) {
-  const FREQ_THRESHOLD    = 3;    // low-to-high transitions in last 10
-  const WIN_RATE_LOOKBACK = 20;   // window for win-rate check
-  const WIN_RATE_MIN      = 0.60; // 60%
-  const freq    = countLowToHighTransitions(history, 10);
-  const winRate = recentWinRate(history, WIN_RATE_LOOKBACK);
-  return freq >= FREQ_THRESHOLD || winRate >= WIN_RATE_MIN;
-}
-
 function computeStrategies(results) {
-  const BASE_BET = 0.2;
-  const PAUSE_TRIGGER_LOSSES = 3;
+  const BASE_BET           = 0.2;
+  const PAUSE_TRIGGER_LOSSES = 3;    // consecutive losses before pause
+  const MIN_COOLDOWN       = 10;    // mandatory rounds to sit out after pause
+  const FREQ_THRESHOLD     = 3;     // low→high transitions needed in last 10
+  const WIN_RATE_LOOKBACK  = 20;    // window for win-rate check
+  const WIN_RATE_MIN       = 0.60;  // 60 % win rate required
 
   // ── Plain unlimited Martingale ──
   let plainBalance = 0;
   let plainBet = BASE_BET;
   const plainBets = results.map((r, idx) => {
-    const isWin = r.value >= 2.0;
+    const isWin     = r.value >= 2.0;
     const betPlaced = plainBet;
-    const change = isWin ? plainBet : -plainBet;
-    plainBalance += change;
-    plainBet = isWin ? BASE_BET : plainBet * 2;
+    const change    = isWin ? plainBet : -plainBet;
+    plainBalance   += change;
+    plainBet        = isWin ? BASE_BET : plainBet * 2;
     return {
       index: idx + 1,
       timestamp: `Round ${r.id}`,
       isWin,
       betPlaced: Math.round(betPlaced * 100) / 100,
-      change: Math.round(change * 100) / 100,
-      balance: Math.round(plainBalance * 100) / 100,
-      skipped: false,
+      change:    Math.round(change    * 100) / 100,
+      balance:   Math.round(plainBalance * 100) / 100,
+      skipped:   false,
     };
   });
 
-  // ── Frequency-gated smart Martingale ──
-  let smartBalance = 0;
-  let smartBet = BASE_BET;
+  // ── Smart Martingale — mandatory 10-round cooldown, 2-phase resume ──
+  //
+  //  Phase 1 (rounds 10+):  freq check   — ≥ 3 low→high in last 10
+  //  Phase 2 (rounds 20+):  win-rate     — ≥ 60 % of last 20 are ≥ 2.0x
+  //  Rolling after round 20: re-check both every round until one is met.
+  //
+  let smartBalance     = 0;
+  let smartBet         = BASE_BET;
   let consecutiveLosses = 0;
-  let isPaused = false;
-  const rawHistory = [];
-  const smartBets = [];
+  let isPaused         = false;
+  let pausedCount      = 0;   // rounds observed while in cooldown
+  const rawHistory     = [];
+  const smartBets      = [];
 
   results.forEach((r, idx) => {
     const isWin = r.value >= 2.0;
     rawHistory.push(r.value);
 
     if (isPaused) {
-      if (shouldResume(rawHistory)) {
-        isPaused = false;
+      pausedCount++;   // count every round spent in cooldown
+
+      let canResume = false;
+
+      // Phase 1: mandatory 10-round wait has passed → check freq
+      if (pausedCount >= MIN_COOLDOWN) {
+        const freq = countLowToHighTransitions(rawHistory, 10);
+        if (freq >= FREQ_THRESHOLD) canResume = true;
+      }
+
+      // Phase 2: 20-round wait has passed → also allow win-rate check
+      if (!canResume && pausedCount >= WIN_RATE_LOOKBACK) {
+        const winRate = recentWinRate(rawHistory, WIN_RATE_LOOKBACK);
+        if (winRate >= WIN_RATE_MIN) canResume = true;
+      }
+
+      if (canResume) {
+        // Resume: carry forward bet amount, reset streak & counter
+        isPaused          = false;
         consecutiveLosses = 0;
-        // smartBet intentionally NOT reset — continues from current value
+        pausedCount       = 0;
+        // smartBet intentionally NOT reset — continues from paused level
       } else {
+        // Still in cooldown — record as skipped round
         const freq    = countLowToHighTransitions(rawHistory, 10);
-        const winRate = recentWinRate(rawHistory, 20);
+        const winRate = recentWinRate(rawHistory, WIN_RATE_LOOKBACK);
         smartBets.push({
-          index: idx + 1,
-          timestamp: `Round ${r.id}`,
+          index:       idx + 1,
+          timestamp:   `Round ${r.id}`,
           isWin,
-          betPlaced: 0,
-          change: 0,
-          balance: Math.round(smartBalance * 100) / 100,
-          isPaused: true,
-          frequency: freq,
-          winRate: Math.round(winRate * 100),
-          skipped: true,
+          betPlaced:   0,
+          change:      0,
+          balance:     Math.round(smartBalance * 100) / 100,
+          isPaused:    true,
+          pausedCount,               // how many rounds into the cooldown we are
+          frequency:   freq,
+          winRate:     Math.round(winRate * 100),
+          skipped:     true,
         });
         return;
       }
     }
 
+    // ── Place bet ──
     const betPlaced = smartBet;
     const freq    = countLowToHighTransitions(rawHistory, 10);
-    const winRate = recentWinRate(rawHistory, 20);
+    const winRate = recentWinRate(rawHistory, WIN_RATE_LOOKBACK);
     let change;
 
     if (isWin) {
-      change = smartBet;
-      smartBalance += change;
-      smartBet = BASE_BET;
+      change         = smartBet;
+      smartBalance  += change;
+      smartBet       = BASE_BET;
       consecutiveLosses = 0;
     } else {
-      change = -smartBet;
-      smartBalance += change;
-      smartBet *= 2;
+      change         = -smartBet;
+      smartBalance  += change;
+      smartBet      *= 2;
       consecutiveLosses++;
-      if (consecutiveLosses >= PAUSE_TRIGGER_LOSSES) isPaused = true;
+      if (consecutiveLosses >= PAUSE_TRIGGER_LOSSES) {
+        isPaused    = true;
+        pausedCount = 0;   // reset cooldown counter fresh on each new pause
+      }
     }
 
     smartBets.push({
-      index: idx + 1,
-      timestamp: `Round ${r.id}`,
+      index:             idx + 1,
+      timestamp:         `Round ${r.id}`,
       isWin,
-      betPlaced: Math.round(betPlaced * 100) / 100,
-      change: Math.round(change * 100) / 100,
-      balance: Math.round(smartBalance * 100) / 100,
-      isPaused: false,
-      paused: isPaused,
+      betPlaced:         Math.round(betPlaced * 100) / 100,
+      change:            Math.round(change    * 100) / 100,
+      balance:           Math.round(smartBalance * 100) / 100,
+      isPaused:          false,
+      paused:            isPaused,    // true if THIS round triggered the pause
       consecutiveLosses,
-      frequency: freq,
-      winRate: Math.round(winRate * 100),
-      skipped: false,
+      frequency:         freq,
+      winRate:           Math.round(winRate * 100),
+      skipped:           false,
     });
   });
 
   return { plainBets, smartBets };
 }
+
 
 export async function GET() {
   const encoder = new TextEncoder();

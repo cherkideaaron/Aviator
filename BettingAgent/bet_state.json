@@ -2,6 +2,6 @@
   "current_bet": 0.2,
   "loss_streak": 0,
   "max_bet_reached": 0.2,
-  "max_balance": 0.0,
+  "max_balance": 20000.0,
   "consecutive_high_bets": 0
 }

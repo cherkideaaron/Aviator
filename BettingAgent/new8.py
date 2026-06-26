@@ -18,6 +18,41 @@ if hasattr(sys.stdout, 'reconfigure'):
 if hasattr(sys.stderr, 'reconfigure'):
     sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
+# --- AUTO-KILL any previous instance of new8.py (prevents port conflicts) ---
+_my_pid = os.getpid()
+_my_script = os.path.abspath(__file__)
+try:
+    import psutil
+    for _proc in psutil.process_iter(['pid', 'cmdline']):
+        try:
+            _cmdline = ' '.join(_proc.info['cmdline'] or [])
+            if _proc.info['pid'] != _my_pid and 'new8.py' in _cmdline:
+                print(f"[Startup] Killing old instance PID {_proc.info['pid']}...", flush=True)
+                _proc.kill()
+                _proc.wait(timeout=3)
+        except Exception:
+            pass
+except ImportError:
+    # psutil not installed — fall back to wmic (Windows only)
+    try:
+        _result = subprocess.check_output(
+            'wmic process where "name=\'python.exe\'" get ProcessId,CommandLine /FORMAT:CSV',
+            shell=True, stderr=subprocess.DEVNULL
+        ).decode(errors='replace')
+        for _line in _result.splitlines():
+            if 'new8.py' in _line:
+                _parts = _line.strip().split(',')
+                try:
+                    _pid = int(_parts[-1].strip())
+                    if _pid != _my_pid:
+                        print(f"[Startup] Killing old instance PID {_pid}...", flush=True)
+                        subprocess.call(f'taskkill /PID {_pid} /F', shell=True, stderr=subprocess.DEVNULL)
+                except Exception:
+                    pass
+    except Exception:
+        pass
+# ---------------------------------------------------------------------------
+
 round_counter = 0
 restart_lock = threading.Lock()
 is_restarting = False
@@ -662,26 +697,37 @@ def get_balance_history_data():
 @app.route('/summary-data', methods=['GET'])
 def get_summary_data():
     """
-    Returns raw game result values from the current session (game_data) in
-    chronological order for the /summary frontend page.
-    All balance simulation math runs on the frontend — this endpoint is
-    intentionally minimal so a future ML prediction layer can be added here
-    (e.g. a 'predictions' key) without breaking the frontend chart structure.
+    Returns raw game result values for the /straight frontend page.
+    Uses the current session (game_data) if it has data, otherwise falls
+    back to the full all-time history (all_games) so the graphs always render.
+    Capped at the last 2000 results to keep response size manageable.
     """
     try:
         conn = mysql.connector.connect(**db_config)
         cursor = conn.cursor(dictionary=True)
-        cursor.execute("SELECT id, raw_value FROM game_data ORDER BY id ASC")
-        rows = cursor.fetchall()
+
+        # Try current session first
+        cursor.execute("SELECT COUNT(*) as cnt FROM game_data")
+        session_count = cursor.fetchone()['cnt']
+
+        if session_count > 0:
+            cursor.execute("SELECT id, raw_value FROM game_data ORDER BY id ASC")
+            rows = cursor.fetchall()
+            source = "session"
+        else:
+            # Fall back to all-time history (last 2000 for performance)
+            cursor.execute("SELECT id, raw_value FROM all_games ORDER BY id DESC LIMIT 2000")
+            rows = cursor.fetchall()
+            rows = list(reversed(rows))  # chronological order
+            source = "all_games"
+
         cursor.close()
         conn.close()
         return jsonify({
             "status": "success",
             "results": [{"id": int(r["id"]), "value": float(r["raw_value"])} for r in rows],
-            "count": len(rows)
-            # Future ML hook: add "predictions": [...] here alongside "results"
-            # The frontend chart component checks for payload.predictions and
-            # renders it as a second dashed line if present.
+            "count": len(rows),
+            "source": source
         }), 200
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500

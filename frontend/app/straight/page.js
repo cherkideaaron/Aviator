@@ -37,22 +37,54 @@ const SmartTooltip = ({ active, payload }) => {
   const d = payload[0].payload;
 
   if (d.skipped) {
+    const cooldownDone = d.pausedCount >= 10;
+    const phase2Ready  = d.pausedCount >= 20;
     return (
-      <div className="custom-tooltip" style={{ minWidth: '170px' }}>
+      <div className="custom-tooltip" style={{ minWidth: '185px' }}>
         <p style={{ color: 'var(--text-muted)', marginBottom: '6px', fontSize: '11px' }}>Round #{d.index}</p>
-        <p style={{ margin: 0, color: '#f59e0b', fontSize: '12px', fontWeight: 600 }}>⏸ PAUSED</p>
-        <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '11px', marginTop: '4px' }}>Waiting for either condition…</p>
-        <p style={{ margin: 0, fontSize: '11px', marginTop: '4px' }}>
-          <span style={{ color: d.frequency >= 3 ? 'var(--accent-green)' : '#f59e0b' }}>
-            Low→High freq: {d.frequency}/3
-          </span>
+        <p style={{ margin: 0, color: '#f59e0b', fontSize: '12px', fontWeight: 600 }}>⏸ COOLDOWN</p>
+
+        {/* Cooldown progress bar */}
+        <p style={{ margin: '5px 0 2px', fontSize: '11px', color: 'var(--text-muted)' }}>
+          Mandatory wait: <strong style={{ color: cooldownDone ? 'var(--accent-green)' : '#f59e0b' }}>
+            {Math.min(d.pausedCount, 10)}/10 rounds
+          </strong>
         </p>
-        <p style={{ margin: 0, fontSize: '11px' }}>
-          <span style={{ color: d.winRate >= 60 ? 'var(--accent-green)' : '#f59e0b' }}>
-            Win rate (last 20): {d.winRate ?? 0}%
-          </span>
-        </p>
-        <p style={{ margin: 0, borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '3px', marginTop: '3px' }}>
+        <div style={{ height: 4, background: 'rgba(255,255,255,0.08)', borderRadius: 2, marginBottom: '6px' }}>
+          <div style={{
+            height: '100%',
+            width: `${Math.min((d.pausedCount / 10) * 100, 100)}%`,
+            background: cooldownDone ? 'var(--accent-green)' : '#f59e0b',
+            borderRadius: 2,
+            transition: 'width 0.3s'
+          }} />
+        </div>
+
+        {/* Phase 1: freq — shown after cooldown */}
+        {cooldownDone && (
+          <p style={{ margin: 0, fontSize: '11px' }}>
+            <span style={{ color: d.frequency >= 3 ? 'var(--accent-green)' : '#f59e0b' }}>
+              📈 Low→High freq: {d.frequency}/3
+            </span>
+          </p>
+        )}
+
+        {/* Phase 2: win rate — shown after 20 rounds */}
+        {phase2Ready && (
+          <p style={{ margin: 0, fontSize: '11px' }}>
+            <span style={{ color: d.winRate >= 60 ? 'var(--accent-green)' : '#f59e0b' }}>
+              🎯 Win rate (last 20): {d.winRate ?? 0}%
+            </span>
+          </p>
+        )}
+
+        {!cooldownDone && (
+          <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '10px', fontStyle: 'italic' }}>
+            Criteria unlock at round 10…
+          </p>
+        )}
+
+        <p style={{ margin: '5px 0 0', borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '4px' }}>
           Balance: <strong style={{ color: 'var(--text-primary)' }}>${d.balance.toFixed(2)}</strong>
         </p>
       </div>
@@ -72,7 +104,7 @@ const SmartTooltip = ({ active, payload }) => {
         {' | '}WR(20): <strong style={{ color: d.winRate >= 60 ? 'var(--accent-green)' : '#f59e0b' }}>{d.winRate ?? 0}%</strong>
       </p>
       {d.paused && (
-        <p style={{ margin: 0, color: '#f59e0b', fontSize: '11px', fontWeight: 600 }}>⏸ Pause triggered this round</p>
+        <p style={{ margin: 0, color: '#f59e0b', fontSize: '11px', fontWeight: 600 }}>⏸ 10-round cooldown started</p>
       )}
       <p style={{ margin: 0, borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '3px', marginTop: '3px' }}>
         Balance: <strong style={{ color: 'var(--text-primary)' }}>${d.balance.toFixed(2)}</strong>
@@ -80,6 +112,7 @@ const SmartTooltip = ({ active, payload }) => {
     </div>
   );
 };
+
 
 // ── Reusable chart card ────────────────────────────────────────────────────
 function BankrollChart({ data, label, description, TooltipComponent, accentColor, gradientId, showPauseDots }) {
@@ -209,10 +242,13 @@ export default function StraightPage() {
       <div className="page-header">
         <h1 className="page-title">Straight Strategy — Comparison</h1>
         <p className="page-subtitle">
-          Two simulations side by side: unlimited Martingale vs. frequency-gated smart pause.
-          Base bet <strong>$0.20</strong> · Odds <strong>2.0x</strong> · Doubles on loss · Pauses after <strong>3 consecutive losses</strong> until Low→High transitions ≥ <strong>4</strong>
+          Two simulations side by side: unlimited Martingale vs. smart pause with mandatory cooldown.
+          Base bet <strong>$0.20</strong> · Doubles on loss · Pauses after <strong>3 consecutive losses</strong> ·
+          Mandatory <strong>10-round cooldown</strong> · Resumes on Low→High freq ≥ <strong>3</strong> (from round 10)
+          or Win Rate ≥ <strong>60%</strong> over 20 rounds (from round 20)
         </p>
       </div>
+
 
       {loading ? (
         <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-muted)' }}>
@@ -246,11 +282,11 @@ export default function StraightPage() {
             <div style={{ flex: 1, height: 1, background: 'rgba(255,255,255,0.06)' }} />
           </div>
 
-          {/* ── Graph 2: Smart frequency-gated ── */}
+          {/* ── Graph 2: Smart 2-phase cooldown ── */}
           <BankrollChart
             data={smartBets}
-            label="Graph 2 — Smart Martingale (Frequency Gate)"
-            description="Pauses after 3 consecutive losses. Resumes (same bet amount) once Low→High transitions ≥ 4 in last 10 rounds."
+            label="Graph 2 — Smart Martingale (2-Phase Cooldown)"
+            description="Pauses after 3 losses. Mandatory 10-round cooldown. Phase 1: resumes if Low→High freq ≥ 3 in last 10 (from round 10). Phase 2: resumes if Win Rate ≥ 60% in last 20 (from round 20). Rolling check after round 20."
             TooltipComponent={SmartTooltip}
             accentColor="var(--accent-blue, #5b8dee)"
             gradientId="smartGrad"
