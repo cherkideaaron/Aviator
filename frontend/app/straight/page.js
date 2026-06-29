@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {
   ResponsiveContainer,
   AreaChart,
@@ -31,60 +31,80 @@ const PlainTooltip = ({ active, payload }) => {
   );
 };
 
-// ── Tooltip for smart (frequency-gated) graph ──────────────────────────────
+// ── Tooltip for smart (3-state gated) graph ────────────────────────────────
 const SmartTooltip = ({ active, payload }) => {
   if (!active || !payload?.length) return null;
   const d = payload[0].payload;
 
   if (d.skipped) {
-    const cooldownDone = d.pausedCount >= 10;
-    const phase2Ready  = d.pausedCount >= 20;
+    const isWatching = d.mode === 'WATCHING';
+    const isAwaiting = d.mode === 'AWAITING';
     return (
-      <div className="custom-tooltip" style={{ minWidth: '185px' }}>
+      <div className="custom-tooltip" style={{ minWidth: '200px' }}>
         <p style={{ color: 'var(--text-muted)', marginBottom: '6px', fontSize: '11px' }}>Round #{d.index}</p>
-        <p style={{ margin: 0, color: '#f59e0b', fontSize: '12px', fontWeight: 600 }}>⏸ COOLDOWN</p>
 
-        {/* Cooldown progress bar */}
-        <p style={{ margin: '5px 0 2px', fontSize: '11px', color: 'var(--text-muted)' }}>
-          Mandatory wait: <strong style={{ color: cooldownDone ? 'var(--accent-green)' : '#f59e0b' }}>
-            {Math.min(d.pausedCount, 10)}/10 rounds
-          </strong>
-        </p>
-        <div style={{ height: 4, background: 'rgba(255,255,255,0.08)', borderRadius: 2, marginBottom: '6px' }}>
-          <div style={{
-            height: '100%',
-            width: `${Math.min((d.pausedCount / 10) * 100, 100)}%`,
-            background: cooldownDone ? 'var(--accent-green)' : '#f59e0b',
-            borderRadius: 2,
-            transition: 'width 0.3s'
-          }} />
-        </div>
+        {isWatching && (
+          <>
+            <p style={{ margin: 0, color: '#f59e0b', fontSize: '12px', fontWeight: 600 }}>👁 WATCHING</p>
 
-        {/* Phase 1: freq — shown after cooldown */}
-        {cooldownDone && (
-          <p style={{ margin: 0, fontSize: '11px' }}>
-            <span style={{ color: d.frequency >= 3 ? 'var(--accent-green)' : '#f59e0b' }}>
-              📈 Low→High freq: {d.frequency}/3
-            </span>
-          </p>
+            {d.awaitingGood ? (
+              <p style={{ margin: '4px 0 0', fontSize: '11px', color: 'var(--text-muted)', fontStyle: 'italic' }}>
+                Waiting for good result to open 10-round window…
+              </p>
+            ) : d.windowReset ? (
+              <p style={{ margin: '4px 0 0', fontSize: '11px', color: 'var(--accent-red)', fontWeight: 600 }}>
+                ⚠️ 3+ bad streak — window RESET
+              </p>
+            ) : d.windowComplete ? (
+              <p style={{ margin: '4px 0 0', fontSize: '11px', color: 'var(--accent-green)', fontWeight: 600 }}>
+                ✅ Clean window complete → AWAITING entry
+              </p>
+            ) : (
+              <>
+                <p style={{ margin: '5px 0 2px', fontSize: '11px', color: 'var(--text-muted)' }}>
+                  Window progress: <strong style={{ color: (d.watchProgress ?? 0) >= 10 ? 'var(--accent-green)' : '#f59e0b' }}>
+                    {d.watchProgress ?? 0}/10 rounds
+                  </strong>
+                </p>
+                <div style={{ height: 4, background: 'rgba(255,255,255,0.08)', borderRadius: 2, marginBottom: '6px' }}>
+                  <div style={{
+                    height: '100%',
+                    width: `${Math.min(((d.watchProgress ?? 0) / 10) * 100, 100)}%`,
+                    background: (d.watchProgress ?? 0) >= 10 ? 'var(--accent-green)' : '#f59e0b',
+                    borderRadius: 2,
+                  }} />
+                </div>
+                {(d.watchBadStreak ?? 0) > 0 && (
+                  <p style={{ margin: 0, fontSize: '11px', color: '#f59e0b' }}>
+                    ⚠️ Bad streak in window: {d.watchBadStreak}/3
+                  </p>
+                )}
+              </>
+            )}
+          </>
         )}
 
-        {/* Phase 2: win rate — shown after 20 rounds */}
-        {phase2Ready && (
-          <p style={{ margin: 0, fontSize: '11px' }}>
-            <span style={{ color: d.winRate >= 60 ? 'var(--accent-green)' : '#f59e0b' }}>
-              🎯 Win rate (last 20): {d.winRate ?? 0}%
-            </span>
-          </p>
+        {isAwaiting && (
+          <>
+            {d.awaitingTrigger ? (
+              <>
+                <p style={{ margin: 0, color: 'var(--accent-cyan)', fontSize: '12px', fontWeight: 600 }}>🎯 TRIGGER round</p>
+                <p style={{ margin: '4px 0 0', fontSize: '11px', color: 'var(--text-muted)', fontStyle: 'italic' }}>
+                  Bad result detected — no bet this round. Betting starts next round.
+                </p>
+              </>
+            ) : (
+              <>
+                <p style={{ margin: 0, color: 'var(--accent-green)', fontSize: '12px', fontWeight: 600 }}>✅ AWAITING entry</p>
+                <p style={{ margin: '4px 0 0', fontSize: '11px', color: 'var(--text-muted)', fontStyle: 'italic' }}>
+                  Clean window done. Waiting for next bad result to trigger betting…
+                </p>
+              </>
+            )}
+          </>
         )}
 
-        {!cooldownDone && (
-          <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '10px', fontStyle: 'italic' }}>
-            Criteria unlock at round 10…
-          </p>
-        )}
-
-        <p style={{ margin: '5px 0 0', borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '4px' }}>
+        <p style={{ margin: '6px 0 0', borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '4px' }}>
           Balance: <strong style={{ color: 'var(--text-primary)' }}>${d.balance.toFixed(2)}</strong>
         </p>
       </div>
@@ -93,18 +113,17 @@ const SmartTooltip = ({ active, payload }) => {
 
   const color = d.isWin ? 'var(--accent-green)' : 'var(--accent-red)';
   return (
-    <div className="custom-tooltip" style={{ minWidth: '170px' }}>
+    <div className="custom-tooltip" style={{ minWidth: '175px' }}>
       <p style={{ color: 'var(--text-muted)', marginBottom: '6px', fontSize: '11px' }}>Round #{d.index}</p>
       <p style={{ margin: 0 }}>Bet: <strong style={{ color: 'var(--text-primary)' }}>${d.betPlaced.toFixed(2)}</strong></p>
       <p style={{ margin: 0 }}>
         Outcome: <strong style={{ color }}>{d.isWin ? '▲ WIN' : '▼ LOSS'} ({d.isWin ? '+' : ''}${d.change.toFixed(2)})</strong>
       </p>
-      <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '11px' }}>
-        Low→High freq: <strong style={{ color: d.frequency >= 3 ? 'var(--accent-green)' : '#f59e0b' }}>{d.frequency}/3</strong>
-        {' | '}WR(20): <strong style={{ color: d.winRate >= 60 ? 'var(--accent-green)' : '#f59e0b' }}>{d.winRate ?? 0}%</strong>
-      </p>
-      {d.paused && (
-        <p style={{ margin: 0, color: '#f59e0b', fontSize: '11px', fontWeight: 600 }}>⏸ 10-round cooldown started</p>
+      {d.triggeredPause && (
+        <p style={{ margin: 0, color: '#f59e0b', fontSize: '11px', fontWeight: 600 }}>⏸ 3+ bad streak → now WATCHING</p>
+      )}
+      {d.forcedResume && (
+        <p style={{ margin: 0, color: 'var(--accent-cyan)', fontSize: '11px', fontWeight: 600 }}>🚀 FORCE RESUMED</p>
       )}
       <p style={{ margin: 0, borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '3px', marginTop: '3px' }}>
         Balance: <strong style={{ color: 'var(--text-primary)' }}>${d.balance.toFixed(2)}</strong>
@@ -215,6 +234,33 @@ export default function StraightPage() {
   const [smartBets, setSmartBets] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const smartBetsRef = useRef(smartBets);
+  useEffect(() => {
+    smartBetsRef.current = smartBets;
+  }, [smartBets]);
+
+  useEffect(() => {
+    const handleKeyDown = async (e) => {
+      if (e.key === '^') {
+        const bets = smartBetsRef.current;
+        if (bets.length > 0) {
+          const lastBet = bets[bets.length - 1];
+          const match = lastBet.timestamp.match(/Round (\d+)/);
+          if (match) {
+            const roundId = parseInt(match[1], 10);
+            await fetch('/api/straight', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ roundId })
+            });
+          }
+        }
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   useEffect(() => {
     // SSE — server pushes only when a new round result arrives
     const es = new EventSource('/api/straight');
@@ -242,10 +288,11 @@ export default function StraightPage() {
       <div className="page-header">
         <h1 className="page-title">Straight Strategy — Comparison</h1>
         <p className="page-subtitle">
-          Two simulations side by side: unlimited Martingale vs. smart pause with mandatory cooldown.
-          Base bet <strong>$0.20</strong> · Doubles on loss · Pauses after <strong>3 consecutive losses</strong> ·
-          Mandatory <strong>10-round cooldown</strong> · Resumes on Low→High freq ≥ <strong>3</strong> (from round 10)
-          or Win Rate ≥ <strong>60%</strong> over 20 rounds (from round 20)
+          Two simulations side by side: unlimited Martingale vs. Smart 3-State Martingale.
+          Base bet <strong>$0.20</strong> · Doubles on loss · After <strong>3 consecutive bad results</strong> →
+          enters <strong>WATCHING</strong>: waits for clean 10-round window (resets if 3+ streak appears) →
+          then <strong>AWAITING</strong>: sits out until a bad result arrives (the trigger — no bet on it) →
+          betting resumes from the <strong>same bet level</strong> on the very next round.
         </p>
       </div>
 
@@ -282,11 +329,11 @@ export default function StraightPage() {
             <div style={{ flex: 1, height: 1, background: 'rgba(255,255,255,0.06)' }} />
           </div>
 
-          {/* ── Graph 2: Smart 2-phase cooldown ── */}
+          {/* ── Graph 2: Smart 3-state gated ── */}
           <BankrollChart
             data={smartBets}
-            label="Graph 2 — Smart Martingale (2-Phase Cooldown)"
-            description="Pauses after 3 losses. Mandatory 10-round cooldown. Phase 1: resumes if Low→High freq ≥ 3 in last 10 (from round 10). Phase 2: resumes if Win Rate ≥ 60% in last 20 (from round 20). Rolling check after round 20."
+            label="Graph 2 — Smart Martingale (3-State Entry Gate)"
+            description="BETTING: bets every round, doubles on loss. After 3 bad results → WATCHING: waits for a 10-round window with no 3+ bad streak (resets if streak occurs). After clean window → AWAITING: sits out until next bad result, then bets on it and resumes BETTING."
             TooltipComponent={SmartTooltip}
             accentColor="var(--accent-blue, #5b8dee)"
             gradientId="smartGrad"
@@ -297,7 +344,7 @@ export default function StraightPage() {
           <div style={{ display: 'flex', gap: '1.5rem', fontSize: '11px', color: 'var(--text-muted)', flexWrap: 'wrap', marginTop: '-0.5rem', marginBottom: '2rem' }}>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               <span style={{ width: 10, height: 10, borderRadius: '50%', background: '#f59e0b', display: 'inline-block' }} />
-              Amber dots = paused round (no bet placed, balance flat)
+              Amber dots = WATCHING or AWAITING round (no bet, balance flat)
             </span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               <span style={{ width: 22, height: 2, background: 'rgba(255,255,255,0.2)', display: 'inline-block', borderRadius: 2 }} />
