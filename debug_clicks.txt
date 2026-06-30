@@ -20415,3 +20415,892 @@
 [2026-06-29 13:37:14.364298] DEBUG: current_game_id=24498, active_targets=[24501], should_click_now=False
 [2026-06-29 13:37:33.240782] DEBUG: current_game_id=24499, active_targets=[24501], should_click_now=False
 [2026-06-29 13:37:54.400186] DEBUG: current_game_id=24500, active_targets=[24501], should_click_now=False
+[2026-06-30 05:08:37.650478] DEBUG: current_game_id=3, active_targets=[24501], should_click_now=False
+[2026-06-30 05:09:19.725100] DEBUG: current_game_id=4, active_targets=[24501], should_click_now=False
+[2026-06-30 05:09:41.877882] DEBUG: current_game_id=5, active_targets=[24501], should_click_now=False
+[2026-06-30 05:09:50.966138] DEBUG: current_game_id=6, active_targets=[24501, 6], should_click_now=True
+[2026-06-30 05:10:02.623659] DEBUG: current_game_id=7, active_targets=[24501], should_click_now=False
+[2026-06-30 05:10:13.931491] DEBUG: current_game_id=8, active_targets=[8, 24501], should_click_now=True
+[2026-06-30 05:10:32.952110] DEBUG: current_game_id=9, active_targets=[24501], should_click_now=False
+[2026-06-30 05:10:51.035191] DEBUG: current_game_id=10, active_targets=[24501], should_click_now=False
+[2026-06-30 05:11:00.362770] DEBUG: current_game_id=11, active_targets=[11, 24501], should_click_now=True
+[2026-06-30 05:12:06.749588] DEBUG: current_game_id=12, active_targets=[24501], should_click_now=False
+[2026-06-30 05:12:31.727867] DEBUG: current_game_id=13, active_targets=[24501], should_click_now=False
+[2026-06-30 05:12:42.676729] DEBUG: current_game_id=14, active_targets=[17, 24501], should_click_now=False
+[2026-06-30 05:12:53.927770] DEBUG: current_game_id=15, active_targets=[17, 24501], should_click_now=False
+[2026-06-30 05:13:36.925031] DEBUG: current_game_id=16, active_targets=[17, 24501], should_click_now=False
+[2026-06-30 05:13:46.060856] DEBUG: current_game_id=17, active_targets=[17, 21, 24501], should_click_now=True
+[2026-06-30 05:13:57.638922] DEBUG: current_game_id=18, active_targets=[21, 24501], should_click_now=False
+[2026-06-30 05:14:08.769354] DEBUG: current_game_id=19, active_targets=[23, 21, 24501], should_click_now=False
+[2026-06-30 05:14:17.984522] DEBUG: current_game_id=20, active_targets=[23, 21, 24501], should_click_now=False
+[2026-06-30 05:14:32.049825] DEBUG: current_game_id=21, active_targets=[23, 21, 24501], should_click_now=True
+[2026-06-30 05:14:49.530905] DEBUG: current_game_id=22, active_targets=[23, 24501], should_click_now=False
+[2026-06-30 05:15:03.672424] DEBUG: current_game_id=23, active_targets=[23, 24501], should_click_now=True
+[2026-06-30 05:15:16.365179] DEBUG: current_game_id=24, active_targets=[24501], should_click_now=False
+[2026-06-30 05:15:29.354622] DEBUG: current_game_id=25, active_targets=[24501], should_click_now=False
+[2026-06-30 05:15:39.512402] DEBUG: current_game_id=26, active_targets=[28, 24501], should_click_now=False
+[2026-06-30 05:15:48.651529] DEBUG: current_game_id=27, active_targets=[28, 24501], should_click_now=False
+[2026-06-30 05:16:08.250994] DEBUG: current_game_id=28, active_targets=[28, 24501], should_click_now=True
+[2026-06-30 05:16:46.012214] DEBUG: current_game_id=29, active_targets=[24501], should_click_now=False
+[2026-06-30 05:16:55.095171] DEBUG: current_game_id=30, active_targets=[33, 24501], should_click_now=False
+[2026-06-30 05:17:04.936690] DEBUG: current_game_id=31, active_targets=[33, 24501], should_click_now=False
+[2026-06-30 05:17:22.754278] DEBUG: current_game_id=32, active_targets=[33, 24501], should_click_now=False
+[2026-06-30 05:17:32.105985] DEBUG: current_game_id=33, active_targets=[33, 34, 24501], should_click_now=True
+[2026-06-30 05:17:44.281596] DEBUG: current_game_id=34, active_targets=[34, 24501], should_click_now=True
+[2026-06-30 05:18:08.000695] DEBUG: current_game_id=35, active_targets=[24501], should_click_now=False
+[2026-06-30 05:18:28.593291] DEBUG: current_game_id=36, active_targets=[24501], should_click_now=False
+[2026-06-30 05:18:55.679828] DEBUG: current_game_id=37, active_targets=[24501], should_click_now=False
+[2026-06-30 05:19:08.429492] DEBUG: current_game_id=38, active_targets=[24501], should_click_now=False
+[2026-06-30 05:19:24.875077] DEBUG: current_game_id=39, active_targets=[24501], should_click_now=False
+[2026-06-30 05:19:38.045657] DEBUG: current_game_id=40, active_targets=[24501], should_click_now=False
+[2026-06-30 05:19:48.439990] DEBUG: current_game_id=41, active_targets=[43, 24501], should_click_now=False
+[2026-06-30 05:19:58.168223] DEBUG: current_game_id=42, active_targets=[43, 24501], should_click_now=False
+[2026-06-30 05:20:29.950905] DEBUG: current_game_id=43, active_targets=[43, 24501], should_click_now=True
+[2026-06-30 05:20:40.033232] DEBUG: current_game_id=44, active_targets=[45, 24501], should_click_now=False
+[2026-06-30 05:20:57.638178] DEBUG: current_game_id=45, active_targets=[45, 24501], should_click_now=True
+[2026-06-30 05:21:14.018877] DEBUG: current_game_id=46, active_targets=[24501], should_click_now=False
+[2026-06-30 05:21:54.020913] DEBUG: current_game_id=47, active_targets=[24501], should_click_now=False
+[2026-06-30 05:22:48.460637] DEBUG: current_game_id=48, active_targets=[24501], should_click_now=False
+[2026-06-30 05:22:58.839677] DEBUG: current_game_id=49, active_targets=[24501], should_click_now=False
+[2026-06-30 05:23:08.785360] DEBUG: current_game_id=50, active_targets=[52, 24501], should_click_now=False
+[2026-06-30 05:23:33.642190] DEBUG: current_game_id=51, active_targets=[52, 24501], should_click_now=False
+[2026-06-30 05:23:44.483198] DEBUG: current_game_id=52, active_targets=[52, 24501, 54], should_click_now=True
+[2026-06-30 05:24:06.427689] DEBUG: current_game_id=53, active_targets=[24501, 54], should_click_now=False
+[2026-06-30 05:24:18.256743] DEBUG: current_game_id=54, active_targets=[24501, 54], should_click_now=True
+[2026-06-30 05:24:39.089987] DEBUG: current_game_id=55, active_targets=[24501], should_click_now=False
+[2026-06-30 05:25:16.759098] DEBUG: current_game_id=56, active_targets=[24501], should_click_now=False
+[2026-06-30 05:25:27.388254] DEBUG: current_game_id=57, active_targets=[59, 24501], should_click_now=False
+[2026-06-30 05:25:43.999964] DEBUG: current_game_id=58, active_targets=[59, 24501], should_click_now=False
+[2026-06-30 05:25:57.657788] DEBUG: current_game_id=59, active_targets=[59, 24501], should_click_now=True
+[2026-06-30 05:26:16.798347] DEBUG: current_game_id=60, active_targets=[24501], should_click_now=False
+[2026-06-30 05:26:39.736357] DEBUG: current_game_id=61, active_targets=[24501], should_click_now=False
+[2026-06-30 05:26:50.565222] DEBUG: current_game_id=62, active_targets=[24501, 63], should_click_now=False
+[2026-06-30 05:27:40.152765] DEBUG: current_game_id=63, active_targets=[24501, 63], should_click_now=True
+[2026-06-30 05:28:06.298835] DEBUG: current_game_id=64, active_targets=[24501], should_click_now=False
+[2026-06-30 05:28:21.118241] DEBUG: current_game_id=65, active_targets=[24501], should_click_now=False
+[2026-06-30 05:28:30.989735] DEBUG: current_game_id=66, active_targets=[67, 24501], should_click_now=False
+[2026-06-30 05:28:43.154811] DEBUG: current_game_id=67, active_targets=[67, 24501], should_click_now=True
+[2026-06-30 05:29:06.374930] DEBUG: current_game_id=68, active_targets=[24501], should_click_now=False
+[2026-06-30 05:29:15.559596] DEBUG: current_game_id=69, active_targets=[24501, 70], should_click_now=False
+[2026-06-30 05:29:32.442230] DEBUG: current_game_id=70, active_targets=[24501, 70], should_click_now=True
+[2026-06-30 05:29:42.489214] DEBUG: current_game_id=71, active_targets=[72, 24501], should_click_now=False
+[2026-06-30 05:29:58.045751] DEBUG: current_game_id=72, active_targets=[72, 24501], should_click_now=True
+[2026-06-30 05:30:10.681719] DEBUG: current_game_id=73, active_targets=[24501], should_click_now=False
+[2026-06-30 05:30:21.134139] DEBUG: current_game_id=74, active_targets=[77, 24501], should_click_now=False
+[2026-06-30 05:30:31.052647] DEBUG: current_game_id=75, active_targets=[77, 24501], should_click_now=False
+[2026-06-30 05:30:40.149045] DEBUG: current_game_id=76, active_targets=[77, 24501], should_click_now=False
+[2026-06-30 05:30:58.598734] DEBUG: current_game_id=77, active_targets=[77, 24501], should_click_now=True
+[2026-06-30 05:31:12.723716] DEBUG: current_game_id=78, active_targets=[24501], should_click_now=False
+[2026-06-30 05:31:48.155752] DEBUG: current_game_id=79, active_targets=[24501], should_click_now=False
+[2026-06-30 05:31:57.768988] DEBUG: current_game_id=80, active_targets=[81, 24501], should_click_now=False
+[2026-06-30 05:32:07.695025] DEBUG: current_game_id=81, active_targets=[81, 24501], should_click_now=True
+[2026-06-30 05:32:17.521608] DEBUG: current_game_id=82, active_targets=[24501], should_click_now=False
+[2026-06-30 05:32:35.907085] DEBUG: current_game_id=83, active_targets=[24501], should_click_now=False
+[2026-06-30 05:32:56.503743] DEBUG: current_game_id=84, active_targets=[24501], should_click_now=False
+[2026-06-30 05:33:07.259356] DEBUG: current_game_id=85, active_targets=[24501, 86], should_click_now=False
+[2026-06-30 05:33:19.141138] DEBUG: current_game_id=86, active_targets=[24501, 86], should_click_now=True
+[2026-06-30 05:33:30.503890] DEBUG: current_game_id=87, active_targets=[24501, 87], should_click_now=True
+[2026-06-30 05:33:44.802441] DEBUG: current_game_id=88, active_targets=[24501], should_click_now=False
+[2026-06-30 05:33:59.550625] DEBUG: current_game_id=89, active_targets=[24501], should_click_now=False
+[2026-06-30 05:34:10.728317] DEBUG: current_game_id=90, active_targets=[93, 24501], should_click_now=False
+[2026-06-30 05:34:26.861479] DEBUG: current_game_id=91, active_targets=[93, 24501], should_click_now=False
+[2026-06-30 05:34:46.967986] DEBUG: current_game_id=92, active_targets=[93, 24501], should_click_now=False
+[2026-06-30 05:35:05.543899] DEBUG: current_game_id=93, active_targets=[93, 24501], should_click_now=True
+[2026-06-30 05:35:33.189320] DEBUG: current_game_id=94, active_targets=[24501], should_click_now=False
+[2026-06-30 05:35:43.047042] DEBUG: current_game_id=95, active_targets=[96, 24501], should_click_now=False
+[2026-06-30 05:36:26.718393] DEBUG: current_game_id=96, active_targets=[96, 24501], should_click_now=True
+[2026-06-30 05:36:36.576917] DEBUG: current_game_id=97, active_targets=[98, 24501], should_click_now=False
+[2026-06-30 05:36:45.710500] DEBUG: current_game_id=98, active_targets=[98, 24501], should_click_now=True
+[2026-06-30 05:37:15.398137] DEBUG: current_game_id=99, active_targets=[24501], should_click_now=False
+[2026-06-30 05:37:31.414945] DEBUG: current_game_id=100, active_targets=[24501], should_click_now=False
+[2026-06-30 05:37:49.020520] DEBUG: current_game_id=101, active_targets=[24501], should_click_now=False
+[2026-06-30 05:38:15.005583] DEBUG: current_game_id=102, active_targets=[24501], should_click_now=False
+[2026-06-30 05:39:40.815035] DEBUG: current_game_id=103, active_targets=[24501], should_click_now=False
+[2026-06-30 05:40:08.930188] DEBUG: current_game_id=104, active_targets=[24501], should_click_now=False
+[2026-06-30 05:40:40.900820] DEBUG: current_game_id=105, active_targets=[24501], should_click_now=False
+[2026-06-30 05:41:16.927235] DEBUG: current_game_id=106, active_targets=[24501], should_click_now=False
+[2026-06-30 05:41:37.084067] DEBUG: current_game_id=107, active_targets=[24501], should_click_now=False
+[2026-06-30 05:41:46.223982] DEBUG: current_game_id=108, active_targets=[24501, 110], should_click_now=False
+[2026-06-30 05:41:57.180949] DEBUG: current_game_id=109, active_targets=[24501, 110], should_click_now=False
+[2026-06-30 05:42:13.994832] DEBUG: current_game_id=110, active_targets=[24501, 110], should_click_now=True
+[2026-06-30 05:42:39.831637] DEBUG: current_game_id=111, active_targets=[24501], should_click_now=False
+[2026-06-30 05:43:48.885145] DEBUG: current_game_id=112, active_targets=[24501], should_click_now=False
+[2026-06-30 05:44:03.838195] DEBUG: current_game_id=113, active_targets=[24501], should_click_now=False
+[2026-06-30 05:44:49.276064] DEBUG: current_game_id=114, active_targets=[24501], should_click_now=False
+[2026-06-30 05:45:01.538840] DEBUG: current_game_id=115, active_targets=[24501], should_click_now=False
+[2026-06-30 05:45:13.212704] DEBUG: current_game_id=116, active_targets=[24501], should_click_now=False
+[2026-06-30 05:45:34.766868] DEBUG: current_game_id=117, active_targets=[24501], should_click_now=False
+[2026-06-30 05:45:46.133144] DEBUG: current_game_id=118, active_targets=[120, 24501], should_click_now=False
+[2026-06-30 05:46:19.711605] DEBUG: current_game_id=119, active_targets=[120, 24501], should_click_now=False
+[2026-06-30 05:46:30.660648] DEBUG: current_game_id=120, active_targets=[120, 24501], should_click_now=True
+[2026-06-30 05:47:01.997659] DEBUG: current_game_id=121, active_targets=[24501], should_click_now=False
+[2026-06-30 05:47:14.343014] DEBUG: current_game_id=122, active_targets=[24501], should_click_now=False
+[2026-06-30 05:48:12.610407] DEBUG: current_game_id=123, active_targets=[24501], should_click_now=False
+[2026-06-30 05:48:39.322455] DEBUG: current_game_id=124, active_targets=[24501], should_click_now=False
+[2026-06-30 05:49:04.084297] DEBUG: current_game_id=125, active_targets=[24501], should_click_now=False
+[2026-06-30 05:49:14.955621] DEBUG: current_game_id=126, active_targets=[24501, 126], should_click_now=True
+[2026-06-30 05:49:44.391567] DEBUG: current_game_id=127, active_targets=[24501], should_click_now=False
+[2026-06-30 05:50:01.105061] DEBUG: current_game_id=128, active_targets=[24501], should_click_now=False
+[2026-06-30 05:50:10.743926] DEBUG: current_game_id=129, active_targets=[130, 24501], should_click_now=False
+[2026-06-30 05:50:31.730407] DEBUG: current_game_id=130, active_targets=[130, 24501], should_click_now=True
+[2026-06-30 05:50:42.034823] DEBUG: current_game_id=131, active_targets=[132, 24501], should_click_now=False
+[2026-06-30 05:50:56.468585] DEBUG: current_game_id=132, active_targets=[132, 24501], should_click_now=True
+[2026-06-30 05:51:10.187590] DEBUG: current_game_id=133, active_targets=[24501], should_click_now=False
+[2026-06-30 05:51:21.231949] DEBUG: current_game_id=134, active_targets=[24501, 134], should_click_now=True
+[2026-06-30 05:51:34.297297] DEBUG: current_game_id=135, active_targets=[24501], should_click_now=False
+[2026-06-30 05:52:59.527948] DEBUG: current_game_id=136, active_targets=[24501], should_click_now=False
+[2026-06-30 05:53:09.807768] DEBUG: current_game_id=137, active_targets=[24501, 142], should_click_now=False
+[2026-06-30 05:53:23.889961] DEBUG: current_game_id=138, active_targets=[24501, 142], should_click_now=False
+[2026-06-30 05:53:35.231394] DEBUG: current_game_id=139, active_targets=[140, 24501, 142], should_click_now=False
+[2026-06-30 05:53:57.478059] DEBUG: current_game_id=140, active_targets=[140, 24501, 142], should_click_now=True
+[2026-06-30 05:54:24.447058] DEBUG: current_game_id=141, active_targets=[24501, 142], should_click_now=False
+[2026-06-30 05:54:34.828015] DEBUG: current_game_id=142, active_targets=[24501, 142], should_click_now=True
+[2026-06-30 05:54:44.732370] DEBUG: current_game_id=143, active_targets=[24501], should_click_now=False
+[2026-06-30 05:55:13.006510] DEBUG: current_game_id=144, active_targets=[24501], should_click_now=False
+[2026-06-30 05:55:41.016351] DEBUG: current_game_id=145, active_targets=[24501], should_click_now=False
+[2026-06-30 05:56:00.065610] DEBUG: current_game_id=146, active_targets=[24501], should_click_now=False
+[2026-06-30 05:56:23.011154] DEBUG: current_game_id=147, active_targets=[24501], should_click_now=False
+[2026-06-30 05:56:33.002071] DEBUG: current_game_id=148, active_targets=[24501, 150], should_click_now=False
+[2026-06-30 05:56:42.008613] DEBUG: current_game_id=149, active_targets=[24501, 150], should_click_now=False
+[2026-06-30 05:57:00.007854] DEBUG: current_game_id=150, active_targets=[24501, 150], should_click_now=True
+[2026-06-30 05:57:19.012535] DEBUG: current_game_id=151, active_targets=[24501], should_click_now=False
+[2026-06-30 05:59:02.104754] DEBUG: current_game_id=152, active_targets=[24501], should_click_now=False
+[2026-06-30 05:59:47.019297] DEBUG: current_game_id=153, active_targets=[24501], should_click_now=False
+[2026-06-30 06:00:07.604881] DEBUG: current_game_id=154, active_targets=[24501], should_click_now=False
+[2026-06-30 06:00:20.665354] DEBUG: current_game_id=155, active_targets=[24501], should_click_now=False
+[2026-06-30 06:00:35.759337] DEBUG: current_game_id=156, active_targets=[24501], should_click_now=False
+[2026-06-30 06:00:57.410181] DEBUG: current_game_id=157, active_targets=[24501], should_click_now=False
+[2026-06-30 06:01:14.757515] DEBUG: current_game_id=158, active_targets=[24501], should_click_now=False
+[2026-06-30 06:01:39.677526] DEBUG: current_game_id=159, active_targets=[24501], should_click_now=False
+[2026-06-30 06:01:57.373744] DEBUG: current_game_id=160, active_targets=[24501], should_click_now=False
+[2026-06-30 06:02:19.660972] DEBUG: current_game_id=161, active_targets=[24501], should_click_now=False
+[2026-06-30 06:02:44.705337] DEBUG: current_game_id=162, active_targets=[24501], should_click_now=False
+[2026-06-30 06:03:05.551120] DEBUG: current_game_id=163, active_targets=[24501], should_click_now=False
+[2026-06-30 06:03:14.996633] DEBUG: current_game_id=164, active_targets=[168, 24501], should_click_now=False
+[2026-06-30 06:03:26.999270] DEBUG: current_game_id=165, active_targets=[168, 24501], should_click_now=False
+[2026-06-30 06:10:19.016299] DEBUG: current_game_id=166, active_targets=[168, 24501], should_click_now=False
+[2026-06-30 06:21:19.018124] DEBUG: current_game_id=167, active_targets=[168, 24501], should_click_now=False
+[2026-06-30 06:21:35.609843] DEBUG: current_game_id=168, active_targets=[168, 24501], should_click_now=True
+[2026-06-30 06:21:54.008348] DEBUG: current_game_id=169, active_targets=[24501], should_click_now=False
+[2026-06-30 06:22:06.007775] DEBUG: current_game_id=170, active_targets=[24501], should_click_now=False
+[2026-06-30 06:22:19.014107] DEBUG: current_game_id=171, active_targets=[24501], should_click_now=False
+[2026-06-30 06:22:31.003738] DEBUG: current_game_id=172, active_targets=[24501], should_click_now=False
+[2026-06-30 06:22:42.006553] DEBUG: current_game_id=173, active_targets=[177, 24501], should_click_now=False
+[2026-06-30 06:25:15.015019] DEBUG: current_game_id=174, active_targets=[177, 24501], should_click_now=False
+[2026-06-30 06:25:42.010241] DEBUG: current_game_id=175, active_targets=[177, 24501], should_click_now=False
+[2026-06-30 06:27:19.015955] DEBUG: current_game_id=176, active_targets=[177, 24501], should_click_now=False
+[2026-06-30 06:32:19.014418] DEBUG: current_game_id=177, active_targets=[177, 24501], should_click_now=True
+[2026-06-30 06:34:19.017526] DEBUG: current_game_id=178, active_targets=[178, 24501], should_click_now=True
+[2026-06-30 06:38:19.014375] DEBUG: current_game_id=179, active_targets=[24501], should_click_now=False
+[2026-06-30 06:48:19.001131] DEBUG: current_game_id=180, active_targets=[24501], should_click_now=False
+[2026-06-30 06:56:19.025932] DEBUG: current_game_id=181, active_targets=[24501], should_click_now=False
+[2026-06-30 06:58:23.015223] DEBUG: current_game_id=182, active_targets=[24501], should_click_now=False
+[2026-06-30 06:58:36.013043] DEBUG: current_game_id=183, active_targets=[24501], should_click_now=False
+[2026-06-30 06:58:57.015857] DEBUG: current_game_id=184, active_targets=[24501], should_click_now=False
+[2026-06-30 06:59:46.138485] DEBUG: current_game_id=185, active_targets=[24501], should_click_now=False
+[2026-06-30 07:00:09.002223] DEBUG: current_game_id=186, active_targets=[24501], should_click_now=False
+[2026-06-30 07:00:20.008978] DEBUG: current_game_id=187, active_targets=[187, 24501], should_click_now=True
+[2026-06-30 07:00:34.008253] DEBUG: current_game_id=188, active_targets=[24501], should_click_now=False
+[2026-06-30 07:02:19.012962] DEBUG: current_game_id=189, active_targets=[24501], should_click_now=False
+[2026-06-30 07:05:19.012962] DEBUG: current_game_id=190, active_targets=[24501], should_click_now=False
+[2026-06-30 07:07:20.898986] DEBUG: current_game_id=191, active_targets=[24501, 191], should_click_now=True
+[2026-06-30 07:13:34.137271] DEBUG: current_game_id=192, active_targets=[24501], should_click_now=False
+[2026-06-30 07:14:02.002269] DEBUG: current_game_id=193, active_targets=[24501], should_click_now=False
+[2026-06-30 07:14:20.011331] DEBUG: current_game_id=194, active_targets=[24501], should_click_now=False
+[2026-06-30 07:14:46.007784] DEBUG: current_game_id=195, active_targets=[24501], should_click_now=False
+[2026-06-30 07:17:01.204426] DEBUG: current_game_id=196, active_targets=[200, 24501], should_click_now=False
+[2026-06-30 07:17:09.295056] DEBUG: current_game_id=197, active_targets=[200, 24501], should_click_now=False
+[2026-06-30 07:17:25.399576] DEBUG: current_game_id=198, active_targets=[200, 24501], should_click_now=False
+[2026-06-30 07:17:53.301072] DEBUG: current_game_id=199, active_targets=[200, 24501], should_click_now=False
+[2026-06-30 07:18:48.606888] DEBUG: current_game_id=200, active_targets=[200, 24501], should_click_now=True
+[2026-06-30 07:19:19.854883] DEBUG: current_game_id=201, active_targets=[24501], should_click_now=False
+[2026-06-30 07:20:02.229617] DEBUG: current_game_id=202, active_targets=[24501], should_click_now=False
+[2026-06-30 07:20:38.219795] DEBUG: current_game_id=203, active_targets=[24501], should_click_now=False
+[2026-06-30 07:21:00.354305] DEBUG: current_game_id=204, active_targets=[24501], should_click_now=False
+[2026-06-30 07:21:28.099421] DEBUG: current_game_id=205, active_targets=[24501], should_click_now=False
+[2026-06-30 07:21:37.207342] DEBUG: current_game_id=206, active_targets=[210, 24501], should_click_now=False
+[2026-06-30 07:22:12.155114] DEBUG: current_game_id=207, active_targets=[210, 24501], should_click_now=False
+[2026-06-30 07:22:25.209452] DEBUG: current_game_id=208, active_targets=[210, 24501], should_click_now=False
+[2026-06-30 07:22:48.228094] DEBUG: current_game_id=209, active_targets=[210, 24501], should_click_now=False
+[2026-06-30 07:23:23.701303] DEBUG: current_game_id=210, active_targets=[210, 24501], should_click_now=True
+[2026-06-30 07:23:41.244864] DEBUG: current_game_id=211, active_targets=[24501], should_click_now=False
+[2026-06-30 07:23:50.596124] DEBUG: current_game_id=212, active_targets=[212, 24501], should_click_now=True
+[2026-06-30 07:24:04.129373] DEBUG: current_game_id=213, active_targets=[24501], should_click_now=False
+[2026-06-30 07:24:13.246062] DEBUG: current_game_id=214, active_targets=[24501, 214], should_click_now=True
+[2026-06-30 07:24:27.325278] DEBUG: current_game_id=215, active_targets=[24501], should_click_now=False
+[2026-06-30 07:24:42.763240] DEBUG: current_game_id=216, active_targets=[24501], should_click_now=False
+[2026-06-30 07:25:00.896429] DEBUG: current_game_id=217, active_targets=[24501], should_click_now=False
+[2026-06-30 07:25:29.405404] DEBUG: current_game_id=218, active_targets=[24501], should_click_now=False
+[2026-06-30 07:25:48.663578] DEBUG: current_game_id=219, active_targets=[24501], should_click_now=False
+[2026-06-30 07:26:05.327328] DEBUG: current_game_id=220, active_targets=[24501], should_click_now=False
+[2026-06-30 07:26:21.263677] DEBUG: current_game_id=221, active_targets=[24501], should_click_now=False
+[2026-06-30 07:26:40.424051] DEBUG: current_game_id=222, active_targets=[24501], should_click_now=False
+[2026-06-30 07:26:49.540418] DEBUG: current_game_id=223, active_targets=[228, 24501], should_click_now=False
+[2026-06-30 07:27:04.510783] DEBUG: current_game_id=224, active_targets=[228, 24501], should_click_now=False
+[2026-06-30 07:27:14.503216] DEBUG: current_game_id=225, active_targets=[228, 24501, 230], should_click_now=False
+[2026-06-30 07:27:34.964957] DEBUG: current_game_id=226, active_targets=[228, 24501, 230], should_click_now=False
+[2026-06-30 07:27:44.805262] DEBUG: current_game_id=227, active_targets=[232, 228, 24501, 230], should_click_now=False
+[2026-06-30 07:27:59.069123] DEBUG: current_game_id=228, active_targets=[232, 228, 24501, 230], should_click_now=True
+[2026-06-30 07:28:12.671151] DEBUG: current_game_id=229, active_targets=[232, 24501, 230], should_click_now=False
+[2026-06-30 07:28:23.098602] DEBUG: current_game_id=230, active_targets=[232, 235, 24501, 230], should_click_now=True
+[2026-06-30 07:28:48.757876] DEBUG: current_game_id=231, active_targets=[232, 235, 24501], should_click_now=False
+[2026-06-30 07:29:06.642280] DEBUG: current_game_id=232, active_targets=[232, 235, 24501], should_click_now=True
+[2026-06-30 07:29:31.552507] DEBUG: current_game_id=233, active_targets=[235, 24501], should_click_now=False
+[2026-06-30 07:29:44.651290] DEBUG: current_game_id=234, active_targets=[235, 24501], should_click_now=False
+[2026-06-30 07:30:01.045265] DEBUG: current_game_id=235, active_targets=[235, 24501], should_click_now=True
+[2026-06-30 07:30:25.598945] DEBUG: current_game_id=236, active_targets=[24501], should_click_now=False
+[2026-06-30 07:30:43.255272] DEBUG: current_game_id=237, active_targets=[24501], should_click_now=False
+[2026-06-30 07:31:02.807268] DEBUG: current_game_id=238, active_targets=[24501], should_click_now=False
+[2026-06-30 07:31:19.943109] DEBUG: current_game_id=239, active_targets=[24501], should_click_now=False
+[2026-06-30 07:31:35.594437] DEBUG: current_game_id=240, active_targets=[24501], should_click_now=False
+[2026-06-30 07:32:04.266655] DEBUG: current_game_id=241, active_targets=[24501], should_click_now=False
+[2026-06-30 07:32:29.304229] DEBUG: current_game_id=242, active_targets=[24501], should_click_now=False
+[2026-06-30 07:32:38.507817] DEBUG: current_game_id=243, active_targets=[244, 24501], should_click_now=False
+[2026-06-30 07:33:18.682745] DEBUG: current_game_id=244, active_targets=[244, 24501], should_click_now=True
+[2026-06-30 07:33:36.515309] DEBUG: current_game_id=245, active_targets=[24501], should_click_now=False
+[2026-06-30 07:34:31.072047] DEBUG: current_game_id=246, active_targets=[24501], should_click_now=False
+[2026-06-30 07:34:47.992950] DEBUG: current_game_id=247, active_targets=[24501], should_click_now=False
+[2026-06-30 07:34:59.350957] DEBUG: current_game_id=248, active_targets=[252, 24501], should_click_now=False
+[2026-06-30 07:35:37.895629] DEBUG: current_game_id=249, active_targets=[252, 24501], should_click_now=False
+[2026-06-30 07:36:09.545386] DEBUG: current_game_id=250, active_targets=[252, 24501], should_click_now=False
+[2026-06-30 07:36:28.500975] DEBUG: current_game_id=251, active_targets=[252, 24501], should_click_now=False
+[2026-06-30 07:36:37.646305] DEBUG: current_game_id=252, active_targets=[252, 24501, 254], should_click_now=True
+[2026-06-30 07:36:46.747120] DEBUG: current_game_id=253, active_targets=[24501, 254], should_click_now=False
+[2026-06-30 07:37:06.459587] DEBUG: current_game_id=254, active_targets=[24501, 254], should_click_now=True
+[2026-06-30 07:37:17.203341] DEBUG: current_game_id=255, active_targets=[257, 24501], should_click_now=False
+[2026-06-30 07:37:30.035660] DEBUG: current_game_id=256, active_targets=[257, 24501], should_click_now=False
+[2026-06-30 07:38:23.015253] DEBUG: current_game_id=257, active_targets=[257, 24501], should_click_now=True
+[2026-06-30 07:38:33.462428] DEBUG: current_game_id=258, active_targets=[261, 24501], should_click_now=False
+[2026-06-30 07:38:44.794633] DEBUG: current_game_id=259, active_targets=[261, 24501], should_click_now=False
+[2026-06-30 07:39:32.995785] DEBUG: current_game_id=260, active_targets=[261, 24501], should_click_now=False
+[2026-06-30 07:39:48.918639] DEBUG: current_game_id=261, active_targets=[261, 24501], should_click_now=True
+[2026-06-30 07:40:34.065749] DEBUG: current_game_id=262, active_targets=[24501], should_click_now=False
+[2026-06-30 07:40:44.954800] DEBUG: current_game_id=263, active_targets=[265, 24501], should_click_now=False
+[2026-06-30 07:41:04.405364] DEBUG: current_game_id=264, active_targets=[265, 24501], should_click_now=False
+[2026-06-30 07:41:18.694629] DEBUG: current_game_id=265, active_targets=[265, 24501], should_click_now=True
+[2026-06-30 07:41:41.443511] DEBUG: current_game_id=266, active_targets=[24501], should_click_now=False
+[2026-06-30 07:43:03.162036] DEBUG: current_game_id=267, active_targets=[24501], should_click_now=False
+[2026-06-30 07:43:16.058633] DEBUG: current_game_id=268, active_targets=[24501], should_click_now=False
+[2026-06-30 07:43:27.703587] DEBUG: current_game_id=269, active_targets=[24501], should_click_now=False
+[2026-06-30 07:43:36.881374] DEBUG: current_game_id=270, active_targets=[24501, 270], should_click_now=True
+[2026-06-30 07:43:50.813897] DEBUG: current_game_id=271, active_targets=[24501], should_click_now=False
+[2026-06-30 07:44:37.731888] DEBUG: current_game_id=272, active_targets=[24501], should_click_now=False
+[2026-06-30 07:44:49.904967] DEBUG: current_game_id=273, active_targets=[24501], should_click_now=False
+[2026-06-30 07:45:08.102664] DEBUG: current_game_id=274, active_targets=[24501], should_click_now=False
+[2026-06-30 07:45:32.040374] DEBUG: current_game_id=275, active_targets=[24501], should_click_now=False
+[2026-06-30 07:46:06.039446] DEBUG: current_game_id=276, active_targets=[24501], should_click_now=False
+[2026-06-30 07:46:20.397931] DEBUG: current_game_id=277, active_targets=[24501], should_click_now=False
+[2026-06-30 07:46:30.445647] DEBUG: current_game_id=278, active_targets=[281, 24501], should_click_now=False
+[2026-06-30 07:47:01.296399] DEBUG: current_game_id=279, active_targets=[281, 24501], should_click_now=False
+[2026-06-30 07:47:10.398733] DEBUG: current_game_id=280, active_targets=[281, 283, 24501], should_click_now=False
+[2026-06-30 07:47:23.518335] DEBUG: current_game_id=281, active_targets=[281, 283, 24501], should_click_now=True
+[2026-06-30 07:47:34.851714] DEBUG: current_game_id=282, active_targets=[285, 283, 24501], should_click_now=False
+[2026-06-30 07:47:44.918244] DEBUG: current_game_id=283, active_targets=[285, 283, 24501], should_click_now=True
+[2026-06-30 07:48:03.193828] DEBUG: current_game_id=284, active_targets=[285, 24501], should_click_now=False
+[2026-06-30 07:48:12.902496] DEBUG: current_game_id=285, active_targets=[290, 285, 24501], should_click_now=True
+[2026-06-30 07:48:22.453215] DEBUG: current_game_id=286, active_targets=[290, 24501], should_click_now=False
+[2026-06-30 07:48:48.898918] DEBUG: current_game_id=287, active_targets=[290, 24501], should_click_now=False
+[2026-06-30 07:49:04.503406] DEBUG: current_game_id=288, active_targets=[290, 24501], should_click_now=False
+[2026-06-30 07:49:15.806668] DEBUG: current_game_id=289, active_targets=[290, 293, 24501], should_click_now=False
+[2026-06-30 07:49:27.495254] DEBUG: current_game_id=290, active_targets=[290, 293, 24501], should_click_now=True
+[2026-06-30 07:50:03.228276] DEBUG: current_game_id=291, active_targets=[293, 24501], should_click_now=False
+[2026-06-30 07:50:44.965174] DEBUG: current_game_id=292, active_targets=[293, 24501], should_click_now=False
+[2026-06-30 07:50:57.477487] DEBUG: current_game_id=293, active_targets=[293, 24501], should_click_now=True
+[2026-06-30 07:51:16.335334] DEBUG: current_game_id=294, active_targets=[24501], should_click_now=False
+[2026-06-30 07:51:28.075401] DEBUG: current_game_id=295, active_targets=[24501], should_click_now=False
+[2026-06-30 07:51:48.862957] DEBUG: current_game_id=296, active_targets=[24501], should_click_now=False
+[2026-06-30 07:51:58.792773] DEBUG: current_game_id=297, active_targets=[297, 24501], should_click_now=True
+[2026-06-30 07:52:28.419644] DEBUG: current_game_id=298, active_targets=[24501], should_click_now=False
+[2026-06-30 07:52:46.450189] DEBUG: current_game_id=299, active_targets=[24501], should_click_now=False
+[2026-06-30 07:52:57.302191] DEBUG: current_game_id=300, active_targets=[24501, 303], should_click_now=False
+[2026-06-30 07:53:08.900245] DEBUG: current_game_id=301, active_targets=[24501, 303], should_click_now=False
+[2026-06-30 07:53:25.508200] DEBUG: current_game_id=302, active_targets=[24501, 303], should_click_now=False
+[2026-06-30 07:54:00.792339] DEBUG: current_game_id=303, active_targets=[24501, 303], should_click_now=True
+[2026-06-30 07:54:18.164095] DEBUG: current_game_id=304, active_targets=[24501], should_click_now=False
+[2026-06-30 07:54:43.762801] DEBUG: current_game_id=305, active_targets=[24501], should_click_now=False
+[2026-06-30 07:55:03.607754] DEBUG: current_game_id=306, active_targets=[24501], should_click_now=False
+[2026-06-30 07:55:12.741838] DEBUG: current_game_id=307, active_targets=[24501, 310], should_click_now=False
+[2026-06-30 07:55:26.868310] DEBUG: current_game_id=308, active_targets=[24501, 310], should_click_now=False
+[2026-06-30 07:55:36.791895] DEBUG: current_game_id=309, active_targets=[312, 24501, 310], should_click_now=False
+[2026-06-30 07:55:50.011986] DEBUG: current_game_id=310, active_targets=[312, 24501, 310], should_click_now=True
+[2026-06-30 07:56:27.955420] DEBUG: current_game_id=311, active_targets=[312, 24501], should_click_now=False
+[2026-06-30 07:56:40.519345] DEBUG: current_game_id=312, active_targets=[312, 24501], should_click_now=True
+[2026-06-30 07:57:04.851178] DEBUG: current_game_id=313, active_targets=[24501], should_click_now=False
+[2026-06-30 07:57:46.762303] DEBUG: current_game_id=314, active_targets=[24501], should_click_now=False
+[2026-06-30 07:58:29.724148] DEBUG: current_game_id=315, active_targets=[24501], should_click_now=False
+[2026-06-30 07:58:57.495491] DEBUG: current_game_id=316, active_targets=[24501], should_click_now=False
+[2026-06-30 07:59:09.891817] DEBUG: current_game_id=317, active_targets=[24501], should_click_now=False
+[2026-06-30 07:59:53.432153] DEBUG: current_game_id=318, active_targets=[24501], should_click_now=False
+[2026-06-30 08:00:02.517454] DEBUG: current_game_id=319, active_targets=[321, 24501], should_click_now=False
+[2026-06-30 08:00:12.113048] DEBUG: current_game_id=320, active_targets=[321, 24501], should_click_now=False
+[2026-06-30 08:00:21.197963] DEBUG: current_game_id=321, active_targets=[321, 24501], should_click_now=True
+[2026-06-30 08:00:31.076828] DEBUG: current_game_id=322, active_targets=[24501], should_click_now=False
+[2026-06-30 08:00:40.266071] DEBUG: current_game_id=323, active_targets=[24501], should_click_now=False
+[2026-06-30 08:01:06.455955] DEBUG: current_game_id=324, active_targets=[24501], should_click_now=False
+[2026-06-30 08:01:21.209123] DEBUG: current_game_id=325, active_targets=[24501], should_click_now=False
+[2026-06-30 08:01:40.291961] DEBUG: current_game_id=326, active_targets=[24501], should_click_now=False
+[2026-06-30 08:02:15.160457] DEBUG: current_game_id=327, active_targets=[24501], should_click_now=False
+[2026-06-30 08:02:30.604509] DEBUG: current_game_id=328, active_targets=[24501], should_click_now=False
+[2026-06-30 08:02:45.193782] DEBUG: current_game_id=329, active_targets=[24501], should_click_now=False
+[2026-06-30 08:03:15.593470] DEBUG: current_game_id=330, active_targets=[24501], should_click_now=False
+[2026-06-30 08:03:44.706829] DEBUG: current_game_id=331, active_targets=[24501], should_click_now=False
+[2026-06-30 08:03:56.020429] DEBUG: current_game_id=332, active_targets=[333, 24501], should_click_now=False
+[2026-06-30 08:04:14.611256] DEBUG: current_game_id=333, active_targets=[333, 24501], should_click_now=True
+[2026-06-30 08:04:33.367257] DEBUG: current_game_id=334, active_targets=[24501], should_click_now=False
+[2026-06-30 08:04:53.382455] DEBUG: current_game_id=335, active_targets=[24501], should_click_now=False
+[2026-06-30 08:05:03.349383] DEBUG: current_game_id=336, active_targets=[336, 24501], should_click_now=True
+[2026-06-30 08:05:13.630084] DEBUG: current_game_id=337, active_targets=[24501], should_click_now=False
+[2026-06-30 08:05:45.238547] DEBUG: current_game_id=338, active_targets=[24501], should_click_now=False
+[2026-06-30 08:06:04.384215] DEBUG: current_game_id=339, active_targets=[24501], should_click_now=False
+[2026-06-30 08:06:33.742015] DEBUG: current_game_id=340, active_targets=[24501], should_click_now=False
+[2026-06-30 08:06:51.356572] DEBUG: current_game_id=341, active_targets=[24501], should_click_now=False
+[2026-06-30 08:07:05.189651] DEBUG: current_game_id=342, active_targets=[24501], should_click_now=False
+[2026-06-30 08:07:14.380419] DEBUG: current_game_id=343, active_targets=[347, 24501], should_click_now=False
+[2026-06-30 08:07:43.785261] DEBUG: current_game_id=344, active_targets=[347, 24501], should_click_now=False
+[2026-06-30 08:07:55.627979] DEBUG: current_game_id=345, active_targets=[347, 24501], should_click_now=False
+[2026-06-30 08:08:11.687579] DEBUG: current_game_id=346, active_targets=[347, 24501], should_click_now=False
+[2026-06-30 08:08:52.551092] DEBUG: current_game_id=347, active_targets=[347, 24501], should_click_now=True
+[2026-06-30 08:09:07.855411] DEBUG: current_game_id=348, active_targets=[24501], should_click_now=False
+[2026-06-30 08:09:16.973171] DEBUG: current_game_id=349, active_targets=[349, 24501], should_click_now=True
+[2026-06-30 08:09:40.461819] DEBUG: current_game_id=350, active_targets=[24501], should_click_now=False
+[2026-06-30 08:10:14.730909] DEBUG: current_game_id=351, active_targets=[24501], should_click_now=False
+[2026-06-30 08:10:50.140529] DEBUG: current_game_id=352, active_targets=[24501], should_click_now=False
+[2026-06-30 08:11:20.788707] DEBUG: current_game_id=353, active_targets=[24501], should_click_now=False
+[2026-06-30 08:11:49.977617] DEBUG: current_game_id=354, active_targets=[24501], should_click_now=False
+[2026-06-30 08:12:16.350105] DEBUG: current_game_id=355, active_targets=[24501], should_click_now=False
+[2026-06-30 08:12:32.688021] DEBUG: current_game_id=356, active_targets=[24501], should_click_now=False
+[2026-06-30 08:13:23.414622] DEBUG: current_game_id=357, active_targets=[24501], should_click_now=False
+[2026-06-30 08:13:54.455057] DEBUG: current_game_id=358, active_targets=[24501], should_click_now=False
+[2026-06-30 08:14:15.121261] DEBUG: current_game_id=359, active_targets=[24501], should_click_now=False
+[2026-06-30 08:14:30.827824] DEBUG: current_game_id=360, active_targets=[24501], should_click_now=False
+[2026-06-30 08:15:07.401714] DEBUG: current_game_id=361, active_targets=[24501], should_click_now=False
+[2026-06-30 08:15:17.947379] DEBUG: current_game_id=362, active_targets=[362, 24501], should_click_now=True
+[2026-06-30 08:15:38.433963] DEBUG: current_game_id=363, active_targets=[24501], should_click_now=False
+[2026-06-30 08:15:53.862403] DEBUG: current_game_id=364, active_targets=[24501], should_click_now=False
+[2026-06-30 08:16:05.672381] DEBUG: current_game_id=365, active_targets=[24501], should_click_now=False
+[2026-06-30 08:16:24.087228] DEBUG: current_game_id=366, active_targets=[24501], should_click_now=False
+[2026-06-30 08:16:34.755411] DEBUG: current_game_id=367, active_targets=[371, 24501], should_click_now=False
+[2026-06-30 08:17:06.715791] DEBUG: current_game_id=368, active_targets=[371, 24501], should_click_now=False
+[2026-06-30 08:17:20.783982] DEBUG: current_game_id=369, active_targets=[371, 24501], should_click_now=False
+[2026-06-30 08:17:36.239480] DEBUG: current_game_id=370, active_targets=[371, 24501], should_click_now=False
+[2026-06-30 08:18:08.793347] DEBUG: current_game_id=371, active_targets=[371, 24501], should_click_now=True
+[2026-06-30 08:18:31.855175] DEBUG: current_game_id=372, active_targets=[24501], should_click_now=False
+[2026-06-30 08:18:42.282468] DEBUG: current_game_id=373, active_targets=[378, 24501], should_click_now=False
+[2026-06-30 08:19:05.210561] DEBUG: current_game_id=374, active_targets=[378, 24501], should_click_now=False
+[2026-06-30 08:19:17.878929] DEBUG: current_game_id=375, active_targets=[378, 24501], should_click_now=False
+[2026-06-30 08:19:29.357075] DEBUG: current_game_id=376, active_targets=[378, 24501], should_click_now=False
+[2026-06-30 08:19:40.077568] DEBUG: current_game_id=377, active_targets=[378, 380, 24501], should_click_now=False
+[2026-06-30 08:19:55.647467] DEBUG: current_game_id=378, active_targets=[378, 380, 24501], should_click_now=True
+[2026-06-30 08:20:07.132029] DEBUG: current_game_id=379, active_targets=[380, 24501, 383], should_click_now=False
+[2026-06-30 08:20:42.101357] DEBUG: current_game_id=380, active_targets=[380, 24501, 383], should_click_now=True
+[2026-06-30 08:20:52.887139] DEBUG: current_game_id=381, active_targets=[385, 24501, 383], should_click_now=False
+[2026-06-30 08:21:25.913699] DEBUG: current_game_id=382, active_targets=[385, 24501, 383], should_click_now=False
+[2026-06-30 08:21:40.985244] DEBUG: current_game_id=383, active_targets=[385, 24501, 383], should_click_now=True
+[2026-06-30 08:21:56.036710] DEBUG: current_game_id=384, active_targets=[385, 24501], should_click_now=False
+[2026-06-30 08:22:08.550885] DEBUG: current_game_id=385, active_targets=[385, 24501], should_click_now=True
+[2026-06-30 08:22:42.799242] DEBUG: current_game_id=386, active_targets=[24501], should_click_now=False
+[2026-06-30 08:22:56.858031] DEBUG: current_game_id=387, active_targets=[24501], should_click_now=False
+[2026-06-30 08:23:08.545739] DEBUG: current_game_id=388, active_targets=[24501], should_click_now=False
+[2026-06-30 08:23:28.799644] DEBUG: current_game_id=389, active_targets=[24501], should_click_now=False
+[2026-06-30 08:24:35.199531] DEBUG: current_game_id=390, active_targets=[24501], should_click_now=False
+[2026-06-30 08:25:05.513803] DEBUG: current_game_id=391, active_targets=[24501], should_click_now=False
+[2026-06-30 08:25:17.398441] DEBUG: current_game_id=392, active_targets=[24501], should_click_now=False
+[2026-06-30 08:25:36.887210] DEBUG: current_game_id=393, active_targets=[24501], should_click_now=False
+[2026-06-30 08:26:17.592291] DEBUG: current_game_id=394, active_targets=[24501], should_click_now=False
+[2026-06-30 08:26:34.652266] DEBUG: current_game_id=395, active_targets=[24501], should_click_now=False
+[2026-06-30 08:26:59.376610] DEBUG: current_game_id=396, active_targets=[24501], should_click_now=False
+[2026-06-30 08:27:32.214341] DEBUG: current_game_id=397, active_targets=[24501], should_click_now=False
+[2026-06-30 08:28:05.614637] DEBUG: current_game_id=398, active_targets=[24501], should_click_now=False
+[2026-06-30 08:28:34.173683] DEBUG: current_game_id=399, active_targets=[24501], should_click_now=False
+[2026-06-30 08:28:57.385272] DEBUG: current_game_id=400, active_targets=[24501], should_click_now=False
+[2026-06-30 08:29:37.930954] DEBUG: current_game_id=401, active_targets=[24501], should_click_now=False
+[2026-06-30 08:30:05.672438] DEBUG: current_game_id=402, active_targets=[24501], should_click_now=False
+[2026-06-30 08:30:15.627028] DEBUG: current_game_id=403, active_targets=[24501, 406], should_click_now=False
+[2026-06-30 08:30:30.394445] DEBUG: current_game_id=404, active_targets=[24501, 406], should_click_now=False
+[2026-06-30 08:30:52.289714] DEBUG: current_game_id=405, active_targets=[24501, 406], should_click_now=False
+[2026-06-30 08:31:05.404515] DEBUG: current_game_id=406, active_targets=[24501, 406], should_click_now=True
+[2026-06-30 08:31:25.109442] DEBUG: current_game_id=407, active_targets=[24501], should_click_now=False
+[2026-06-30 08:31:51.500324] DEBUG: current_game_id=408, active_targets=[24501], should_click_now=False
+[2026-06-30 08:32:06.598017] DEBUG: current_game_id=409, active_targets=[24501], should_click_now=False
+[2026-06-30 08:32:23.267060] DEBUG: current_game_id=410, active_targets=[24501], should_click_now=False
+[2026-06-30 08:32:40.876718] DEBUG: current_game_id=411, active_targets=[24501], should_click_now=False
+[2026-06-30 08:33:01.534761] DEBUG: current_game_id=412, active_targets=[24501], should_click_now=False
+[2026-06-30 08:33:31.764799] DEBUG: current_game_id=413, active_targets=[24501], should_click_now=False
+[2026-06-30 08:33:40.836917] DEBUG: current_game_id=414, active_targets=[24501, 415], should_click_now=False
+[2026-06-30 08:34:10.755451] DEBUG: current_game_id=415, active_targets=[24501, 415], should_click_now=True
+[2026-06-30 08:34:22.716577] DEBUG: current_game_id=416, active_targets=[24501], should_click_now=False
+[2026-06-30 08:34:47.901788] DEBUG: current_game_id=417, active_targets=[24501], should_click_now=False
+[2026-06-30 08:34:57.195482] DEBUG: current_game_id=418, active_targets=[419, 24501], should_click_now=False
+[2026-06-30 08:35:07.649815] DEBUG: current_game_id=419, active_targets=[419, 24501], should_click_now=True
+[2026-06-30 08:35:19.400105] DEBUG: current_game_id=420, active_targets=[24501], should_click_now=False
+[2026-06-30 08:35:35.566878] DEBUG: current_game_id=421, active_targets=[24501], should_click_now=False
+[2026-06-30 08:36:14.977954] DEBUG: current_game_id=422, active_targets=[24501], should_click_now=False
+[2026-06-30 08:36:24.032314] DEBUG: current_game_id=423, active_targets=[428, 24501], should_click_now=False
+[2026-06-30 08:36:48.273143] DEBUG: current_game_id=424, active_targets=[428, 24501], should_click_now=False
+[2026-06-30 08:37:06.461744] DEBUG: current_game_id=425, active_targets=[428, 24501], should_click_now=False
+[2026-06-30 08:37:35.974088] DEBUG: current_game_id=426, active_targets=[428, 24501], should_click_now=False
+[2026-06-30 08:37:47.081650] DEBUG: current_game_id=427, active_targets=[427, 428, 24501], should_click_now=True
+[2026-06-30 08:38:16.433071] DEBUG: current_game_id=428, active_targets=[428, 24501], should_click_now=True
+[2026-06-30 08:38:38.870185] DEBUG: current_game_id=429, active_targets=[24501], should_click_now=False
+[2026-06-30 08:39:12.181381] DEBUG: current_game_id=430, active_targets=[24501], should_click_now=False
+[2026-06-30 08:39:36.988624] DEBUG: current_game_id=431, active_targets=[24501], should_click_now=False
+[2026-06-30 08:40:09.600165] DEBUG: current_game_id=432, active_targets=[24501], should_click_now=False
+[2026-06-30 08:40:18.978506] DEBUG: current_game_id=433, active_targets=[24501, 437], should_click_now=False
+[2026-06-30 08:40:30.193277] DEBUG: current_game_id=434, active_targets=[24501, 437], should_click_now=False
+[2026-06-30 08:40:42.513471] DEBUG: current_game_id=435, active_targets=[24501, 437], should_click_now=False
+[2026-06-30 08:40:56.353418] DEBUG: current_game_id=436, active_targets=[24501, 437], should_click_now=False
+[2026-06-30 08:41:28.673777] DEBUG: current_game_id=437, active_targets=[24501, 437], should_click_now=True
+[2026-06-30 08:41:47.449486] DEBUG: current_game_id=438, active_targets=[24501], should_click_now=False
+[2026-06-30 08:42:03.752557] DEBUG: current_game_id=439, active_targets=[24501], should_click_now=False
+[2026-06-30 08:42:40.368901] DEBUG: current_game_id=440, active_targets=[24501], should_click_now=False
+[2026-06-30 08:42:53.521953] DEBUG: current_game_id=441, active_targets=[24501], should_click_now=False
+[2026-06-30 08:43:15.238549] DEBUG: current_game_id=442, active_targets=[24501], should_click_now=False
+[2026-06-30 08:43:29.947268] DEBUG: current_game_id=443, active_targets=[24501], should_click_now=False
+[2026-06-30 08:43:48.217344] DEBUG: current_game_id=444, active_targets=[24501], should_click_now=False
+[2026-06-30 08:44:12.904479] DEBUG: current_game_id=445, active_targets=[24501], should_click_now=False
+[2026-06-30 08:44:39.968591] DEBUG: current_game_id=446, active_targets=[24501], should_click_now=False
+[2026-06-30 08:45:33.334106] DEBUG: current_game_id=447, active_targets=[24501], should_click_now=False
+[2026-06-30 08:46:06.195299] DEBUG: current_game_id=448, active_targets=[24501], should_click_now=False
+[2026-06-30 08:46:22.120099] DEBUG: current_game_id=449, active_targets=[24501], should_click_now=False
+[2026-06-30 08:46:33.088526] DEBUG: current_game_id=450, active_targets=[24501, 455], should_click_now=False
+[2026-06-30 08:46:49.560800] DEBUG: current_game_id=451, active_targets=[24501, 455], should_click_now=False
+[2026-06-30 08:47:28.079025] DEBUG: current_game_id=452, active_targets=[24501, 455], should_click_now=False
+[2026-06-30 08:47:38.330130] DEBUG: current_game_id=453, active_targets=[453, 24501, 455], should_click_now=True
+[2026-06-30 08:48:31.749647] DEBUG: current_game_id=454, active_targets=[24501, 455], should_click_now=False
+[2026-06-30 08:49:58.031958] DEBUG: current_game_id=455, active_targets=[24501, 455], should_click_now=True
+[2026-06-30 11:33:32.648857] DEBUG: current_game_id=456, active_targets=[461, 24501], should_click_now=False
+[2026-06-30 11:33:42.355109] DEBUG: current_game_id=457, active_targets=[461, 24501], should_click_now=False
+[2026-06-30 11:33:47.967236] DEBUG: current_game_id=458, active_targets=[461, 24501], should_click_now=False
+[2026-06-30 11:33:57.998301] DEBUG: current_game_id=459, active_targets=[461, 24501], should_click_now=False
+[2026-06-30 11:34:37.509764] DEBUG: current_game_id=460, active_targets=[461, 24501], should_click_now=False
+[2026-06-30 11:35:30.452766] DEBUG: current_game_id=461, active_targets=[461, 24501], should_click_now=True
+[2026-06-30 11:35:40.767498] DEBUG: current_game_id=462, active_targets=[24501, 463], should_click_now=False
+[2026-06-30 11:36:22.817647] DEBUG: current_game_id=463, active_targets=[24501, 463], should_click_now=True
+[2026-06-30 11:36:37.186949] DEBUG: current_game_id=464, active_targets=[24501], should_click_now=False
+[2026-06-30 12:10:09.665948] DEBUG: current_game_id=465, active_targets=[24501], should_click_now=False
+[2026-06-30 12:10:19.661500] DEBUG: current_game_id=466, active_targets=[24501, 470], should_click_now=False
+[2026-06-30 12:10:52.013894] DEBUG: current_game_id=467, active_targets=[24501, 470], should_click_now=False
+[2026-06-30 12:11:18.606712] DEBUG: current_game_id=468, active_targets=[24501, 470], should_click_now=False
+[2026-06-30 12:12:04.471926] DEBUG: current_game_id=469, active_targets=[24501, 470], should_click_now=False
+[2026-06-30 12:12:51.365032] DEBUG: current_game_id=470, active_targets=[24501, 470], should_click_now=True
+[2026-06-30 12:13:18.502688] DEBUG: current_game_id=471, active_targets=[24501], should_click_now=False
+[2026-06-30 12:13:45.772361] DEBUG: current_game_id=472, active_targets=[24501], should_click_now=False
+[2026-06-30 12:13:59.250773] DEBUG: current_game_id=473, active_targets=[24501], should_click_now=False
+[2026-06-30 12:14:08.713389] DEBUG: current_game_id=474, active_targets=[476, 24501], should_click_now=False
+[2026-06-30 12:14:20.176201] DEBUG: current_game_id=475, active_targets=[476, 24501], should_click_now=False
+[2026-06-30 12:14:42.121644] DEBUG: current_game_id=476, active_targets=[476, 24501], should_click_now=True
+[2026-06-30 12:15:12.217659] DEBUG: current_game_id=477, active_targets=[24501], should_click_now=False
+[2026-06-30 12:15:58.956452] DEBUG: current_game_id=478, active_targets=[24501], should_click_now=False
+[2026-06-30 12:16:08.240987] DEBUG: current_game_id=479, active_targets=[482, 24501], should_click_now=False
+[2026-06-30 12:16:36.595761] DEBUG: current_game_id=480, active_targets=[482, 24501], should_click_now=False
+[2026-06-30 12:16:52.702490] DEBUG: current_game_id=481, active_targets=[482, 24501], should_click_now=False
+[2026-06-30 12:17:27.398062] DEBUG: current_game_id=482, active_targets=[482, 24501], should_click_now=True
+[2026-06-30 12:17:51.663510] DEBUG: current_game_id=483, active_targets=[24501], should_click_now=False
+[2026-06-30 12:18:39.909033] DEBUG: current_game_id=484, active_targets=[24501], should_click_now=False
+[2026-06-30 12:18:53.793916] DEBUG: current_game_id=485, active_targets=[24501], should_click_now=False
+[2026-06-30 12:19:21.957686] DEBUG: current_game_id=486, active_targets=[24501], should_click_now=False
+[2026-06-30 12:19:41.514763] DEBUG: current_game_id=487, active_targets=[24501], should_click_now=False
+[2026-06-30 12:19:50.657884] DEBUG: current_game_id=488, active_targets=[492, 24501], should_click_now=False
+[2026-06-30 12:20:02.546104] DEBUG: current_game_id=489, active_targets=[492, 24501], should_click_now=False
+[2026-06-30 12:20:16.298875] DEBUG: current_game_id=490, active_targets=[492, 24501], should_click_now=False
+[2026-06-30 12:20:27.695958] DEBUG: current_game_id=491, active_targets=[492, 24501, 495], should_click_now=False
+[2026-06-30 12:20:37.642580] DEBUG: current_game_id=492, active_targets=[492, 24501, 495], should_click_now=True
+[2026-06-30 12:21:08.006830] DEBUG: current_game_id=493, active_targets=[24501, 495], should_click_now=False
+[2026-06-30 12:21:21.163841] DEBUG: current_game_id=494, active_targets=[24501, 495], should_click_now=False
+[2026-06-30 12:21:54.606373] DEBUG: current_game_id=495, active_targets=[24501, 495], should_click_now=True
+[2026-06-30 12:22:06.800790] DEBUG: current_game_id=496, active_targets=[24501], should_click_now=False
+[2026-06-30 12:22:32.651682] DEBUG: current_game_id=497, active_targets=[24501], should_click_now=False
+[2026-06-30 12:22:43.553455] DEBUG: current_game_id=498, active_targets=[500, 24501], should_click_now=False
+[2026-06-30 12:23:28.357877] DEBUG: current_game_id=499, active_targets=[500, 24501], should_click_now=False
+[2026-06-30 12:23:37.403855] DEBUG: current_game_id=500, active_targets=[500, 24501], should_click_now=True
+[2026-06-30 12:23:55.223408] DEBUG: current_game_id=501, active_targets=[24501], should_click_now=False
+[2026-06-30 12:24:10.344051] DEBUG: current_game_id=502, active_targets=[24501], should_click_now=False
+[2026-06-30 12:24:20.549700] DEBUG: current_game_id=503, active_targets=[506, 24501], should_click_now=False
+[2026-06-30 12:24:31.706793] DEBUG: current_game_id=504, active_targets=[506, 24501], should_click_now=False
+[2026-06-30 12:24:43.254560] DEBUG: current_game_id=505, active_targets=[506, 24501], should_click_now=False
+[2026-06-30 12:25:09.208561] DEBUG: current_game_id=506, active_targets=[506, 24501], should_click_now=True
+[2026-06-30 12:25:24.712171] DEBUG: current_game_id=507, active_targets=[24501], should_click_now=False
+[2026-06-30 12:25:37.146550] DEBUG: current_game_id=508, active_targets=[24501], should_click_now=False
+[2026-06-30 12:25:47.614312] DEBUG: current_game_id=509, active_targets=[512, 24501], should_click_now=False
+[2026-06-30 12:26:04.408393] DEBUG: current_game_id=510, active_targets=[512, 24501], should_click_now=False
+[2026-06-30 12:26:23.034288] DEBUG: current_game_id=511, active_targets=[512, 24501], should_click_now=False
+[2026-06-30 12:26:41.808668] DEBUG: current_game_id=512, active_targets=[512, 24501], should_click_now=True
+[2026-06-30 12:26:59.161058] DEBUG: current_game_id=513, active_targets=[24501], should_click_now=False
+[2026-06-30 12:27:26.350604] DEBUG: current_game_id=514, active_targets=[24501], should_click_now=False
+[2026-06-30 12:27:35.662661] DEBUG: current_game_id=515, active_targets=[515, 24501], should_click_now=True
+[2026-06-30 12:27:46.603388] DEBUG: current_game_id=516, active_targets=[24501], should_click_now=False
+[2026-06-30 12:28:46.724728] DEBUG: current_game_id=517, active_targets=[24501], should_click_now=False
+[2026-06-30 12:28:55.800815] DEBUG: current_game_id=518, active_targets=[521, 24501], should_click_now=False
+[2026-06-30 12:29:17.397647] DEBUG: current_game_id=519, active_targets=[521, 24501], should_click_now=False
+[2026-06-30 12:29:28.452880] DEBUG: current_game_id=520, active_targets=[520, 521, 24501], should_click_now=True
+[2026-06-30 12:29:47.219466] DEBUG: current_game_id=521, active_targets=[521, 24501], should_click_now=True
+[2026-06-30 12:30:33.973430] DEBUG: current_game_id=522, active_targets=[24501], should_click_now=False
+[2026-06-30 12:30:36.947803] DEBUG: current_game_id=523, active_targets=[24501], should_click_now=False
+[2026-06-30 12:30:46.022322] DEBUG: current_game_id=524, active_targets=[528, 24501], should_click_now=False
+[2026-06-30 12:31:33.966631] DEBUG: current_game_id=525, active_targets=[528, 24501], should_click_now=False
+[2026-06-30 12:31:43.999670] DEBUG: current_game_id=526, active_targets=[528, 24501], should_click_now=False
+[2026-06-30 12:31:54.556434] DEBUG: current_game_id=527, active_targets=[528, 24501], should_click_now=False
+[2026-06-30 12:32:12.368923] DEBUG: current_game_id=528, active_targets=[528, 24501], should_click_now=True
+[2026-06-30 12:32:21.648330] DEBUG: current_game_id=529, active_targets=[533, 24501], should_click_now=False
+[2026-06-30 12:32:36.159481] DEBUG: current_game_id=530, active_targets=[533, 24501], should_click_now=False
+[2026-06-30 12:32:48.044775] DEBUG: current_game_id=531, active_targets=[533, 24501], should_click_now=False
+[2026-06-30 12:32:57.193362] DEBUG: current_game_id=532, active_targets=[532, 533, 24501], should_click_now=True
+[2026-06-30 12:33:07.251806] DEBUG: current_game_id=533, active_targets=[533, 24501], should_click_now=True
+[2026-06-30 12:33:22.081490] DEBUG: current_game_id=534, active_targets=[24501], should_click_now=False
+[2026-06-30 12:33:31.199557] DEBUG: current_game_id=535, active_targets=[536, 24501], should_click_now=False
+[2026-06-30 12:33:55.046544] DEBUG: current_game_id=536, active_targets=[536, 24501], should_click_now=True
+[2026-06-30 12:34:10.644763] DEBUG: current_game_id=537, active_targets=[24501], should_click_now=False
+[2026-06-30 12:34:21.363994] DEBUG: current_game_id=538, active_targets=[541, 24501], should_click_now=False
+[2026-06-30 12:34:32.253533] DEBUG: current_game_id=539, active_targets=[541, 24501], should_click_now=False
+[2026-06-30 12:34:55.168296] DEBUG: current_game_id=540, active_targets=[541, 24501], should_click_now=False
+[2026-06-30 12:35:11.309741] DEBUG: current_game_id=541, active_targets=[541, 24501], should_click_now=True
+[2026-06-30 12:35:27.351579] DEBUG: current_game_id=542, active_targets=[24501], should_click_now=False
+[2026-06-30 12:35:36.764655] DEBUG: current_game_id=543, active_targets=[545, 24501], should_click_now=False
+[2026-06-30 12:35:55.244853] DEBUG: current_game_id=544, active_targets=[545, 24501], should_click_now=False
+[2026-06-30 12:36:05.422944] DEBUG: current_game_id=545, active_targets=[545, 24501, 550], should_click_now=True
+[2026-06-30 12:36:21.302649] DEBUG: current_game_id=546, active_targets=[24501, 550], should_click_now=False
+[2026-06-30 12:36:30.910808] DEBUG: current_game_id=547, active_targets=[547, 24501, 550], should_click_now=True
+[2026-06-30 12:36:54.561470] DEBUG: current_game_id=548, active_targets=[24501, 550], should_click_now=False
+[2026-06-30 12:37:07.809501] DEBUG: current_game_id=549, active_targets=[24501, 550], should_click_now=False
+[2026-06-30 12:37:58.477881] DEBUG: current_game_id=550, active_targets=[24501, 550], should_click_now=True
+[2026-06-30 12:38:14.012862] DEBUG: current_game_id=551, active_targets=[24501], should_click_now=False
+[2026-06-30 12:38:26.807290] DEBUG: current_game_id=552, active_targets=[24501], should_click_now=False
+[2026-06-30 12:38:36.795140] DEBUG: current_game_id=553, active_targets=[24501, 558], should_click_now=False
+[2026-06-30 12:39:34.346182] DEBUG: current_game_id=554, active_targets=[24501, 558], should_click_now=False
+[2026-06-30 12:39:44.692541] DEBUG: current_game_id=555, active_targets=[24501, 558], should_click_now=False
+[2026-06-30 12:40:02.961505] DEBUG: current_game_id=556, active_targets=[24501, 558], should_click_now=False
+[2026-06-30 12:40:14.898172] DEBUG: current_game_id=557, active_targets=[24501, 558], should_click_now=False
+[2026-06-30 12:40:26.495117] DEBUG: current_game_id=558, active_targets=[24501, 558], should_click_now=True
+[2026-06-30 12:40:46.882638] DEBUG: current_game_id=559, active_targets=[24501], should_click_now=False
+[2026-06-30 12:41:20.554004] DEBUG: current_game_id=560, active_targets=[24501], should_click_now=False
+[2026-06-30 12:41:31.258831] DEBUG: current_game_id=561, active_targets=[564, 24501], should_click_now=False
+[2026-06-30 12:41:54.154402] DEBUG: current_game_id=562, active_targets=[564, 24501], should_click_now=False
+[2026-06-30 12:42:35.238639] DEBUG: current_game_id=563, active_targets=[564, 24501], should_click_now=False
+[2026-06-30 12:42:47.613254] DEBUG: current_game_id=564, active_targets=[564, 24501], should_click_now=True
+[2026-06-30 12:42:57.955765] DEBUG: current_game_id=565, active_targets=[24501, 566], should_click_now=False
+[2026-06-30 12:43:07.103700] DEBUG: current_game_id=566, active_targets=[24501, 566], should_click_now=True
+[2026-06-30 12:43:39.255202] DEBUG: current_game_id=567, active_targets=[24501], should_click_now=False
+[2026-06-30 12:43:56.623887] DEBUG: current_game_id=568, active_targets=[24501], should_click_now=False
+[2026-06-30 12:44:36.877859] DEBUG: current_game_id=569, active_targets=[24501], should_click_now=False
+[2026-06-30 12:45:24.114077] DEBUG: current_game_id=570, active_targets=[24501], should_click_now=False
+[2026-06-30 12:45:34.753631] DEBUG: current_game_id=571, active_targets=[24501, 574], should_click_now=False
+[2026-06-30 12:45:44.321159] DEBUG: current_game_id=572, active_targets=[24501, 574], should_click_now=False
+[2026-06-30 12:46:10.397171] DEBUG: current_game_id=573, active_targets=[24501, 574], should_click_now=False
+[2026-06-30 12:46:28.251309] DEBUG: current_game_id=574, active_targets=[24501, 574], should_click_now=True
+[2026-06-30 12:46:40.099568] DEBUG: current_game_id=575, active_targets=[24501], should_click_now=False
+[2026-06-30 12:46:51.062460] DEBUG: current_game_id=576, active_targets=[579, 24501], should_click_now=False
+[2026-06-30 12:47:04.338375] DEBUG: current_game_id=577, active_targets=[579, 24501], should_click_now=False
+[2026-06-30 12:47:21.844696] DEBUG: current_game_id=578, active_targets=[579, 24501], should_click_now=False
+[2026-06-30 12:47:45.196516] DEBUG: current_game_id=579, active_targets=[579, 24501], should_click_now=True
+[2026-06-30 12:48:09.554053] DEBUG: current_game_id=580, active_targets=[24501], should_click_now=False
+[2026-06-30 12:48:30.357944] DEBUG: current_game_id=581, active_targets=[24501], should_click_now=False
+[2026-06-30 12:48:43.149835] DEBUG: current_game_id=582, active_targets=[24501], should_click_now=False
+[2026-06-30 12:48:55.772767] DEBUG: current_game_id=583, active_targets=[24501], should_click_now=False
+[2026-06-30 12:49:07.643591] DEBUG: current_game_id=584, active_targets=[24501], should_click_now=False
+[2026-06-30 12:49:24.560827] DEBUG: current_game_id=585, active_targets=[24501], should_click_now=False
+[2026-06-30 12:49:43.654677] DEBUG: current_game_id=586, active_targets=[24501], should_click_now=False
+[2026-06-30 12:49:59.648948] DEBUG: current_game_id=587, active_targets=[24501], should_click_now=False
+[2026-06-30 12:50:39.849786] DEBUG: current_game_id=588, active_targets=[24501], should_click_now=False
+[2026-06-30 12:51:20.174142] DEBUG: current_game_id=589, active_targets=[24501], should_click_now=False
+[2026-06-30 12:51:37.795540] DEBUG: current_game_id=590, active_targets=[24501], should_click_now=False
+[2026-06-30 12:52:09.251458] DEBUG: current_game_id=591, active_targets=[24501], should_click_now=False
+[2026-06-30 12:52:18.512505] DEBUG: current_game_id=592, active_targets=[596, 24501], should_click_now=False
+[2026-06-30 12:52:35.749574] DEBUG: current_game_id=593, active_targets=[596, 24501], should_click_now=False
+[2026-06-30 12:52:47.609259] DEBUG: current_game_id=594, active_targets=[596, 24501], should_click_now=False
+[2026-06-30 12:53:00.818926] DEBUG: current_game_id=595, active_targets=[596, 24501], should_click_now=False
+[2026-06-30 12:53:17.461215] DEBUG: current_game_id=596, active_targets=[596, 24501], should_click_now=True
+[2026-06-30 12:53:33.995062] DEBUG: current_game_id=597, active_targets=[24501], should_click_now=False
+[2026-06-30 12:53:43.743810] DEBUG: current_game_id=598, active_targets=[601, 24501], should_click_now=False
+[2026-06-30 12:53:52.909119] DEBUG: current_game_id=599, active_targets=[601, 24501], should_click_now=False
+[2026-06-30 12:54:06.094153] DEBUG: current_game_id=600, active_targets=[601, 24501], should_click_now=False
+[2026-06-30 12:54:19.920470] DEBUG: current_game_id=601, active_targets=[601, 24501], should_click_now=True
+[2026-06-30 12:54:43.024492] DEBUG: current_game_id=602, active_targets=[24501], should_click_now=False
+[2026-06-30 12:55:40.484086] DEBUG: current_game_id=603, active_targets=[24501], should_click_now=False
+[2026-06-30 12:55:49.142953] DEBUG: current_game_id=604, active_targets=[24501], should_click_now=False
+[2026-06-30 12:56:31.953068] DEBUG: current_game_id=605, active_targets=[24501], should_click_now=False
+[2026-06-30 12:56:50.326405] DEBUG: current_game_id=606, active_targets=[24501], should_click_now=False
+[2026-06-30 12:57:11.967413] DEBUG: current_game_id=607, active_targets=[24501], should_click_now=False
+[2026-06-30 12:57:24.692844] DEBUG: current_game_id=608, active_targets=[24501], should_click_now=False
+[2026-06-30 12:57:34.249292] DEBUG: current_game_id=609, active_targets=[24501, 614], should_click_now=False
+[2026-06-30 12:57:58.556414] DEBUG: current_game_id=610, active_targets=[24501, 614], should_click_now=False
+[2026-06-30 12:58:10.647772] DEBUG: current_game_id=611, active_targets=[24501, 614], should_click_now=False
+[2026-06-30 12:58:24.848352] DEBUG: current_game_id=612, active_targets=[24501, 614], should_click_now=False
+[2026-06-30 12:58:52.341469] DEBUG: current_game_id=613, active_targets=[24501, 614], should_click_now=False
+[2026-06-30 12:59:03.226345] DEBUG: current_game_id=614, active_targets=[24501, 614], should_click_now=True
+[2026-06-30 12:59:15.469284] DEBUG: current_game_id=615, active_targets=[24501], should_click_now=False
+[2026-06-30 12:59:31.010016] DEBUG: current_game_id=616, active_targets=[24501], should_click_now=False
+[2026-06-30 13:01:07.840268] DEBUG: current_game_id=617, active_targets=[24501], should_click_now=False
+[2026-06-30 13:01:12.724676] DEBUG: current_game_id=618, active_targets=[24501], should_click_now=False
+[2026-06-30 13:01:27.500168] DEBUG: current_game_id=619, active_targets=[24501], should_click_now=False
+[2026-06-30 13:02:07.974309] DEBUG: current_game_id=620, active_targets=[24501], should_click_now=False
+[2026-06-30 13:02:16.898625] DEBUG: current_game_id=621, active_targets=[621, 24501], should_click_now=True
+[2026-06-30 13:02:49.289909] DEBUG: current_game_id=622, active_targets=[24501], should_click_now=False
+[2026-06-30 13:03:34.427189] DEBUG: current_game_id=623, active_targets=[24501], should_click_now=False
+[2026-06-30 13:03:57.262569] DEBUG: current_game_id=624, active_targets=[24501], should_click_now=False
+[2026-06-30 13:04:09.542534] DEBUG: current_game_id=625, active_targets=[24501], should_click_now=False
+[2026-06-30 13:05:20.449921] DEBUG: current_game_id=626, active_targets=[24501], should_click_now=False
+[2026-06-30 13:05:30.294613] DEBUG: current_game_id=627, active_targets=[24501, 631], should_click_now=False
+[2026-06-30 13:05:42.915821] DEBUG: current_game_id=628, active_targets=[24501, 631], should_click_now=False
+[2026-06-30 13:06:08.911250] DEBUG: current_game_id=629, active_targets=[24501, 631], should_click_now=False
+[2026-06-30 13:06:20.018720] DEBUG: current_game_id=630, active_targets=[24501, 631], should_click_now=False
+[2026-06-30 13:06:43.153716] DEBUG: current_game_id=631, active_targets=[24501, 631], should_click_now=True
+[2026-06-30 13:06:53.596852] DEBUG: current_game_id=632, active_targets=[636, 24501], should_click_now=False
+[2026-06-30 13:07:02.771602] DEBUG: current_game_id=633, active_targets=[636, 24501], should_click_now=False
+[2026-06-30 13:07:41.812018] DEBUG: current_game_id=634, active_targets=[636, 24501], should_click_now=False
+[2026-06-30 13:14:59.187657] DEBUG: current_game_id=635, active_targets=[636, 24501, 638], should_click_now=False
+[2026-06-30 13:15:09.349796] DEBUG: current_game_id=636, active_targets=[636, 24501, 638], should_click_now=True
+[2026-06-30 13:15:18.840684] DEBUG: current_game_id=637, active_targets=[24501, 638], should_click_now=False
+[2026-06-30 13:15:30.640527] DEBUG: current_game_id=638, active_targets=[24501, 638], should_click_now=True
+[2026-06-30 13:15:47.627607] DEBUG: current_game_id=639, active_targets=[24501], should_click_now=False
+[2026-06-30 13:16:17.472472] DEBUG: current_game_id=640, active_targets=[24501], should_click_now=False
+[2026-06-30 13:17:04.032650] DEBUG: current_game_id=641, active_targets=[24501], should_click_now=False
+[2026-06-30 13:17:21.798144] DEBUG: current_game_id=642, active_targets=[24501], should_click_now=False
+[2026-06-30 13:17:33.276922] DEBUG: current_game_id=643, active_targets=[24501], should_click_now=False
+[2026-06-30 13:18:05.742244] DEBUG: current_game_id=644, active_targets=[24501], should_click_now=False
+[2026-06-30 13:18:36.382775] DEBUG: current_game_id=645, active_targets=[24501], should_click_now=False
+[2026-06-30 13:19:08.915523] DEBUG: current_game_id=646, active_targets=[24501], should_click_now=False
+[2026-06-30 13:19:26.066725] DEBUG: current_game_id=647, active_targets=[24501], should_click_now=False
+[2026-06-30 13:19:45.535909] DEBUG: current_game_id=648, active_targets=[24501], should_click_now=False
+[2026-06-30 13:20:05.688252] DEBUG: current_game_id=649, active_targets=[24501], should_click_now=False
+[2026-06-30 13:20:21.938344] DEBUG: current_game_id=650, active_targets=[24501], should_click_now=False
+[2026-06-30 13:20:48.609639] DEBUG: current_game_id=651, active_targets=[24501], should_click_now=False
+[2026-06-30 13:21:14.310971] DEBUG: current_game_id=652, active_targets=[24501], should_click_now=False
+[2026-06-30 13:21:26.297920] DEBUG: current_game_id=653, active_targets=[24501], should_click_now=False
+[2026-06-30 13:21:37.162478] DEBUG: current_game_id=654, active_targets=[24501, 655], should_click_now=False
+[2026-06-30 13:21:42.448234] DEBUG: current_game_id=655, active_targets=[24501, 655], should_click_now=True
+[2026-06-30 13:21:51.948361] DEBUG: current_game_id=656, active_targets=[656, 24501], should_click_now=True
+[2026-06-30 13:22:01.085135] DEBUG: current_game_id=657, active_targets=[24501], should_click_now=False
+[2026-06-30 13:22:38.891615] DEBUG: current_game_id=658, active_targets=[24501], should_click_now=False
+[2026-06-30 13:23:02.084170] DEBUG: current_game_id=659, active_targets=[24501], should_click_now=False
+[2026-06-30 13:23:25.353972] DEBUG: current_game_id=660, active_targets=[24501], should_click_now=False
+[2026-06-30 13:23:41.093617] DEBUG: current_game_id=661, active_targets=[24501], should_click_now=False
+[2026-06-30 13:23:55.068392] DEBUG: current_game_id=662, active_targets=[24501], should_click_now=False
+[2026-06-30 13:24:18.694160] DEBUG: current_game_id=663, active_targets=[24501], should_click_now=False
+[2026-06-30 13:24:52.925410] DEBUG: current_game_id=664, active_targets=[24501], should_click_now=False
+[2026-06-30 13:25:08.434875] DEBUG: current_game_id=665, active_targets=[24501], should_click_now=False
+[2026-06-30 13:25:17.541506] DEBUG: current_game_id=666, active_targets=[668, 24501], should_click_now=False
+[2026-06-30 13:25:35.296839] DEBUG: current_game_id=667, active_targets=[668, 24501], should_click_now=False
+[2026-06-30 13:26:37.350520] DEBUG: current_game_id=668, active_targets=[668, 24501], should_click_now=True
+[2026-06-30 13:27:02.076264] DEBUG: current_game_id=669, active_targets=[24501], should_click_now=False
+[2026-06-30 13:27:11.649585] DEBUG: current_game_id=670, active_targets=[24501, 670], should_click_now=True
+[2026-06-30 13:27:39.259152] DEBUG: current_game_id=671, active_targets=[24501], should_click_now=False
+[2026-06-30 13:27:48.455418] DEBUG: current_game_id=672, active_targets=[673, 24501], should_click_now=False
+[2026-06-30 13:28:15.913696] DEBUG: current_game_id=673, active_targets=[673, 24501], should_click_now=True
+[2026-06-30 13:28:57.591637] DEBUG: current_game_id=674, active_targets=[24501], should_click_now=False
+[2026-06-30 13:29:35.148745] DEBUG: current_game_id=675, active_targets=[24501], should_click_now=False
+[2026-06-30 13:29:48.074796] DEBUG: current_game_id=676, active_targets=[24501], should_click_now=False
+[2026-06-30 13:30:17.984840] DEBUG: current_game_id=677, active_targets=[24501], should_click_now=False
+[2026-06-30 13:30:32.688464] DEBUG: current_game_id=678, active_targets=[24501], should_click_now=False
+[2026-06-30 13:31:20.393423] DEBUG: current_game_id=679, active_targets=[24501], should_click_now=False
+[2026-06-30 13:31:29.366679] DEBUG: current_game_id=680, active_targets=[24501, 685], should_click_now=False
+[2026-06-30 13:31:42.556635] DEBUG: current_game_id=681, active_targets=[24501, 685], should_click_now=False
+[2026-06-30 13:31:56.213868] DEBUG: current_game_id=682, active_targets=[24501, 685], should_click_now=False
+[2026-06-30 13:32:05.693588] DEBUG: current_game_id=683, active_targets=[688, 24501, 685], should_click_now=False
+[2026-06-30 13:32:46.831420] DEBUG: current_game_id=684, active_targets=[688, 24501, 685], should_click_now=False
+[2026-06-30 13:32:58.667764] DEBUG: current_game_id=685, active_targets=[688, 24501, 685], should_click_now=True
+[2026-06-30 13:33:16.697314] DEBUG: current_game_id=686, active_targets=[688, 24501], should_click_now=False
+[2026-06-30 13:33:34.645627] DEBUG: current_game_id=687, active_targets=[688, 24501], should_click_now=False
+[2026-06-30 13:34:14.040523] DEBUG: current_game_id=688, active_targets=[688, 24501], should_click_now=True
+[2026-06-30 13:34:26.771347] DEBUG: current_game_id=689, active_targets=[24501], should_click_now=False
+[2026-06-30 13:34:37.358518] DEBUG: current_game_id=690, active_targets=[691, 24501], should_click_now=False
+[2026-06-30 13:34:49.670733] DEBUG: current_game_id=691, active_targets=[691, 24501], should_click_now=True
+[2026-06-30 13:35:13.984498] DEBUG: current_game_id=692, active_targets=[24501], should_click_now=False
+[2026-06-30 13:35:42.555260] DEBUG: current_game_id=693, active_targets=[24501], should_click_now=False
+[2026-06-30 13:36:22.049145] DEBUG: current_game_id=694, active_targets=[24501], should_click_now=False
+[2026-06-30 13:36:33.793343] DEBUG: current_game_id=695, active_targets=[24501], should_click_now=False
+[2026-06-30 13:37:25.994038] DEBUG: current_game_id=696, active_targets=[24501], should_click_now=False
+[2026-06-30 13:37:37.891873] DEBUG: current_game_id=697, active_targets=[24501], should_click_now=False
+[2026-06-30 13:38:17.659963] DEBUG: current_game_id=698, active_targets=[24501], should_click_now=False
+[2026-06-30 13:38:36.366192] DEBUG: current_game_id=699, active_targets=[24501], should_click_now=False
+[2026-06-30 13:38:50.142403] DEBUG: current_game_id=700, active_targets=[24501], should_click_now=False
+[2026-06-30 13:39:05.954192] DEBUG: current_game_id=701, active_targets=[24501], should_click_now=False
+[2026-06-30 13:40:23.491825] DEBUG: current_game_id=702, active_targets=[24501], should_click_now=False
+[2026-06-30 13:40:41.800334] DEBUG: current_game_id=703, active_targets=[24501], should_click_now=False
+[2026-06-30 13:41:22.315186] DEBUG: current_game_id=704, active_targets=[24501], should_click_now=False
+[2026-06-30 13:41:34.605374] DEBUG: current_game_id=705, active_targets=[24501], should_click_now=False
+[2026-06-30 13:42:55.416251] DEBUG: current_game_id=706, active_targets=[24501], should_click_now=False
+[2026-06-30 13:43:05.155718] DEBUG: current_game_id=707, active_targets=[24501], should_click_now=False
+[2026-06-30 13:43:21.914597] DEBUG: current_game_id=708, active_targets=[24501], should_click_now=False
+[2026-06-30 13:43:45.871453] DEBUG: current_game_id=709, active_targets=[24501], should_click_now=False
+[2026-06-30 13:43:56.741688] DEBUG: current_game_id=710, active_targets=[24501], should_click_now=False
+[2026-06-30 13:44:06.858251] DEBUG: current_game_id=711, active_targets=[713, 24501], should_click_now=False
+[2026-06-30 13:44:38.321217] DEBUG: current_game_id=712, active_targets=[713, 24501], should_click_now=False
+[2026-06-30 13:44:52.036866] DEBUG: current_game_id=713, active_targets=[713, 24501], should_click_now=True
+[2026-06-30 13:45:02.427613] DEBUG: current_game_id=714, active_targets=[716, 24501], should_click_now=False
+[2026-06-30 13:45:34.551653] DEBUG: current_game_id=715, active_targets=[716, 24501], should_click_now=False
+[2026-06-30 13:46:00.794440] DEBUG: current_game_id=716, active_targets=[716, 24501], should_click_now=True
+[2026-06-30 13:47:56.672448] DEBUG: current_game_id=718, active_targets=[24501], should_click_now=False
+[2026-06-30 13:48:06.661120] DEBUG: current_game_id=719, active_targets=[721, 24501], should_click_now=False
+[2026-06-30 13:48:35.668057] DEBUG: current_game_id=720, active_targets=[721, 24501], should_click_now=False
+[2026-06-30 13:48:46.913876] DEBUG: current_game_id=721, active_targets=[721, 24501], should_click_now=True
+[2026-06-30 13:48:55.929498] DEBUG: current_game_id=722, active_targets=[724, 24501], should_click_now=False
+[2026-06-30 13:49:07.998626] DEBUG: current_game_id=723, active_targets=[724, 24501], should_click_now=False
+[2026-06-30 13:49:37.986547] DEBUG: current_game_id=724, active_targets=[724, 24501], should_click_now=True
+[2026-06-30 13:49:48.353779] DEBUG: current_game_id=725, active_targets=[730, 24501], should_click_now=False
+[2026-06-30 13:51:01.279146] DEBUG: current_game_id=726, active_targets=[730, 24501], should_click_now=False
+[2026-06-30 13:51:13.984977] DEBUG: current_game_id=727, active_targets=[730, 24501], should_click_now=False
+[2026-06-30 13:51:33.949208] DEBUG: current_game_id=728, active_targets=[730, 24501], should_click_now=False
+[2026-06-30 13:51:44.915736] DEBUG: current_game_id=729, active_targets=[730, 732, 24501], should_click_now=False
+[2026-06-30 13:52:32.459613] DEBUG: current_game_id=730, active_targets=[730, 732, 24501], should_click_now=True
+[2026-06-30 13:52:42.910930] DEBUG: current_game_id=731, active_targets=[732, 24501], should_click_now=False
+[2026-06-30 13:53:14.810056] DEBUG: current_game_id=732, active_targets=[732, 24501], should_click_now=True
+[2026-06-30 13:53:31.305157] DEBUG: current_game_id=733, active_targets=[24501], should_click_now=False
+[2026-06-30 13:54:19.902464] DEBUG: current_game_id=734, active_targets=[24501], should_click_now=False
+[2026-06-30 13:54:42.634076] DEBUG: current_game_id=735, active_targets=[24501], should_click_now=False
+[2026-06-30 13:54:54.947905] DEBUG: current_game_id=736, active_targets=[24501], should_click_now=False
+[2026-06-30 13:55:09.418127] DEBUG: current_game_id=737, active_targets=[24501], should_click_now=False
+[2026-06-30 13:55:45.155485] DEBUG: current_game_id=738, active_targets=[24501], should_click_now=False
+[2026-06-30 13:56:05.057316] DEBUG: current_game_id=739, active_targets=[24501], should_click_now=False
+[2026-06-30 13:57:11.890264] DEBUG: current_game_id=740, active_targets=[24501], should_click_now=False
+[2026-06-30 13:57:37.245819] DEBUG: current_game_id=741, active_targets=[24501], should_click_now=False
+[2026-06-30 13:58:27.169655] DEBUG: current_game_id=742, active_targets=[24501], should_click_now=False
+[2026-06-30 14:09:55.601542] DEBUG: current_game_id=743, active_targets=[24501], should_click_now=False
+[2026-06-30 14:10:17.279112] DEBUG: current_game_id=744, active_targets=[24501], should_click_now=False
+[2026-06-30 14:10:26.764829] DEBUG: current_game_id=745, active_targets=[24501, 750], should_click_now=False
+[2026-06-30 14:10:36.062976] DEBUG: current_game_id=746, active_targets=[24501, 750], should_click_now=False
+[2026-06-30 14:10:59.272972] DEBUG: current_game_id=747, active_targets=[24501, 750], should_click_now=False
+[2026-06-30 14:11:09.954307] DEBUG: current_game_id=748, active_targets=[753, 24501, 750], should_click_now=False
+[2026-06-30 14:11:50.853266] DEBUG: current_game_id=749, active_targets=[753, 24501, 750], should_click_now=False
+[2026-06-30 14:12:13.175919] DEBUG: current_game_id=750, active_targets=[753, 24501, 750], should_click_now=True
+[2026-06-30 14:12:36.613818] DEBUG: current_game_id=751, active_targets=[753, 24501], should_click_now=False
+[2026-06-30 14:12:57.224182] DEBUG: current_game_id=752, active_targets=[753, 24501], should_click_now=False
+[2026-06-30 14:13:08.867952] DEBUG: current_game_id=753, active_targets=[753, 24501], should_click_now=True
+[2026-06-30 14:13:25.330391] DEBUG: current_game_id=754, active_targets=[24501], should_click_now=False
+[2026-06-30 14:13:53.409450] DEBUG: current_game_id=755, active_targets=[24501], should_click_now=False
+[2026-06-30 14:14:02.951633] DEBUG: current_game_id=756, active_targets=[24501, 758], should_click_now=False
+[2026-06-30 14:14:42.099564] DEBUG: current_game_id=757, active_targets=[24501, 758], should_click_now=False
+[2026-06-30 14:14:51.205910] DEBUG: current_game_id=758, active_targets=[760, 24501, 758], should_click_now=True
+[2026-06-30 14:15:11.299546] DEBUG: current_game_id=759, active_targets=[760, 24501], should_click_now=False
+[2026-06-30 14:15:20.704889] DEBUG: current_game_id=760, active_targets=[760, 762, 24501], should_click_now=True
+[2026-06-30 14:15:30.747258] DEBUG: current_game_id=761, active_targets=[762, 24501], should_click_now=False
+[2026-06-30 14:15:54.705664] DEBUG: current_game_id=762, active_targets=[762, 24501], should_click_now=True
+[2026-06-30 14:16:23.699737] DEBUG: current_game_id=763, active_targets=[24501], should_click_now=False
+[2026-06-30 14:16:53.507451] DEBUG: current_game_id=764, active_targets=[24501], should_click_now=False
+[2026-06-30 14:17:05.078150] DEBUG: current_game_id=765, active_targets=[24501], should_click_now=False
+[2026-06-30 14:17:14.216772] DEBUG: current_game_id=766, active_targets=[770, 24501], should_click_now=False
+[2026-06-30 14:17:43.148762] DEBUG: current_game_id=767, active_targets=[770, 24501], should_click_now=False
+[2026-06-30 14:17:53.268963] DEBUG: current_game_id=768, active_targets=[768, 770, 24501], should_click_now=True
+[2026-06-30 14:18:23.749619] DEBUG: current_game_id=769, active_targets=[770, 24501], should_click_now=False
+[2026-06-30 14:18:33.488114] DEBUG: current_game_id=770, active_targets=[770, 772, 24501], should_click_now=True
+[2026-06-30 14:18:43.788729] DEBUG: current_game_id=771, active_targets=[772, 24501], should_click_now=False
+[2026-06-30 14:19:14.983024] DEBUG: current_game_id=772, active_targets=[772, 24501], should_click_now=True
+[2026-06-30 14:19:50.359988] DEBUG: current_game_id=773, active_targets=[24501], should_click_now=False
+[2026-06-30 14:20:04.105868] DEBUG: current_game_id=774, active_targets=[24501], should_click_now=False
+[2026-06-30 14:20:24.961319] DEBUG: current_game_id=775, active_targets=[24501], should_click_now=False
+[2026-06-30 14:20:59.143002] DEBUG: current_game_id=776, active_targets=[24501], should_click_now=False
+[2026-06-30 14:21:12.360387] DEBUG: current_game_id=777, active_targets=[24501], should_click_now=False
+[2026-06-30 14:21:51.765470] DEBUG: current_game_id=778, active_targets=[24501], should_click_now=False
+[2026-06-30 14:22:00.792413] DEBUG: current_game_id=779, active_targets=[781, 24501], should_click_now=False
+[2026-06-30 14:22:18.529898] DEBUG: current_game_id=780, active_targets=[781, 24501], should_click_now=False
+[2026-06-30 14:22:32.950607] DEBUG: current_game_id=781, active_targets=[781, 24501], should_click_now=True
+[2026-06-30 14:23:22.854808] DEBUG: current_game_id=782, active_targets=[24501], should_click_now=False
+[2026-06-30 14:23:32.171171] DEBUG: current_game_id=783, active_targets=[24501, 783], should_click_now=True
+[2026-06-30 14:23:43.008856] DEBUG: current_game_id=784, active_targets=[24501], should_click_now=False
+[2026-06-30 14:24:04.390757] DEBUG: current_game_id=785, active_targets=[24501], should_click_now=False
+[2026-06-30 14:24:14.317817] DEBUG: current_game_id=786, active_targets=[788, 24501], should_click_now=False
+[2026-06-30 14:24:28.846643] DEBUG: current_game_id=787, active_targets=[788, 24501], should_click_now=False
+[2026-06-30 14:25:01.299827] DEBUG: current_game_id=788, active_targets=[788, 24501], should_click_now=True
+[2026-06-30 14:25:11.171000] DEBUG: current_game_id=789, active_targets=[789, 24501], should_click_now=True
+[2026-06-30 14:25:22.960551] DEBUG: current_game_id=790, active_targets=[24501], should_click_now=False
+[2026-06-30 14:25:32.158177] DEBUG: current_game_id=791, active_targets=[24501, 791], should_click_now=True
+[2026-06-30 14:25:47.400472] DEBUG: current_game_id=792, active_targets=[24501], should_click_now=False
+[2026-06-30 14:26:05.660181] DEBUG: current_game_id=793, active_targets=[24501], should_click_now=False
+[2026-06-30 14:26:14.673313] DEBUG: current_game_id=794, active_targets=[24501, 799], should_click_now=False
+[2026-06-30 14:26:34.101787] DEBUG: current_game_id=795, active_targets=[24501, 799], should_click_now=False
+[2026-06-30 14:26:47.742055] DEBUG: current_game_id=796, active_targets=[24501, 799], should_click_now=False
+[2026-06-30 14:27:11.220037] DEBUG: current_game_id=797, active_targets=[24501, 799], should_click_now=False
+[2026-06-30 14:27:53.055953] DEBUG: current_game_id=798, active_targets=[24501, 799], should_click_now=False
+[2026-06-30 14:28:26.012291] DEBUG: current_game_id=799, active_targets=[24501, 799], should_click_now=True
+[2026-06-30 14:28:38.118635] DEBUG: current_game_id=800, active_targets=[24501], should_click_now=False
+[2026-06-30 14:29:00.380199] DEBUG: current_game_id=801, active_targets=[24501], should_click_now=False
+[2026-06-30 14:29:13.024493] DEBUG: current_game_id=802, active_targets=[24501], should_click_now=False
+[2026-06-30 14:29:24.281714] DEBUG: current_game_id=803, active_targets=[24501, 807], should_click_now=False
+[2026-06-30 14:29:33.983470] DEBUG: current_game_id=804, active_targets=[24501, 807], should_click_now=False
+[2026-06-30 14:29:44.141630] DEBUG: current_game_id=805, active_targets=[24501, 807], should_click_now=False
+[2026-06-30 14:30:01.364103] DEBUG: current_game_id=806, active_targets=[24501, 807], should_click_now=False
+[2026-06-30 14:30:28.766965] DEBUG: current_game_id=807, active_targets=[24501, 807], should_click_now=True
+[2026-06-30 14:30:46.365781] DEBUG: current_game_id=808, active_targets=[24501], should_click_now=False
+[2026-06-30 14:30:59.216465] DEBUG: current_game_id=809, active_targets=[24501], should_click_now=False
+[2026-06-30 14:31:08.433629] DEBUG: current_game_id=810, active_targets=[811, 24501], should_click_now=False
+[2026-06-30 14:31:17.502403] DEBUG: current_game_id=811, active_targets=[811, 24501], should_click_now=True
+[2026-06-30 14:31:31.469637] DEBUG: current_game_id=812, active_targets=[24501], should_click_now=False
+[2026-06-30 14:31:58.750937] DEBUG: current_game_id=813, active_targets=[24501], should_click_now=False
+[2026-06-30 14:32:08.541044] DEBUG: current_game_id=814, active_targets=[24501, 815], should_click_now=False
+[2026-06-30 14:34:18.826651] DEBUG: current_game_id=815, active_targets=[24501, 815], should_click_now=True
+[2026-06-30 14:34:25.955136] DEBUG: current_game_id=816, active_targets=[24501], should_click_now=False
+[2026-06-30 14:34:52.259876] DEBUG: current_game_id=817, active_targets=[24501], should_click_now=False
+[2026-06-30 14:35:31.138704] DEBUG: current_game_id=818, active_targets=[24501], should_click_now=False
+[2026-06-30 14:36:09.962296] DEBUG: current_game_id=819, active_targets=[24501], should_click_now=False
+[2026-06-30 14:36:48.160248] DEBUG: current_game_id=820, active_targets=[24501], should_click_now=False
+[2026-06-30 14:37:27.707389] DEBUG: current_game_id=821, active_targets=[24501], should_click_now=False
+[2026-06-30 14:37:40.259772] DEBUG: current_game_id=822, active_targets=[24501], should_click_now=False
+[2026-06-30 14:38:30.894030] DEBUG: current_game_id=823, active_targets=[24501], should_click_now=False
+[2026-06-30 14:39:23.203303] DEBUG: current_game_id=824, active_targets=[24501], should_click_now=False
+[2026-06-30 14:39:34.908266] DEBUG: current_game_id=825, active_targets=[24501], should_click_now=False
+[2026-06-30 15:44:05.281275] DEBUG: current_game_id=826, active_targets=[827, 24501], should_click_now=False
+[2026-06-30 15:44:37.701623] DEBUG: current_game_id=827, active_targets=[827, 24501], should_click_now=True
+[2026-06-30 15:45:02.302596] DEBUG: current_game_id=828, active_targets=[24501], should_click_now=False
+[2026-06-30 15:45:20.086066] DEBUG: current_game_id=829, active_targets=[24501], should_click_now=False
+[2026-06-30 15:45:33.319389] DEBUG: current_game_id=830, active_targets=[24501], should_click_now=False
+[2026-06-30 15:45:46.340056] DEBUG: current_game_id=831, active_targets=[24501], should_click_now=False
+[2026-06-30 15:45:55.358531] DEBUG: current_game_id=832, active_targets=[832, 24501], should_click_now=True
+[2026-06-30 15:46:08.191131] DEBUG: current_game_id=833, active_targets=[24501], should_click_now=False
+[2026-06-30 15:46:27.091644] DEBUG: current_game_id=834, active_targets=[24501], should_click_now=False
+[2026-06-30 15:46:44.257437] DEBUG: current_game_id=835, active_targets=[24501], should_click_now=False
+[2026-06-30 15:46:57.827965] DEBUG: current_game_id=836, active_targets=[24501], should_click_now=False
+[2026-06-30 15:47:17.862881] DEBUG: current_game_id=837, active_targets=[24501], should_click_now=False
+[2026-06-30 15:47:39.678995] DEBUG: current_game_id=838, active_targets=[24501], should_click_now=False
+[2026-06-30 15:48:08.811510] DEBUG: current_game_id=839, active_targets=[24501], should_click_now=False
+[2026-06-30 15:48:27.204089] DEBUG: current_game_id=840, active_targets=[24501], should_click_now=False
+[2026-06-30 15:48:42.002602] DEBUG: current_game_id=841, active_targets=[24501], should_click_now=False
+[2026-06-30 15:49:16.238749] DEBUG: current_game_id=842, active_targets=[24501], should_click_now=False
+[2026-06-30 15:49:45.837285] DEBUG: current_game_id=843, active_targets=[24501], should_click_now=False
+[2026-06-30 15:50:10.460084] DEBUG: current_game_id=844, active_targets=[24501], should_click_now=False
+[2026-06-30 15:50:31.763009] DEBUG: current_game_id=845, active_targets=[24501], should_click_now=False
+[2026-06-30 15:50:42.657991] DEBUG: current_game_id=846, active_targets=[24501, 846], should_click_now=True
+[2026-06-30 15:50:51.778788] DEBUG: current_game_id=847, active_targets=[24501], should_click_now=False
+[2026-06-30 15:51:09.738300] DEBUG: current_game_id=848, active_targets=[24501], should_click_now=False
+[2026-06-30 15:51:19.383695] DEBUG: current_game_id=849, active_targets=[852, 24501], should_click_now=False
+[2026-06-30 15:51:35.762270] DEBUG: current_game_id=850, active_targets=[852, 24501], should_click_now=False
+[2026-06-30 15:51:45.490674] DEBUG: current_game_id=851, active_targets=[851, 852, 24501], should_click_now=True
+[2026-06-30 15:51:54.663407] DEBUG: current_game_id=852, active_targets=[852, 24501], should_click_now=True
+[2026-06-30 15:52:19.787956] DEBUG: current_game_id=853, active_targets=[24501], should_click_now=False
+[2026-06-30 15:53:03.631199] DEBUG: current_game_id=854, active_targets=[24501], should_click_now=False
+[2026-06-30 15:53:12.741476] DEBUG: current_game_id=855, active_targets=[856, 24501], should_click_now=False
+[2026-06-30 15:53:21.873765] DEBUG: current_game_id=856, active_targets=[856, 24501], should_click_now=True
+[2026-06-30 15:53:53.438208] DEBUG: current_game_id=857, active_targets=[24501], should_click_now=False
+[2026-06-30 15:54:46.230967] DEBUG: current_game_id=858, active_targets=[24501], should_click_now=False
+[2026-06-30 15:54:58.831741] DEBUG: current_game_id=859, active_targets=[24501], should_click_now=False
+[2026-06-30 15:55:08.650514] DEBUG: current_game_id=860, active_targets=[865, 24501], should_click_now=False
+[2026-06-30 15:55:40.242044] DEBUG: current_game_id=861, active_targets=[865, 24501], should_click_now=False
+[2026-06-30 15:55:52.133252] DEBUG: current_game_id=862, active_targets=[865, 24501], should_click_now=False
+[2026-06-30 15:56:03.699747] DEBUG: current_game_id=863, active_targets=[865, 24501], should_click_now=False
+[2026-06-30 15:56:13.131859] DEBUG: current_game_id=864, active_targets=[865, 24501], should_click_now=False
+[2026-06-30 15:56:28.521812] DEBUG: current_game_id=865, active_targets=[865, 24501], should_click_now=True
+[2026-06-30 15:56:44.068741] DEBUG: current_game_id=866, active_targets=[24501], should_click_now=False
+[2026-06-30 15:57:01.619363] DEBUG: current_game_id=867, active_targets=[24501], should_click_now=False
+[2026-06-30 15:57:10.770829] DEBUG: current_game_id=868, active_targets=[24501, 870], should_click_now=False
+[2026-06-30 15:57:35.306289] DEBUG: current_game_id=869, active_targets=[24501, 870], should_click_now=False
+[2026-06-30 15:57:51.968548] DEBUG: current_game_id=870, active_targets=[24501, 870], should_click_now=True
+[2026-06-30 15:58:16.742844] DEBUG: current_game_id=871, active_targets=[24501], should_click_now=False
+[2026-06-30 15:58:54.396241] DEBUG: current_game_id=872, active_targets=[24501], should_click_now=False
+[2026-06-30 15:59:22.045621] DEBUG: current_game_id=873, active_targets=[24501], should_click_now=False
+[2026-06-30 15:59:31.992299] DEBUG: current_game_id=874, active_targets=[24501, 878], should_click_now=False
+[2026-06-30 15:59:41.508086] DEBUG: current_game_id=875, active_targets=[24501, 878], should_click_now=False
+[2026-06-30 16:00:45.580997] DEBUG: current_game_id=876, active_targets=[24501, 878], should_click_now=False
+[2026-06-30 16:01:07.019862] DEBUG: current_game_id=877, active_targets=[24501, 878], should_click_now=False
+[2026-06-30 16:01:09.228080] DEBUG: current_game_id=878, active_targets=[24501, 878], should_click_now=True
+[2026-06-30 16:01:41.944031] DEBUG: current_game_id=879, active_targets=[24501], should_click_now=False
+[2026-06-30 16:02:03.682268] DEBUG: current_game_id=880, active_targets=[24501], should_click_now=False
+[2026-06-30 16:02:14.958289] DEBUG: current_game_id=881, active_targets=[884, 24501], should_click_now=False
+[2026-06-30 16:02:56.372474] DEBUG: current_game_id=882, active_targets=[884, 24501], should_click_now=False
+[2026-06-30 16:03:13.799853] DEBUG: current_game_id=883, active_targets=[884, 24501], should_click_now=False
+[2026-06-30 16:03:45.240979] DEBUG: current_game_id=884, active_targets=[884, 24501], should_click_now=True
+[2026-06-30 16:04:23.681305] DEBUG: current_game_id=885, active_targets=[24501], should_click_now=False
+[2026-06-30 16:19:16.958140] DEBUG: current_game_id=886, active_targets=[24501, 886], should_click_now=True
+[2026-06-30 16:19:30.949621] DEBUG: current_game_id=887, active_targets=[24501], should_click_now=False
+[2026-06-30 16:19:39.394221] DEBUG: current_game_id=888, active_targets=[888, 24501], should_click_now=True
+[2026-06-30 16:19:58.345429] DEBUG: current_game_id=889, active_targets=[24501], should_click_now=False
+[2026-06-30 16:20:12.748865] DEBUG: current_game_id=890, active_targets=[24501], should_click_now=False
+[2026-06-30 16:20:38.013327] DEBUG: current_game_id=891, active_targets=[24501], should_click_now=False
+[2026-06-30 16:20:48.278032] DEBUG: current_game_id=892, active_targets=[24501], should_click_now=False

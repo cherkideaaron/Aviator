@@ -70,7 +70,7 @@ log.setLevel(logging.ERROR)
 db_config = {
     'host': '127.0.0.1',
     'user': 'root',         # Replace with your MySQL username
-    'password': 'Et3aa@123', # Replace with your MySQL password
+    'password': 'Aaron@123', # Replace with your MySQL password
     'database': 'aviator_db'
 }
 
@@ -711,12 +711,12 @@ def get_summary_data():
         session_count = cursor.fetchone()['cnt']
 
         if session_count > 0:
-            cursor.execute("SELECT id, raw_value FROM game_data ORDER BY id ASC")
+            cursor.execute("SELECT id, timestamp, raw_value FROM game_data ORDER BY id ASC")
             rows = cursor.fetchall()
             source = "session"
         else:
             # Fall back to all-time history (last 2000 for performance)
-            cursor.execute("SELECT id, raw_value FROM all_games ORDER BY id DESC LIMIT 2000")
+            cursor.execute("SELECT id, timestamp, raw_value FROM all_games ORDER BY id DESC LIMIT 2000")
             rows = cursor.fetchall()
             rows = list(reversed(rows))  # chronological order
             source = "all_games"
@@ -725,7 +725,7 @@ def get_summary_data():
         conn.close()
         return jsonify({
             "status": "success",
-            "results": [{"id": int(r["id"]), "value": float(r["raw_value"])} for r in rows],
+            "results": [{"id": int(r["id"]), "timestamp": r["timestamp"].isoformat() if r["timestamp"] else None, "value": float(r["raw_value"])} for r in rows],
             "count": len(rows),
             "source": source
         }), 200

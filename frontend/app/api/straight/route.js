@@ -3,27 +3,30 @@ export const dynamic = 'force-dynamic';
 global.forceResumeRoundIds = global.forceResumeRoundIds || new Set();
 
 // ─────────────────────────────────────────────────────────────────────────────
-//  Smart Martingale — new entry-gating logic
+//  Smart Martingale — 2-phase resume logic
 //
 //  STATE MACHINE:
 //    BETTING   → normal; place bets, double on loss, reset on win.
-//                After 3+ consecutive bad results → enter WATCHING.
+//                After 3+ consecutive bad results → enter COOLING.
 //
-//    WATCHING  → sit out; observe a 10-round window from the first good result
-//                after the bad streak ends.
-//                  • If another 3+ consecutive bad streak occurs within the window
-//                    → reset the 10-round counter (start over from the next good).
-//                  • Once a clean 10-round window completes with no 3+ streak
-//                    → enter AWAITING state.
+//    COOLING   → Phase 1. Sit out.
+//                Wait for the first GOOD result after the bad streak ends.
+//                Then count a 10-round window (that good result = round 1).
+//                If a NEW 3+ consecutive bad streak occurs inside the window:
+//                  → reset window; wait for next good; restart 10-round count.
+//                Once 10 clean rounds complete → enter AWAITING.
 //
-//    AWAITING  → still sitting out; wait for the very next bad result.
-//                When a bad result occurs → immediately enter BETTING again.
+//    AWAITING  → Phase 2. Sit out.
+//                Watch for 2 consecutive bad results.
+//                On the 2nd consecutive bad → start BETTING on the very NEXT round.
+//                Phase 2 NEVER loops back to Phase 1.
+//                Phase 1 (COOLING) is only re-entered from BETTING.
 // ─────────────────────────────────────────────────────────────────────────────
 
 function computeStrategies(results) {
-  const BASE_BET              = 0.2;
-  const PAUSE_TRIGGER_LOSSES  = 3;   // consecutive bad results that trigger WATCHING
-  const CLEAN_WINDOW          = 10;  // rounds that must pass without a 3+ streak
+  const BASE_BET             = 0.2;
+  const PAUSE_TRIGGER_LOSSES = 3;
+  const CLEAN_WINDOW         = 10;
 
   // ── Plain unlimited Martingale ──────────────────────────────────────────────
   let plainBalance = 0;
@@ -39,35 +42,71 @@ function computeStrategies(results) {
       index:     idx + 1,
       timestamp: `Round ${r.id}`,
       isWin,
-      betPlaced: Math.round(betPlaced   * 100) / 100,
-      change:    Math.round(change      * 100) / 100,
+      betPlaced: Math.round(betPlaced    * 100) / 100,
+      change:    Math.round(change       * 100) / 100,
       balance:   Math.round(plainBalance * 100) / 100,
       skipped:   false,
     };
   });
 
   // ── Smart Martingale ────────────────────────────────────────────────────────
-  let smartBalance      = 0;
-  let smartBet          = BASE_BET;
+  let smartBalance = 0;
+  let smartBet     = BASE_BET;
 
-  // State: 'BETTING' | 'WATCHING' | 'AWAITING'
-  let mode              = 'BETTING';
+  let mode = 'BETTING';
+  let consecutiveLosses = 0;
 
-  let consecutiveLosses = 0;   // streak while BETTING
+  // COOLING (Phase 1)
+  let coolingWindowStarted = false;
+  let cleanRounds          = 0;
+  let coolBadStreak        = 0;
 
-  // WATCHING state bookkeeping
-  let watchWindow       = [];  // raw values seen in the current 10-round window
-  let watchBadStreak    = 0;   // consecutive bad results inside watch window
-  let watchingBadStreak = 0;   // bad streak accumulator during watching
-  // We start the 10-round window from the first GOOD result after the bad streak
-  let awaitingGoodStart = false; // true when inside a bad streak, waiting for good
+  // AWAITING (Phase 2)
+  let awaitBadStreak = 0;
+
+  // ── Pause/Resume history ───────────────────────────────────────────────────
+  const pauseResumeHistory = [];
+  let currentPause = null;
+  // currentPause = {
+  //   pauseRound, pauseTimestamp,
+  //   phase1Seq: [],   phase1Resets: 0,
+  //   phase2Seq: [],
+  //   resumeRound: null, resumeTimestamp: null
+  // }
+
+  // ── Bad Streak Tracker ─────────────────────────────────────────────────────
+  const badStreakHistory = [];
+  let trackerBadStreak   = 0;
+  let lastStreakRound     = null;
+  let lastStreakTime      = null;
 
   const smartBets = [];
 
   results.forEach((r, idx) => {
-    const isBad = r.value < 2.0;   // "bad" = below 2.0x
+    const isBad  = r.value < 2.0;
     const isGood = !isBad;
 
+    // ── Bad Streak tracker (independent of strategy) ─────────────────────────
+    if (isBad) {
+      trackerBadStreak++;
+      if (trackerBadStreak === 3) {
+        const currentRound = idx + 1;
+        const currentTs    = r.timestamp ? new Date(r.timestamp) : null;
+        let roundsSinceLast = null;
+        let timeSinceLastMs = null;
+        if (lastStreakRound !== null) {
+          roundsSinceLast = currentRound - lastStreakRound;
+          if (currentTs && lastStreakTime) timeSinceLastMs = currentTs.getTime() - lastStreakTime.getTime();
+        }
+        badStreakHistory.push({ roundId: currentRound, timestamp: r.timestamp, roundsSinceLast, timeSinceLastMs });
+        lastStreakRound = currentRound;
+        lastStreakTime  = currentTs;
+      }
+    } else {
+      trackerBadStreak = 0;
+    }
+
+    // ── pushSkipped helper ────────────────────────────────────────────────────
     const pushSkipped = (extraFields = {}) => {
       smartBets.push({
         index:     idx + 1,
@@ -80,7 +119,7 @@ function computeStrategies(results) {
         mode,
         ...extraFields,
       });
-      // Force resume check: if user pressed ^ on this skipped round
+      // Manual force-resume (^ key)
       if (global.forceResumeRoundIds && global.forceResumeRoundIds.has(r.id)) {
         mode = 'BETTING';
         consecutiveLosses = 0;
@@ -94,114 +133,138 @@ function computeStrategies(results) {
       let change;
 
       if (isGood) {
-        change             = smartBet;
-        smartBalance      += change;
-        smartBet           = BASE_BET;
-        consecutiveLosses  = 0;
+        change            = smartBet;
+        smartBalance     += change;
+        smartBet          = BASE_BET;
+        consecutiveLosses = 0;
       } else {
-        change             = -smartBet;
-        smartBalance      += change;
-        smartBet          *= 2;
+        change            = -smartBet;
+        smartBalance     += change;
+        smartBet         *= 2;
         consecutiveLosses++;
       }
 
       const triggeredPause = consecutiveLosses >= PAUSE_TRIGGER_LOSSES;
       if (triggeredPause) {
-        // Transition to WATCHING: bad streak just ended on THIS round.
-        // We need to wait for the next good result to START the 10-round window.
-        mode               = 'WATCHING';
-        watchWindow        = [];
-        watchBadStreak     = 0;
-        watchingBadStreak  = 0;
-        awaitingGoodStart  = true;   // don't count rounds until a good result appears
-        consecutiveLosses  = 0;
+        mode                 = 'COOLING';
+        coolingWindowStarted = false;
+        cleanRounds          = 0;
+        coolBadStreak        = 0;
+        consecutiveLosses    = 0;
+        // Start recording this pause
+        currentPause = {
+          pauseRound:     idx + 1,
+          pauseTimestamp: r.timestamp,
+          phase1Seq:      [],
+          phase1Resets:   0,
+          phase2Seq:      [],
+          resumeRound:    null,
+          resumeTimestamp: null,
+        };
       }
 
       smartBets.push({
-        index:              idx + 1,
-        timestamp:          `Round ${r.id}`,
-        isWin:              isGood,
-        betPlaced:          Math.round(betPlaced     * 100) / 100,
-        change:             Math.round(change        * 100) / 100,
-        balance:            Math.round(smartBalance  * 100) / 100,
-        skipped:            false,
-        mode:               'BETTING',
+        index:             idx + 1,
+        timestamp:         `Round ${r.id}`,
+        isWin:             isGood,
+        betPlaced:         Math.round(betPlaced    * 100) / 100,
+        change:            Math.round(change       * 100) / 100,
+        balance:           Math.round(smartBalance * 100) / 100,
+        skipped:           false,
+        mode:              'BETTING',
         consecutiveLosses,
         triggeredPause,
       });
       return;
     }
 
-    // ── WATCHING mode ─────────────────────────────────────────────────────────
-    if (mode === 'WATCHING') {
-      if (awaitingGoodStart) {
-        // Still inside (or just after) the triggering bad streak.
-        // Wait for the first good result to open the 10-round window.
+    // ── COOLING mode (Phase 1) ────────────────────────────────────────────────
+    if (mode === 'COOLING') {
+      if (currentPause) currentPause.phase1Seq.push(isBad ? 0 : 1);
+
+      if (!coolingWindowStarted) {
         if (isBad) {
-          // More bad results — still waiting for good; bad streak continues
-          watchingBadStreak++;
-          pushSkipped({ watchProgress: 0, watchWindow: watchWindow.length, watchBadStreak: watchingBadStreak, awaitingGood: true });
+          pushSkipped({ phase: 1, waitingForGood: true, cleanRounds });
           return;
         } else {
-          // First good result → open the window, include this round
-          awaitingGoodStart  = false;
-          watchingBadStreak  = 0;
-          watchWindow        = [r.value];
-          watchBadStreak     = 0;
-        }
-      } else {
-        // Add round to the watch window
-        watchWindow.push(r.value);
-
-        if (isBad) {
-          watchBadStreak++;
-          if (watchBadStreak >= PAUSE_TRIGGER_LOSSES) {
-            // New bad streak within window → RESET window; wait for next good
-            watchWindow       = [];
-            watchBadStreak    = 0;
-            awaitingGoodStart = true;
-            pushSkipped({ watchProgress: 0, windowReset: true, watchBadStreak: PAUSE_TRIGGER_LOSSES });
-            return;
-          }
-        } else {
-          watchBadStreak = 0;
+          // First good → open window; this is Round 1
+          coolingWindowStarted = true;
+          cleanRounds          = 1;
+          coolBadStreak        = 0;
+          pushSkipped({ phase: 1, cleanRounds, windowStarted: true });
+          return;
         }
       }
 
-      // Check if window is complete (reached CLEAN_WINDOW rounds)
-      if (watchWindow.length >= CLEAN_WINDOW) {
-        // Clean window achieved → transition to AWAITING
-        mode = 'AWAITING';
-        pushSkipped({ watchProgress: watchWindow.length, windowComplete: true });
+      // Window is open
+      cleanRounds++;
+
+      if (isBad) {
+        coolBadStreak++;
+        if (coolBadStreak >= PAUSE_TRIGGER_LOSSES) {
+          // New 3+ bad streak → reset
+          coolingWindowStarted = false;
+          cleanRounds          = 0;
+          coolBadStreak        = 0;
+          if (currentPause) currentPause.phase1Resets++;
+          pushSkipped({ phase: 1, windowReset: true, cleanRounds: 0 });
+          return;
+        }
+      } else {
+        coolBadStreak = 0;
+      }
+
+      if (cleanRounds >= CLEAN_WINDOW) {
+        // 10 clean rounds done → enter AWAITING
+        mode           = 'AWAITING';
+        awaitBadStreak = 0;
+        pushSkipped({ phase: 1, cleanRounds, windowComplete: true });
         return;
       }
 
-      // Still building the window
-      pushSkipped({ watchProgress: watchWindow.length, watchBadStreak });
+      pushSkipped({ phase: 1, cleanRounds, coolBadStreak });
       return;
     }
 
-    // ── AWAITING mode ─────────────────────────────────────────────────────────
+    // ── AWAITING mode (Phase 2) ───────────────────────────────────────────────
     if (mode === 'AWAITING') {
+      if (currentPause) currentPause.phase2Seq.push(isBad ? 0 : 1);
+
       if (isBad) {
-        // The trigger bad result arrived.
-        // Do NOT bet on this round — it is just the entry signal.
-        // Record it as a trigger/skipped round, then start BETTING fresh
-        // on the very next round (e.g. bad on round 12 → bet starts round 13).
-        pushSkipped({ awaitingTrigger: true });   // mode is still 'AWAITING' here
-        mode              = 'BETTING';
-        consecutiveLosses = 0;
-        // smartBet intentionally NOT reset — resumes from where it stopped
-        // e.g. after 3 losses (0.2→0.4→0.8→1.6) it continues at 1.6
+        awaitBadStreak++;
+        if (awaitBadStreak >= 2) {
+          // 2 consecutive bad results → resume BETTING on the NEXT round
+          if (currentPause) {
+            currentPause.resumeRound     = idx + 2; // next round index
+            currentPause.resumeTimestamp = r.timestamp;
+            const totalWaited = (idx + 1) - currentPause.pauseRound;
+            pauseResumeHistory.push({ ...currentPause, totalRoundsWaited: totalWaited });
+            currentPause = null;
+          }
+          pushSkipped({ phase: 2, awaitBadStreak, triggerFired: true });
+          mode              = 'BETTING';
+          consecutiveLosses = 0;
+          return;
+        }
+        pushSkipped({ phase: 2, awaitBadStreak });
       } else {
-        // Good result while awaiting — keep waiting for the bad trigger
-        pushSkipped({ awaitingEntry: true });
+        awaitBadStreak = 0;
+        pushSkipped({ phase: 2, awaitBadStreak });
       }
       return;
     }
   });
 
-  return { plainBets, smartBets };
+  // If still paused at the end of the data, save the incomplete pause
+  if (currentPause) {
+    const totalWaited = results.length - currentPause.pauseRound;
+    pauseResumeHistory.push({ ...currentPause, resumeRound: null, resumeTimestamp: null, totalRoundsWaited: totalWaited, incomplete: true });
+  }
+
+  const latestTimestamp = results.length > 0 ? results[results.length - 1].timestamp : null;
+  const latestRoundId   = results.length > 0 ? results[results.length - 1].id        : null;
+
+  return { plainBets, smartBets, badStreakHistory, pauseResumeHistory, latestTimestamp, latestRoundId };
 }
 
 
@@ -211,7 +274,7 @@ export async function GET() {
   const stream = new ReadableStream({
     async start(controller) {
       let lastCount = -1;
-      let closed = false;
+      let closed    = false;
 
       const send = (payload) => {
         try {
@@ -223,17 +286,18 @@ export async function GET() {
 
       const check = async () => {
         try {
-          const res = await fetch('http://127.0.0.1:5000/summary-data', { cache: 'no-store' });
-          const data = await res.json();
+          const res   = await fetch('http://127.0.0.1:5000/summary-data', { cache: 'no-store' });
+          const data  = await res.json();
           const count = data.count ?? 0;
 
-          if (count !== lastCount) {
-            lastCount = count;
+          if (count !== lastCount || global.forceRefresh) {
+            lastCount           = count;
+            global.forceRefresh = false;
             if (data.status === 'success' && data.results?.length > 0) {
-              const { plainBets, smartBets } = computeStrategies(data.results);
-              send({ status: 'success', count, plainBets, smartBets });
+              const { plainBets, smartBets, badStreakHistory, pauseResumeHistory, latestTimestamp, latestRoundId } = computeStrategies(data.results);
+              send({ status: 'success', count, plainBets, smartBets, badStreakHistory, pauseResumeHistory, latestTimestamp, latestRoundId });
             } else {
-              send({ status: 'empty', count: 0, plainBets: [], smartBets: [] });
+              send({ status: 'empty', count: 0, plainBets: [], smartBets: [], badStreakHistory: [], pauseResumeHistory: [], latestTimestamp: null, latestRoundId: null });
             }
           }
         } catch (_) {
@@ -241,15 +305,10 @@ export async function GET() {
         }
       };
 
-      // First check immediately
       await check();
 
-      // Poll every 1 second — only emits when count changes
       const interval = setInterval(async () => {
-        if (closed) {
-          clearInterval(interval);
-          return;
-        }
+        if (closed) { clearInterval(interval); return; }
         await check();
       }, 1000);
     },
@@ -257,9 +316,9 @@ export async function GET() {
 
   return new Response(stream, {
     headers: {
-      'Content-Type': 'text/event-stream',
-      'Cache-Control': 'no-cache, no-transform',
-      'Connection': 'keep-alive',
+      'Content-Type':      'text/event-stream',
+      'Cache-Control':     'no-cache, no-transform',
+      'Connection':        'keep-alive',
       'X-Accel-Buffering': 'no',
     },
   });
@@ -271,6 +330,7 @@ export async function POST(req) {
     if (body.roundId) {
       global.forceResumeRoundIds = global.forceResumeRoundIds || new Set();
       global.forceResumeRoundIds.add(body.roundId);
+      global.forceRefresh = true;
       return new Response(JSON.stringify({ success: true, roundId: body.roundId }), { status: 200 });
     }
   } catch (e) {}
