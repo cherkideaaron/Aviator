@@ -70,7 +70,7 @@ log.setLevel(logging.ERROR)
 db_config = {
     'host': '127.0.0.1',
     'user': 'root',         # Replace with your MySQL username
-    'password': 'Aaron@123', # Replace with your MySQL password
+    'password': 'Et3aa@123', # Replace with your MySQL password
     'database': 'aviator_db'
 }
 

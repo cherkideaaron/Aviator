@@ -4,7 +4,7 @@ import json
 db_config = {
     'host': '127.0.0.1',
     'user': 'root',
-    'password': 'Aaron@123',
+    'password': 'Et3aa@123',
     'database': 'aviator_db'
 }
 

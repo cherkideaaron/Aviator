@@ -45,7 +45,7 @@ DB_CONFIG = {
     'host':     '127.0.0.1',
     'port':     3306,
     'user':     'root',
-    'password': 'Aaron@123',
+    'password': 'Et3aa@123',
     'database': 'aviator_db',
 }
 

@@ -12468,3 +12468,163 @@
 0, 1, 0  |  2026-06-30 16:03:45  |  bad%=50.0%  |  list=5  |  CLICKED=NO  |  Balance: 20,000.00
 0, 1, 1  |  2026-06-30 16:04:23  |  bad%=40.0%  |  list=0  |  CLICKED=YES  |  [<=40% ZONE]  |  Balance: 20,000.00
 0, 1, 0  |  2026-06-30 16:04:23  |  bad%=40.0%  |  list=5  |  CLICKED=YES  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 16:20:48  |  bad%=40.0%  |  list=5  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:45:41  |  bad%=70.0%  |  list=5  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:46:15  |  bad%=60.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:46:15  |  bad%=60.0%  |  list=5  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:46:38  |  bad%=50.0%  |  list=1  |  CLICKED=NO  |  Balance: 0.00
+0, 1, 1  |  2026-06-30 17:46:38  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 0.00
+0, 1, 1  |  2026-06-30 17:47:43  |  bad%=50.0%  |  list=1  |  CLICKED=NO  |  Balance: 0.00
+0, 1, 1  |  2026-06-30 17:47:43  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 0.00
+0, 1, 1  |  2026-06-30 17:47:59  |  bad%=50.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:47:59  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:48:12  |  bad%=60.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:48:27  |  bad%=60.0%  |  list=1  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:50:14  |  bad%=60.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:51:11  |  bad%=50.0%  |  list=3  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:51:48  |  bad%=50.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:52:37  |  bad%=50.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:52:58  |  bad%=50.0%  |  list=1  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 17:54:02  |  bad%=60.0%  |  list=4  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:54:41  |  bad%=50.0%  |  list=2  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 17:54:41  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 17:54:56  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:55:36  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:56:02  |  bad%=40.0%  |  list=4  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:56:02  |  bad%=40.0%  |  list=5  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:58:25  |  bad%=30.0%  |  list=0  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:58:25  |  bad%=30.0%  |  list=4  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:58:25  |  bad%=30.0%  |  list=5  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:58:37  |  bad%=20.0%  |  list=0  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:58:37  |  bad%=20.0%  |  list=4  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:58:37  |  bad%=20.0%  |  list=5  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:59:06  |  bad%=40.0%  |  list=4  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 17:59:06  |  bad%=40.0%  |  list=5  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:00:23  |  bad%=60.0%  |  list=2  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:00:41  |  bad%=60.0%  |  list=2  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:01:56  |  bad%=60.0%  |  list=2  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 18:01:56  |  bad%=60.0%  |  list=4  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:02:08  |  bad%=60.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:02:08  |  bad%=60.0%  |  list=2  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 18:02:08  |  bad%=60.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:02:30  |  bad%=60.0%  |  list=1  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 18:02:30  |  bad%=60.0%  |  list=4  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:03:03  |  bad%=60.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:04:52  |  bad%=50.0%  |  list=3  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 18:04:52  |  bad%=50.0%  |  list=4  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:05:07  |  bad%=50.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:05:07  |  bad%=50.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:06:00  |  bad%=50.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:06:00  |  bad%=50.0%  |  list=2  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:06:34  |  bad%=50.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:06:34  |  bad%=50.0%  |  list=2  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:06:34  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:07:05  |  bad%=40.0%  |  list=1  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:07:05  |  bad%=40.0%  |  list=2  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:07:05  |  bad%=40.0%  |  list=5  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:07:30  |  bad%=40.0%  |  list=1  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:07:30  |  bad%=40.0%  |  list=2  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:09:14  |  bad%=30.0%  |  list=0  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:09:14  |  bad%=30.0%  |  list=1  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:09:14  |  bad%=30.0%  |  list=2  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:09:48  |  bad%=30.0%  |  list=0  |  CLICKED=YES  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:09:48  |  bad%=30.0%  |  list=2  |  CLICKED=YES  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:10:04  |  bad%=20.0%  |  list=0  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:10:43  |  bad%=30.0%  |  list=0  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:11:15  |  bad%=30.0%  |  list=0  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:11:38  |  bad%=30.0%  |  list=0  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:22:09  |  bad%=50.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:22:52  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:23:33  |  bad%=40.0%  |  list=4  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:23:33  |  bad%=40.0%  |  list=5  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:30:41  |  bad%=30.0%  |  list=0  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:30:41  |  bad%=30.0%  |  list=4  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:30:41  |  bad%=30.0%  |  list=5  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:30:57  |  bad%=40.0%  |  list=0  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:30:57  |  bad%=40.0%  |  list=4  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:30:57  |  bad%=40.0%  |  list=5  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:31:41  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:31:41  |  bad%=50.0%  |  list=5  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:31:58  |  bad%=40.0%  |  list=5  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:33:38  |  bad%=80.0%  |  list=2  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:34:41  |  bad%=80.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:34:53  |  bad%=70.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:35:13  |  bad%=80.0%  |  list=1  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:35:47  |  bad%=70.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:35:47  |  bad%=70.0%  |  list=5  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:36:21  |  bad%=70.0%  |  list=1  |  CLICKED=NO  |  Balance: 0.00
+0, 1, 1  |  2026-06-30 18:42:32  |  bad%=80.0%  |  list=0  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:43:35  |  bad%=70.0%  |  list=2  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:43:55  |  bad%=60.0%  |  list=2  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:43:55  |  bad%=60.0%  |  list=5  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:44:25  |  bad%=60.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:44:25  |  bad%=60.0%  |  list=5  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:44:48  |  bad%=50.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:44:48  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:45:01  |  bad%=60.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:45:35  |  bad%=60.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:46:31  |  bad%=50.0%  |  list=1  |  CLICKED=NO  |  Balance: 0.00
+0, 1, 1  |  2026-06-30 18:46:31  |  bad%=50.0%  |  list=3  |  CLICKED=NO  |  Balance: 0.00
+0, 1, 1  |  2026-06-30 18:46:47  |  bad%=40.0%  |  list=1  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:46:47  |  bad%=40.0%  |  list=3  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:47:04  |  bad%=40.0%  |  list=1  |  CLICKED=YES  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:47:34  |  bad%=40.0%  |  list=1  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:48:11  |  bad%=50.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:49:11  |  bad%=40.0%  |  list=1  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:49:23  |  bad%=40.0%  |  list=1  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:49:23  |  bad%=40.0%  |  list=2  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:49:53  |  bad%=60.0%  |  list=0  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:49:53  |  bad%=60.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:49:53  |  bad%=60.0%  |  list=2  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:49:53  |  bad%=60.0%  |  list=5  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:50:10  |  bad%=50.0%  |  list=0  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:50:10  |  bad%=50.0%  |  list=2  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:50:32  |  bad%=60.0%  |  list=0  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:51:15  |  bad%=50.0%  |  list=0  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 18:51:49  |  bad%=50.0%  |  list=4  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 18:52:20  |  bad%=40.0%  |  list=4  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 18:52:36  |  bad%=40.0%  |  list=4  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:52:59  |  bad%=50.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 18:52:59  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:53:17  |  bad%=50.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:53:49  |  bad%=40.0%  |  list=3  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:54:22  |  bad%=50.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:54:41  |  bad%=60.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:55:11  |  bad%=50.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:56:50  |  bad%=50.0%  |  list=0  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:57:13  |  bad%=50.0%  |  list=0  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:57:25  |  bad%=40.0%  |  list=0  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 18:57:44  |  bad%=40.0%  |  list=0  |  CLICKED=NO  |  [<=40% ZONE]  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:15:52  |  bad%=50.0%  |  list=0  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 20:16:15  |  bad%=60.0%  |  list=5  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 20:16:29  |  bad%=60.0%  |  list=5  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:16:42  |  bad%=70.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 0  |  2026-06-30 20:16:42  |  bad%=70.0%  |  list=5  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:17:08  |  bad%=70.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:17:08  |  bad%=70.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:17:26  |  bad%=60.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:17:45  |  bad%=50.0%  |  list=3  |  CLICKED=NO  |  Balance: 0.00
+0, 1, 1  |  2026-06-30 20:17:45  |  bad%=50.0%  |  list=5  |  CLICKED=NO  |  Balance: 0.00
+0, 1, 1  |  2026-06-30 20:19:26  |  bad%=50.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:19:26  |  bad%=50.0%  |  list=5  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:19:39  |  bad%=50.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:19:39  |  bad%=50.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:19:39  |  bad%=50.0%  |  list=5  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:20:15  |  bad%=50.0%  |  list=1  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:20:15  |  bad%=50.0%  |  list=5  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:21:33  |  bad%=90.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:21:33  |  bad%=90.0%  |  list=2  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:21:33  |  bad%=90.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:22:08  |  bad%=80.0%  |  list=0  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:22:08  |  bad%=80.0%  |  list=1  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:22:22  |  bad%=70.0%  |  list=0  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:22:22  |  bad%=70.0%  |  list=4  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:22:22  |  bad%=70.0%  |  list=5  |  CLICKED=YES  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:22:38  |  bad%=70.0%  |  list=0  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:22:38  |  bad%=70.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:22:50  |  bad%=80.0%  |  list=0  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:22:50  |  bad%=80.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:22:50  |  bad%=80.0%  |  list=4  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:23:53  |  bad%=80.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:24:10  |  bad%=70.0%  |  list=2  |  CLICKED=NO  |  Balance: 20,000.00
+0, 1, 1  |  2026-06-30 20:24:10  |  bad%=70.0%  |  list=3  |  CLICKED=NO  |  Balance: 20,000.00

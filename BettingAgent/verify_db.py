@@ -2,7 +2,7 @@ import mysql.connector
 import requests
 import time
 
-db_config = {'host': '127.0.0.1', 'user': 'root', 'password': 'Aaron@123', 'database': 'aviator_db'}
+db_config = {'host': '127.0.0.1', 'user': 'root', 'password': 'Et3aa@123', 'database': 'aviator_db'}
 BASE_URL = "http://127.0.0.1:5000"
 
 def clear_db():
